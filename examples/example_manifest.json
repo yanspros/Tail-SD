@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "SYNTHETIC_PLACEHOLDER_ONLY",
+  "records": [
+    {
+      "record_id": "termination|toy_source_001",
+      "source_id": "toy_source_001",
+      "text": "Replace this text with a licensed training example.",
+      "prompt_audio_path": "REPLACE_WITH_YOUR_AUDIO/prompt.wav",
+      "branch": "termination",
+      "T_i": 20,
+      "target_tokens_path": "REPLACE_WITH_YOUR_TOKENS/toy_source_001.npy",
+      "seed": 0
+    },
+    {
+      "record_id": "content|toy_source_002",
+      "source_id": "toy_source_002",
+      "text": "This manifest contains no redistributed audio or model data.",
+      "prompt_audio_path": "REPLACE_WITH_YOUR_AUDIO/prompt.wav",
+      "branch": "content",
+      "T_i": 18,
+      "target_tokens_path": "REPLACE_WITH_YOUR_TOKENS/toy_source_002.npy",
+      "seed": 1
+    }
+  ]
+}

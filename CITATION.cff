@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use Tail-SD, please cite the paper and this software release."
+title: "Tail-SD: Terminal-Tail Self-Distillation for AR-TTS"
+type: software
+version: "0.1.0rc1"
+date-released: "2026-09-15"
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+preferred-citation:
+  type: conference-paper
+  title: "TODO: final ICASSP 2027 paper title"
+  authors:
+    - family-names: "TODO"
+      given-names: "TODO"
+  conference:
+    name: "2027 IEEE International Conference on Acoustics, Speech and Signal Processing"
+  year: 2027
+repository-code: "TODO: public repository URL"
+license: "NOASSERTION"

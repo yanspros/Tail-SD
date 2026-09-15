@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "audit_type": "READ_ONLY_SOURCE_INVENTORY_AND_CLEAN_EXTRACTION",
+  "status": "PASS",
+  "path_convention": "${TAILSD_RESEARCH_ROOT} is a user-supplied private research root; no private absolute path is embedded",
+  "core_public_modules": [
+    {
+      "capability": "self_generated_target_construction_and_quality_filtering",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p3_method/e01_supply/scripts/build_e01_pairs.py",
+      "original_code_sha256": "411a80efddff9a101bddbe7378351a22b0418a230b927be6b6ec3aacf9e4dbe0",
+      "secondary_authority_path": "${TAILSD_RESEARCH_ROOT}/phases/p3_method/e02_quality/scripts/build_quality_bank.py",
+      "secondary_authority_sha256": "b3a8bcfc1d95b333929ab1fe2baf7cac45abdef0b8f2f3186cc284d5982c4366",
+      "release_path": "tailsd/target_construction.py",
+      "release_code_sha256": "38a57b1c861131a7d928f88250553009c9d5de49ba84374bf8ad404cdd7b4dbb",
+      "semantic_change": "Infrastructure, asset-path and Gate orchestration removed; first-failure, strict-complete quality filter, non-tail/coverage/WER/seed ranking and per-source uniqueness retained in a manifest-neutral API. Exact prefix generation and CTC alignment remain backend responsibilities."
+    },
+    {
+      "capability": "tail_sd_fixed_ratio_and_deterministic_residual_allocation",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p4_final/e06_t6_branch_fixed_tail_addendum/scripts/freeze_t6_protocol.py",
+      "original_code_sha256": "2da90f7463f9d1c6580ca25555b1b9dcbdfb6c0712455e2bdab67becc9ddb3f3",
+      "secondary_authority_path": "${TAILSD_RESEARCH_ROOT}/phases/p4_final/e06_t6_branch_fixed_tail_addendum/scripts/construct_t6_masks.py",
+      "secondary_authority_sha256": "28eb2d985b7e6eabad6e5cc7406cfefb30a64374138c5351e5f7f9c2f2a50353",
+      "release_path": "tailsd/masks.py",
+      "release_code_sha256": "29ff9fd176bdfa21177aeadd9eac749a6f6c65539f32fd22ebd52ab9cf0f1b1e",
+      "semantic_change": "Torch mask serialization was replaced by explicit integer position manifests; branch aggregate floor, per-record floor, earliest-record residual allocation, terminal span, EOS rule and complete-history declaration are unchanged.",
+      "formal_123_record_equivalence": "123/123 K_i, tail start, EOS/special positions and M_i exact match"
+    },
+    {
+      "capability": "random_pr_per_record_matched_mask",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p4_final/e10_t6_seed_repeat/scripts/random_pr_v1.py",
+      "original_code_sha256": "98e4171c3a0c02386ca066a456a0083afd1eb1322012582c3c6cf854b6bc1f0d",
+      "release_path": "tailsd/random_pr.py",
+      "release_code_sha256": "5a2e94f65ea20bff0e531a7596495af830d5f5958cbefdeb109772bd6c3a7174",
+      "semantic_change": "Research-run orchestration removed; Python random.Random, inclusive randrange, one draw per canonical record, no redraw, per-record K_i/EOS/M_i/target-history matching and overlap acceptance are unchanged.",
+      "formal_M0_123_record_equivalence": "123/123 sampled starts, spans, K_i, EOS/special positions and M_i exact match"
+    },
+    {
+      "capability": "full_sd_label_reference",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p3_method/e03_pilot/scripts/pilot_core.py",
+      "original_code_sha256": "e23eec62a1a23eb84314c8d968d5360dd74b2ccc16f1b6671acabbc9b4675dfc",
+      "release_path": "tailsd/masks.py",
+      "release_code_sha256": "29ff9fd176bdfa21177aeadd9eac749a6f6c65539f32fd22ebd52ab9cf0f1b1e",
+      "semantic_change": "Model-specific labels are represented as explicit speech/EOS positions; all speech labels and the original branch EOS rule are retained."
+    },
+    {
+      "capability": "masked_ce_full_history_and_lora_injection",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p3_method/e03_pilot/scripts/pilot_core.py",
+      "original_code_sha256": "e23eec62a1a23eb84314c8d968d5360dd74b2ccc16f1b6671acabbc9b4675dfc",
+      "secondary_authority_path": "${TAILSD_RESEARCH_ROOT}/phases/p4_final/e06_t6_branch_fixed_tail_addendum/scripts/train_t6.py",
+      "secondary_authority_sha256": "be0c1491128800c98da610e2fdbf2177a284dc7908b363b5b78d3f51c20d0964",
+      "release_path": "tailsd/train.py",
+      "release_code_sha256": "9686453d5debd1cea540bacbb51dae2446eeb36a834c9a083033d98c18887a2f",
+      "semantic_change": "CosyVoice loader, internal paths and checkpoint/Gate machinery removed; mean CE over active valid labels, complete forward history, frozen base parameters and q/k/v/o plus gate/up/down LoRA targets retained."
+    },
+    {
+      "capability": "SC_HC_OTHER_failure_metrics_and_alignment",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p3_method/e03_pilot/scripts/score_independent_evaluation.py",
+      "original_code_sha256": "4701ba3d1eff29bd4634c2e3453cac442d77d639abc2d15615b599455fdd203e",
+      "release_path": "tailsd/metrics.py",
+      "release_code_sha256": "a2c5e779f3d895db407456fba62b07b582d56db3f564565bcedaf59bb0ce1338",
+      "semantic_change": "Whisper invocation and chunk storage removed; word alignment, WER, coverage, trailing deletion, reference-denominated non-tail error, category precedence, SC and HC predicate retained."
+    },
+    {
+      "capability": "source_level_paired_bootstrap",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p4_final/e01_sealed_longform/scripts/score_sealed_evaluation.py",
+      "original_code_sha256": "8abb6d5226165741cb0cfd1804b3ea6e715165107aab4b235493076d14a4dbea",
+      "release_path": "tailsd/metrics.py",
+      "release_code_sha256": "a2c5e779f3d895db407456fba62b07b582d56db3f564565bcedaf59bb0ce1338",
+      "semantic_change": "Panel-specific tables removed; seeds are still aggregated within source before paired source resampling with NumPy default_rng and percentile CI."
+    },
+    {
+      "capability": "inference_grid_and_artifact_contract",
+      "original_server_path": "${TAILSD_RESEARCH_ROOT}/phases/p4_final/e11_untouched_confirmatory/scripts/e11_pipeline.py",
+      "original_code_sha256": "f1cf83fe4cf2c3d3544de02ae40153adae55546ed09001386c15e73bb24800e5",
+      "release_path": "tailsd/inference.py",
+      "release_code_sha256": "4a3b15c9942d997458c178e45944593528f47fd7bf63af5ccf80254e48d60173",
+      "semantic_change": "The private runner is not copied. A narrow adapter contract and deterministic path grid expose the required identities while official CosyVoice remains external."
+    }
+  ],
+  "category_B_experiment_orchestration": {
+    "release_decision": "ONLY_MINIMUM_REPRODUCIBILITY_CONTRACTS",
+    "included": ["manifest-driven CLIs", "identity checks", "frozen mask/audit outputs"],
+    "excluded": ["current_state and Gate state machine", "cluster-specific resume supervisors", "private authority-chain reconstruction"]
+  },
+  "category_C_internal_operations": {
+    "release_decision": "EXCLUDED",
+    "items": ["email notification", "GPU monitoring", "private credentials", "scheduler and host bindings"]
+  },
+  "category_D_historical_failures": {
+    "release_decision": "EXCLUDED",
+    "items": ["fail-closed incident logs", "orphan continuation recovery", "stale-state reconciliation", "abandoned candidate protocols"]
+  },
+  "category_E_unrelated_code": {
+    "release_decision": "EXCLUDED",
+    "items": ["unrelated phases and ablations", "paper authoring files", "capability/human-evaluation materials", "CV2/CV3 generated artifacts"]
+  },
+  "large_or_restricted_assets_copied": false,
+  "scientific_experiment_executed": false
+}

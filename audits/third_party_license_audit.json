@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "REVIEW_COMPLETE_OWNER_LICENSE_DECISION_REQUIRED",
+  "legal_advice": false,
+  "project_license": {
+    "detected_authority": null,
+    "release_action": "LICENSE_NOTICE.md created; no permissive license was invented",
+    "blocking_for_public_push": true,
+    "owner_decision": "Select the Tail-SD code license and confirm copyright/institutional approval"
+  },
+  "third_party": [
+    {
+      "name": "CosyVoice2 / Fun-CosyVoice3",
+      "kind": "code_and_model",
+      "observed_code_license": "Apache-2.0",
+      "audit_evidence": "canonical shared checkout LICENSE SHA256 c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "official_source": "https://github.com/QwenAudio/CosyVoice",
+      "code_vendored": false,
+      "weights_redistributed": false,
+      "user_action": "Obtain code/weights from the official source and review each model card"
+    },
+    {
+      "name": "OpenAI Whisper",
+      "kind": "ASR_code_and_weights",
+      "observed_license": "MIT",
+      "audit_evidence": "installed package metadata version 20231117 and official project",
+      "official_source": "https://github.com/openai/whisper",
+      "code_vendored": false,
+      "weights_redistributed": false
+    },
+    {
+      "name": "WeTextProcessing",
+      "kind": "text_normalization_and_FST",
+      "observed_license": "Apache-2.0",
+      "audit_evidence": "official upstream project",
+      "official_source": "https://github.com/wenet-e2e/WeTextProcessing",
+      "code_vendored": false,
+      "fst_redistributed": false
+    },
+    {
+      "name": "LibriTTS",
+      "kind": "corpus_and_audio",
+      "observed_license": "CC BY 4.0",
+      "audit_evidence": "canonical corpus LICENSE SHA256 70279f4c750c20909fd1e2ba9cdc8ab379b7229aa47ed25ead16aa15af21c385",
+      "official_source": "https://www.openslr.org/60/",
+      "audio_redistributed": false,
+      "user_action": "Obtain separately and preserve attribution"
+    },
+    {
+      "name": "Wikipedia-derived text",
+      "kind": "text_corpus",
+      "observed_license": "snapshot_and_page_specific_review_required",
+      "official_terms": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+      "text_redistributed": false,
+      "user_action": "Review attribution/share-alike obligations for the exact snapshot and content used"
+    }
+  ],
+  "bundled_third_party_weights_data_audio_or_fst": false,
+  "release_boundary": "Only original small Python/config/documentation candidate files are packaged"
+}

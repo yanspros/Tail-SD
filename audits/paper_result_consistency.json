@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "source": {
+    "logical_name": "TailSD_ICASSP2027_Evidence_20260915_v2/paper_numbers.json",
+    "sha256": "82dcb6f24d1c463e9c0fcdf13bdb14430f4e51c8fef4e8f838fb656ac0e1083e",
+    "document_gate": "PAPER_EVIDENCE_PACKAGE_TAILSD_ICASSP2027_V2_FROZEN"
+  },
+  "generated_snapshot": {
+    "path": "reproduction/paper_results.json",
+    "sha256": "f1d9ad73314088832b512322a9e1a9f533730fabc46e3fc1ae482b4ded7a021f",
+    "generation_script": "scripts/sync_paper_results.py"
+  },
+  "checks": {
+    "cv3_primary_strict_completion_values_match": true,
+    "cv3_tail_minus_full_sd_delta_pp_is_0p40": true,
+    "cv3_tail_minus_full_sd_ci95_pp_is_minus1p90_to_plus2p70": true,
+    "random_pr_original_M0_present": true,
+    "random_pr_additional_M1_M2_complete_table_present": true,
+    "random_pr_M1_M2_primary_delta_is_4p15pp": true,
+    "cv2_transfer_systems_and_primary_comparison_match": true,
+    "cv2_panel_marked_shared_open": true,
+    "deprecated_positive_only_full_sd_ci_absent": true,
+    "human_evaluation_server_authority_not_claimed": true
+  },
+  "deprecated_statistics_in_release": false,
+  "notes": "Human-evaluation state and values are not asserted because their final authority is local to the paper workstation."
+}

@@ -1,0 +1,25 @@
+schema_version: 1
+classification:
+  strict_complete:
+    eos_generated: true
+    cap_hit: false
+    coverage_min: 0.95
+    trailing_deleted_words: 0
+  early_eos_category:
+    coverage_max: 0.90
+    trailing_deleted_words_min: 5
+  hc_early_eos:
+    coverage_max: 0.85
+    trailing_deleted_words_min: 10
+statistics:
+  independent_unit: source
+  inference_seeds: [0, 1]
+  aggregate_seeds_within_source: true
+  paired_bootstrap_resamples: 10000
+  paired_bootstrap_seed: 20260820
+  percentile_interval: [0.025, 0.975]
+asr:
+  model: Whisper-large-v3
+  chunk_seconds_max: 20.0
+  merge_order: manifest_chunk_id
+  blank_lines_allowed: false

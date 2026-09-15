@@ -1,0 +1,7 @@
+bank: examples/example_manifest.json
+output_dir: outputs/toy_masks
+branch_ratios:
+  termination: 0.21705160991522524
+  content: 0.29909295294208854
+random_pr_seed: 20260912
+note: "Placeholder paths must be replaced with assets you are licensed to use."

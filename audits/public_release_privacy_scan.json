@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "entire release candidate tree before archive",
+  "patterns_checked": [
+    "private GPFS absolute paths",
+    "workspace username",
+    "known notification email",
+    "generic email addresses",
+    "API key/password/cookie assignment",
+    "SSH/private-key material",
+    "private-network URLs",
+    "personal Windows paths",
+    "notification identifiers"
+  ],
+  "blocking_findings": 0,
+  "non_blocking_findings": 0,
+  "large_or_restricted_asset_scan": {
+    "wav": 0,
+    "model_checkpoint_extensions": 0,
+    "files_over_5MiB": 0
+  },
+  "private_provenance_policy": "Private source paths are represented only by ${TAILSD_RESEARCH_ROOT} placeholders; the public result snapshot retains only the private paper-number authority SHA256.",
+  "original_research_tree_modified": false
+}

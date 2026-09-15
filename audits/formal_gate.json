@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "OPEN_SOURCE_TAILSD_V1_RELEASE_CANDIDATE_READY",
+  "gate_type": "DOCUMENTATION_AND_CODE_RELEASE_CANDIDATE_NOT_SCIENTIFIC_GATE",
+  "checks": {
+    "core_code_inventory_complete": true,
+    "formal_method_semantics_audited": true,
+    "formal_tail_mask_123_of_123_equivalent": true,
+    "formal_random_pr_M0_123_of_123_equivalent": true,
+    "privacy_blocking_findings_zero": true,
+    "dependency_audit_complete": true,
+    "license_risks_explicit": true,
+    "unit_tests_pass": true,
+    "readme_and_docs_present": true,
+    "paper_results_match_frozen_evidence": true,
+    "deprecated_statistic_absent": true,
+    "large_or_third_party_assets_absent": true,
+    "scientific_experiment_modified_or_run": false,
+    "github_push_performed": false
+  },
+  "public_push_status": "BLOCKED_PENDING_LICENSE_CITATION_AND_ADAPTER_HUMAN_REVIEW",
+  "scientific_gate_changed": false
+}

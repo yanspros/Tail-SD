@@ -1,0 +1,37 @@
+schema_version: 1
+backbone: Fun-CosyVoice3-0.5B-2512
+base_model_dir: ${COSYVOICE3_MODEL_DIR}
+prompt_audio_root: ${TAILSD_PROMPT_AUDIO_ROOT}
+frontend:
+  official: true
+  text_frontend: true
+  split: false
+inference:
+  eos_token: 6562
+  top_k: 25
+  top_p: 0.8
+  temperature: null
+  min_token_text_ratio: 2
+  max_token_text_ratio: 20
+  cap_rule: frozen_manifest_value
+tailsd:
+  branch_ratios:
+    termination: 0.21705160991522524
+    content: 0.29909295294208854
+  termination_eos_supervised: true
+  content_eos_supervised: false
+  full_teacher_forced_history: true
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.0
+  target_suffixes: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+training:
+  optimizer: Adam
+  lr: 1.0e-5
+  weight_decay: 0.0
+  gradient_clip_norm: 5.0
+  batch_size: 1
+  gradient_accumulation: 1
+  passes: 4
+  shuffle: false

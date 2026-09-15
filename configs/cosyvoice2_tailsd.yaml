@@ -1,0 +1,37 @@
+schema_version: 1
+backbone: CosyVoice2-0.5B
+base_model_dir: ${COSYVOICE2_MODEL_DIR}
+prompt_audio_root: ${TAILSD_PROMPT_AUDIO_ROOT}
+frontend:
+  official: true
+  text_frontend: true
+  split: false
+inference:
+  eos_token: 6561
+  top_k: 25
+  top_p: null
+  temperature: null
+  qwen2lm_native_sampling: true
+  min_token_text_ratio: 2
+  max_token_text_ratio: 20
+  cap_rule: int_text_token_count_times_20
+tailsd:
+  branch_ratios:
+    termination: 0.21705160991522524
+    content: 0.29909295294208854
+  termination_eos_supervised: true
+  content_eos_supervised: false
+  full_teacher_forced_history: true
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.0
+  target_suffixes: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+training:
+  optimizer: Adam
+  lr: 1.0e-5
+  weight_decay: 0.0
+  batch_size: 1
+  gradient_accumulation: 1
+  passes: 4
+  shuffle: false

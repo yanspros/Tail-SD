@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "RELEASE_CANDIDATE_READY_PUBLIC_PUSH_BLOCKED_PENDING_OWNER_DECISIONS",
+  "checks": {
+    "shallow_clean_tree": true,
+    "readme_present_and_user_focused": true,
+    "core_modules_present": true,
+    "tests_present_and_passing": true,
+    "gitignore_excludes_large_and_sensitive_assets": true,
+    "privacy_scan_blocking_findings_zero": true,
+    "third_party_assets_absent": true,
+    "paper_results_authority_consistent": true,
+    "deprecated_statistic_absent": true,
+    "github_remote_configured": false,
+    "github_push_performed": false
+  },
+  "manual_blockers": [
+    "Select the license for original Tail-SD code and confirm copyright/institutional approval",
+    "Replace CITATION.cff author/title/repository TODO fields",
+    "Review third-party model cards and attribution notices",
+    "Implement and review an external official-CosyVoice adapter for end-to-end model reproduction"
+  ],
+  "public_release_allowed_now": false,
+  "local_candidate_review_allowed": true
+}

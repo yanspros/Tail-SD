@@ -1,0 +1,8 @@
+config_source: ../configs/cosyvoice2_tailsd.yaml
+training_bank_records: 123
+training_bank_relation_to_cv3: independently_constructed
+evaluation_panel: shared_open_cv3_e11_500_sources
+systems: [Base, Full-SD, Random-PR, Tail-SD]
+inference_seeds: [0, 1]
+primary_contrast: Tail-SD_minus_Random-PR
+asset_policy: user_supplied_not_distributed

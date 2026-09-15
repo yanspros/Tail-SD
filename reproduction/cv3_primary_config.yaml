@@ -1,0 +1,7 @@
+config_source: ../configs/cosyvoice3_tailsd.yaml
+systems: [Base, Full-SD, Random-Local, Tail-30, Tail-SD]
+formal_sources: 500
+inference_seeds: [0, 1]
+paired_bootstrap_resamples: 10000
+independent_unit: source
+asset_policy: user_supplied_not_distributed

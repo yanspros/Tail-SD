@@ -1,0 +1,18 @@
+schema_version: 1
+method: Random-PR
+reference_mask: Tail-SD
+rng:
+  implementation: Python standard library random.Random
+  seed: 20260912
+  draw_function: randrange(0, T_i-K_i+1)
+  draw_order: canonical_bank_order
+  draws_per_record: 1
+  redraw: false
+matching:
+  per_record_K_i: true
+  eos_special_positions: true
+  CE_denominator_M_i: true
+  target_and_full_history: true
+overlap_with_tail:
+  allowed: true
+  exact_match_allowed: true

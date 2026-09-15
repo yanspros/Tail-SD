@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "runtime_dependencies": [
+    {"name": "numpy", "constraint": ">=1.24,<3", "purpose": "source aggregation and paired bootstrap"},
+    {"name": "PyYAML", "constraint": ">=6,<7", "purpose": "configuration loading"}
+  ],
+  "optional_dependencies": [
+    {"name": "torch", "constraint": ">=2.1", "purpose": "masked CE and LoRA helpers", "extra": "torch"}
+  ],
+  "external_not_installed_by_package": [
+    "official CosyVoice checkout and compatible checkpoint",
+    "Whisper and its weights for paper-style ASR",
+    "WeTextProcessing or the frontend required by the selected CosyVoice release",
+    "ffmpeg/sox as required by user-selected audio tooling"
+  ],
+  "standard_library_imports": ["argparse", "collections", "contextlib", "copy", "hashlib", "importlib", "json", "math", "pathlib", "random", "re", "sys", "typing"],
+  "private_package_imports": [],
+  "machine_specific_dependencies": [],
+  "unused_internal_dependencies_removed": true,
+  "notes": "The training CLI loads a user-supplied backend factory; the package does not vendor or silently patch CosyVoice."
+}
