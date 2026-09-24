@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
-  "status": "OPEN_SOURCE_TAILSD_V1_RELEASE_CANDIDATE_READY",
-  "gate_type": "DOCUMENTATION_AND_CODE_RELEASE_CANDIDATE_NOT_SCIENTIFIC_GATE",
+  "schema_version": 2,
+  "status": "OPEN_SOURCE_TAILSD_V1_PAPER_SYNC_READY",
+  "gate_type": "DOCUMENTATION_AND_CODE_RELEASE_NOT_SCIENTIFIC_GATE",
   "checks": {
     "core_code_inventory_complete": true,
     "formal_method_semantics_audited": true,
@@ -15,9 +15,8 @@
     "paper_results_match_frozen_evidence": true,
     "deprecated_statistic_absent": true,
     "large_or_third_party_assets_absent": true,
-    "scientific_experiment_modified_or_run": false,
-    "github_push_performed": false
+    "scientific_experiment_modified_or_run": false
   },
-  "public_push_status": "BLOCKED_PENDING_LICENSE_CITATION_AND_ADAPTER_HUMAN_REVIEW",
+  "public_push_status": "AUTHORIZED_BY_USER_FOR_ICASSP2027_PAPER_SYNC",
   "scientific_gate_changed": false
 }

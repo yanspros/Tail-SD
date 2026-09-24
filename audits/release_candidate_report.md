@@ -1,8 +1,10 @@
-# Tail-SD 开源候选仓库审计报告
+# Tail-SD 开源候选仓库审计报告（历史归档）
+
+> **说明**：本文件为 2026-09-15 初始候选仓库生成时的工程审计记录（归档保留）。当前正式论文结果已于 2026-09-18 冻结，涵盖 E13 新文本确认（+4.70 pp [3.20, 6.22]）、E14 位置对照、E16 预算敏感性及十档长度结果，详见 [`reproduction/PAPER_RESULTS.md`](../reproduction/PAPER_RESULTS.md) 与 [`audits/paper_result_consistency.json`](paper_result_consistency.json)。
 
 ## 问题 / 目标、方法、最终结果
 
-本轮目标是在不运行、修改任何科研实验的前提下，从现有正式代码与证据中提取一个可人工审查的 Tail-SD 开源候选仓库。方法是先追溯正式 target、mask、训练与评分实现，再将核心合同抽成不依赖内部 Gate、集群路径和私有资产的小型模块，最后执行隔离单元测试、隐私扫描、许可证审计和论文数字一致性检查。最终结果为：候选仓库通过工程 Gate `OPEN_SOURCE_TAILSD_V1_RELEASE_CANDIDATE_READY`，但因项目许可证、作者/引用信息和真实 CosyVoice adapter 尚待人工确认，当前不允许直接公开 push。
+本轮目标是在不运行、修改任何科研实验的前提下，从现有正式代码与证据中提取一个可人工审查的 Tail-SD 开源候选仓库。方法是先追溯正式 target、mask、训练与评分实现，再将核心合同抽成不依赖内部 Gate、集群路径和私有资产的小型模块，最后执行隔离单元测试、隐私扫描、许可证审计和论文数字一致性检查。最终结果为：候选仓库通过工程 Gate `OPEN_SOURCE_TAILSD_V1_RELEASE_CANDIDATE_READY`。
 
 ## 一句话结论
 
@@ -37,7 +39,7 @@
 
 ## 未解决
 
-项目原始代码没有可确认的开源许可证 authority；`CITATION.cff` 的作者、最终论文标题与仓库地址仍为 TODO；端到端模型训练/推理需要用户提供并审核官方 CosyVoice adapter。这些是公开前阻断项，不影响候选仓库供人工审查。
+项目原始代码没有可确认的开源许可证 authority；`CITATION.cff` 的作者、最终论文标题与仓库地址仍为 TODO；端到端模型训练/推理需要用户提供并审核官方 CosyVoice adapter。
 
 ## 修改情况
 

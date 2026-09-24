@@ -1,0 +1,174 @@
+{
+  "schema_version": "2026-09-18",
+  "status": "FINAL_CLAIM_TO_EVIDENCE_THROUGH_E16",
+  "claims": {
+    "C1": {
+      "claim": "Tail-SD improves CV3 completion over Base.",
+      "supported_wording": "On the CV3 E11 panel, Tail-SD improved strict completion over Base by 11.20 pp (95% CI 8.70 to 13.80).",
+      "prohibited_wording": [
+        "solves long-form TTS",
+        "universal improvement"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/cv3_primary/comparisons/tail_vs_base"
+      },
+      "identity_limit": "Original CV3 E11 confirmatory panel."
+    },
+    "C2": {
+      "claim": "Tail-SD outperforms aggregate-budget Random-Local.",
+      "supported_wording": "At the matched aggregate active-label budget, terminal placement exceeded Random-Local by 4.50 pp.",
+      "prohibited_wording": [
+        "all random placements are inferior"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/cv3_primary/comparisons/tail_vs_random_local"
+      },
+      "identity_limit": "Aggregate-budget control; not per-record matching."
+    },
+    "C3": {
+      "claim": "Tail-SD outperforms per-record-matched Random-PR.",
+      "supported_wording": "Tail-SD retained a positive advantage when K_i, EOS/special positions, CE denominator, targets and histories were matched per record.",
+      "prohibited_wording": [
+        "random masks are universally worse"
+      ],
+      "exact_evidence": [
+        {
+          "paper_numbers_pointer": "/random_pr_masks/M0"
+        },
+        {
+          "paper_numbers_pointer": "/random_pr_masks/M1_M2_primary_summary"
+        }
+      ],
+      "identity_limit": "Fixed trained checkpoints and sampled masks."
+    },
+    "C4": {
+      "claim": "Placement advantage persists across tested initialization and mask draws.",
+      "supported_wording": "The placement advantage kept the same direction across the tested paired initializations and additional frozen random-span realizations.",
+      "prohibited_wording": [
+        "all seeds",
+        "all masks",
+        "comprehensive robustness",
+        "six independent replications"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/random_pr_masks/M1_M2_new_cells"
+      },
+      "identity_limit": "Finite sensitivity analysis; cells share Tail-SD checkpoints and masks."
+    },
+    "C5": {
+      "claim": "Placement advantage reproduces on CosyVoice2.",
+      "supported_wording": "On the shared/open E11 panel, Tail-SD exceeded Random-PR on CosyVoice2 by 2.90 pp (95% CI 0.80 to 5.10) using an independently constructed E08 training bank.",
+      "prohibited_wording": [
+        "independent second test set",
+        "architecture-independent",
+        "universal across AR-TTS"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/cv2_transfer/primary_tail_minus_random_pr"
+      },
+      "identity_limit": "Same CosyVoice family; evaluation panel shared with CV3."
+    },
+    "C6": {
+      "claim": "E13 reproduces the placement advantage on a new unopened panel.",
+      "supported_wording": "Across six matched Tail-SD minus Random-PR contrasts, the unopened E13 panel gave a mean +4.70 pp advantage (95% CI 3.20 to 6.22), with six of six positive.",
+      "prohibited_wording": [
+        "guaranteed for all panels",
+        "population-wide mask robustness"
+      ],
+      "exact_evidence": [
+        {
+          "paper_numbers_pointer": "/e13_unopened500/primary_six_unit_average"
+        },
+        {
+          "paper_numbers_pointer": "/e13_unopened500/six_matched_units"
+        }
+      ],
+      "identity_limit": "One final unopened 500-source Wikipedia panel."
+    },
+    "C7": {
+      "claim": "Tail supervision outperforms deterministic Head and Middle placement.",
+      "supported_wording": "On the opened E13 panel, Tail-SD exceeded Head-PR by 16.45 pp and Middle-PR by 9.50 pp under exact per-record supervision matching.",
+      "prohibited_wording": [
+        "independent confirmatory test",
+        "Tail is optimal at every possible position"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/e14_position_study/aggregates"
+      },
+      "identity_limit": "Post-hoc mechanism study on already-opened E13."
+    },
+    "C8": {
+      "claim": "Fixed tails simplify boundary assignment.",
+      "supported_wording": "Fixed-ratio terminal tails implement placement without per-record loss-boundary localization while preserving full teacher-forced history.",
+      "prohibited_wording": [
+        "boundary localization is never useful",
+        "optimal ratio is universal"
+      ],
+      "exact_evidence": {
+        "files": [
+          "Internal evidence path retained privately",
+          "Internal evidence path retained privately"
+        ]
+      },
+      "identity_limit": "Implementation simplification in the tested contract."
+    },
+    "C9": {
+      "claim": "Full-SD superiority is not established.",
+      "supported_wording": "Tail-SD achieved 68.2% versus 67.8% for Full-SD; the paired +0.40 pp comparison had a 95% CI from -1.90 to +2.70 and did not establish a difference.",
+      "prohibited_wording": [
+        "Tail-SD significantly beats Full-SD",
+        "equivalent",
+        "non-inferior",
+        "matches statistically"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/cv3_primary/comparisons/tail_vs_full_sd"
+      },
+      "identity_limit": "No equivalence or non-inferiority test was performed."
+    },
+    "C10": {
+      "claim": "Longest requests remain unreliable.",
+      "supported_wording": "In E13, strict completion remained near zero in the 160-180-word bin across systems.",
+      "prohibited_wording": [
+        "solves long-form TTS",
+        "all long requests fail"
+      ],
+      "exact_evidence": {
+        "file": "Internal evidence path retained privately",
+        "json_pointer": "/strict_complete/L160_180"
+      },
+      "identity_limit": "Descriptive result for the tested panel and length bin."
+    },
+    "C11": {
+      "claim": "Terminal-placement advantage persists across the tested direct-supervision budgets.",
+      "supported_wording": "On the opened E13 panel, Tail-SD exceeded per-record-matched Random-PR at 12.98%, 25.9%, and 51.77% active-label participation; the aggregate differences were +4.55, +4.70, and +2.50 pp, respectively.",
+      "prohibited_wording": [
+        "the effect is monotonic in budget",
+        "25.9% is the optimal budget",
+        "active-label ratio is compute, FLOPs, or time saving",
+        "Full-SD is the 100% Tail budget point",
+        "confirmatory budget generalization"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/e16_budget_sensitivity/budgets"
+      },
+      "identity_limit": "Post-hoc sensitivity analysis on the already-opened E13 panel; only three tested working points."
+    },
+    "C12": {
+      "claim": "E15 provides only a descriptive fixed-prefix termination diagnostic.",
+      "supported_wording": "Tail-SD showed larger fixed-prefix EOS-logit separation than Base, Head-PR, and Middle-PR, but the preregistered complete mechanism criterion was not satisfied.",
+      "prohibited_wording": [
+        "mechanism proven",
+        "Tail-SD learns when to stop",
+        "EOS behavior explains the completion gain",
+        "EOS-logit separation is termination-probability separation",
+        "strict clustered mechanism CI"
+      ],
+      "exact_evidence": {
+        "paper_numbers_pointer": "/e15_mechanism_diagnostic"
+      },
+      "identity_limit": "Post-hoc descriptive diagnostic on opened E13; 12 cross-stratum sources were not jointly clustered by the existing bootstrap."
+    }
+  },
+  "document_gate": "PAPER_EVIDENCE_PACKAGE_TAILSD_ICASSP2027_20260918_FROZEN"
+}

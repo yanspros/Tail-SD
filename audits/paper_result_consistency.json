@@ -1,24 +1,30 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "PASS",
   "source": {
-    "logical_name": "TailSD_ICASSP2027_Evidence_20260915_v2/paper_numbers.json",
-    "sha256": "82dcb6f24d1c463e9c0fcdf13bdb14430f4e51c8fef4e8f838fb656ac0e1083e",
-    "document_gate": "PAPER_EVIDENCE_PACKAGE_TAILSD_ICASSP2027_V2_FROZEN"
+    "logical_name": "TailSD_ICASSP2027_FinalEvidence_20260918/paper_numbers_20260918.json",
+    "sha256": "78f6c1dae237ab8b319922250c7ae50e7b06b3f7f56c84e69c79ef2e1fcc9347",
+    "document_gate": "PAPER_EVIDENCE_PACKAGE_TAILSD_ICASSP2027_20260918_FROZEN"
   },
   "generated_snapshot": {
     "path": "reproduction/paper_results.json",
-    "sha256": "f1d9ad73314088832b512322a9e1a9f533730fabc46e3fc1ae482b4ded7a021f",
+    "sha256": "272247780af9b3459821c9e5c5b0c5555e56e126f524ea84fbe9bcf3b78d8cf2",
     "generation_script": "scripts/sync_paper_results.py"
   },
   "checks": {
     "cv3_primary_strict_completion_values_match": true,
     "cv3_tail_minus_full_sd_delta_pp_is_0p40": true,
     "cv3_tail_minus_full_sd_ci95_pp_is_minus1p90_to_plus2p70": true,
-    "random_pr_original_M0_present": true,
-    "random_pr_additional_M1_M2_complete_table_present": true,
-    "random_pr_M1_M2_primary_delta_is_4p15pp": true,
+    "e13_unopened500_primary_delta_is_4p70pp": true,
+    "e13_unopened500_ci95_is_3p20_to_6p22": true,
+    "e13_six_of_six_paired_units_positive": true,
+    "e13_ten_length_bins_present": true,
+    "e14_position_controls_tail_minus_nonterminal_delta_is_12p98pp": true,
+    "e16_budget_sensitivity_three_points_present": true,
+    "e16_budget_advantage_persists_across_budgets": true,
+    "e16_2x_budget_init20260822_ci_crosses_zero": true,
     "cv2_transfer_systems_and_primary_comparison_match": true,
+    "cv2_primary_delta_is_2p90pp": true,
     "cv2_panel_marked_shared_open": true,
     "deprecated_positive_only_full_sd_ci_absent": true,
     "human_evaluation_server_authority_not_claimed": true

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tailsd"
-version = "0.1.0rc1"
-description = "Manifest-driven terminal-tail self-distillation masks and matched controls for AR-TTS"
+version = "0.1.0"
+description = "Manifest-driven terminal-span supervision masks and matched controls for AR-TTS"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
