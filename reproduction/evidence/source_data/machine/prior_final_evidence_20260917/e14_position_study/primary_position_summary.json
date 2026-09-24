@@ -1,0 +1,43 @@
+{
+  "schema_version": "1",
+  "status": "P4_E14_PRIMARY_POSITION_SUMMARY_COMPLETE",
+  "definition": "Per source equally average Tail-Head and Tail-Middle over two paired initializations, then bootstrap sources.",
+  "tail_minus_nonterminal": {
+    "source_count": 500,
+    "point_estimate": 0.12975,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "ci95": [
+      0.10949375,
+      0.1502562499999999
+    ]
+  },
+  "tail_minus_head": {
+    "source_count": 500,
+    "point_estimate": 0.1645,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "ci95": [
+      0.1405,
+      0.1895
+    ]
+  },
+  "tail_minus_middle": {
+    "source_count": 500,
+    "point_estimate": 0.095,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "ci95": [
+      0.0745,
+      0.116
+    ]
+  },
+  "middle_minus_head": {
+    "point_estimate": 0.0695,
+    "reporting": "DESCRIPTIVE_ONLY_NO_CI"
+  },
+  "tail_point_estimate_above_both_head_and_middle": true,
+  "bootstrap_seed": 20260820,
+  "bootstrap_resamples": 10000,
+  "payload_sha256": "08761f1d7f97652db3f4a932e7f181a2b1b5a42ca678dc689f63a2225e047532"
+}

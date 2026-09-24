@@ -16,7 +16,7 @@ The central research question is **supervision placement**: with the speech traj
 3. **Cross-Backbone Replication (CosyVoice2-0.5B)**:
    Using CosyVoice2's own independently constructed target bank on the original panel, the terminal placement advantage replicates: Tail-SD exceeds Random-PR by **+2.90 pp** (95% CI: **[0.80, 5.10]**).
 4. **Primary Research Conclusion**:
-   Under a matched supervision budget, **direct supervision placement significantly impacts AR-TTS sequence completion**. Terminal placement consistently outperforms random and deterministic non-terminal placement.
+   Under a matched supervision budget, **direct supervision placement significantly impacts AR-TTS sequence completion**. Terminal placement outperforms the tested matched random and deterministic non-terminal placements in the evaluated settings.
 
 ### Explicit Scope and Non-Claims
 To prevent scientific over-generalization, the paper explicitly notes:
@@ -26,7 +26,7 @@ To prevent scientific over-generalization, the paper explicitly notes:
 - **Not a Full-SD replacement**: Full-SD is retained as a dense-supervision reference; no equivalence or superiority is established.
 - **Not general SOTA**: Tail-SD specifically targets trajectory completion failure; longest inputs (160–180 words) remain difficult across all methods.
 
-See [`reproduction/PAPER_RESULTS.md`](reproduction/PAPER_RESULTS.md) for full experimental tables, including position controls, budget controls, and length breakdowns.
+See [`reproduction/PAPER_RESULTS.md`](reproduction/PAPER_RESULTS.md) for the result map and [`reproduction/evidence/README.md`](reproduction/evidence/README.md) for the released result/protocol JSON, matching audits, de-identified human ratings, and checksum verification. No formal statistics were recomputed for this deposit.
 
 ---
 
@@ -94,7 +94,7 @@ python scripts/build_target_bank.py \
   --output outputs/target_bank.json
 ```
 
-Thresholds above reproduce the paper configuration; new datasets require a prospectively defined calibration protocol.
+The thresholds in this example are from CV2. CV3 uses its own frozen threshold (approximately 0.1389), not the CV2 value. Follow the backbone-specific protocol and selection rules in [the evidence guide](reproduction/evidence/README.md); this generic helper is not a complete training reproduction.
 
 ---
 
@@ -143,7 +143,7 @@ python scripts/evaluate.py \
   --output outputs/evaluation.json
 ```
 
-Strict Completion (SC) requires real EOS emission, no length-cap truncation, phoneme/word coverage $\ge 0.95$, and zero trailing deletions. The paired bootstrap first aggregates inference seeds within each source and then resamples sources.
+Strict Completion (SC) requires real EOS emission, no length-cap truncation, word-level coverage $\ge 0.95$, and zero trailing deletions. The paired bootstrap first aggregates inference seeds within each source and then resamples sources.
 
 ---
 
@@ -161,6 +161,7 @@ To re-synchronize results against an authorized evidence package:
 PYTHONPATH=. python scripts/sync_paper_results.py \
   --evidence-package /path/to/TailSD_ICASSP2027_FinalEvidence_20260918 \
   --output reproduction/paper_results.json \
+  --human-summary reproduction/evidence/source_data/human/summary.json \
   --evidence-dir reproduction/evidence
 ```
 

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "P4_E10_RANDOM_PR_PER_RECORD_MATCHED_COMPLETE",
+  "protocol_sha256": "a14ffd08072ee68d8eda93b9cfb158a1a70970f307a081e6a1368086a26f8611",
+  "summary_sha256": "3aed61dbf149af44cdc41c3a2d3cf9713436dae4ecb4b46814c9f7aa4568a357",
+  "pairwise_sha256": "f1eda388ae61abfdc88cbdf5b1d992ff24cda094145b19421063cf30885b038f",
+  "mask_audit_sha256": "ad905dbca8b882a3ec545f652398cf2d255203903b75369bbeb40b1ae893b2ef",
+  "initialization_reuse_audit_sha256": "9b67de86172a9862ded99360312b8887c40f4e8f4a9fc3bfb19cd5d01c025fa0",
+  "assertions": {
+    "historical_r1_not_overwritten": true,
+    "all_123_per_record_budget_and_special_contract_match_t6": true,
+    "two_pre_frozen_p1_initializations_only": true,
+    "each_new_random_pr_train_492_updates": true,
+    "each_random_pr_500_sources_1000_paths": true,
+    "each_pair_literal_e11_input_identity_exact": true,
+    "same_frozen_asr_scorer": true,
+    "source_level_paired_bootstrap_10000": true,
+    "p4_e01_primary_unchanged": true,
+    "e11_main_gate_unchanged": true,
+    "no_result_contingent_extra_seed_or_mask": true,
+    "no_paper_modification": true
+  },
+  "decision": "RANDOM_PR_COMPLETENESS_CLOSED_NO_EXTRA_SEED_OR_MASK_SELECTION",
+  "interpretation": "TAIL_SD_ADVANTAGE_REPEATED_FOR_BOTH_TESTED_PAIRED_INITIALIZATIONS",
+  "scientific_boundary": "Post-hoc mechanism evidence on E11's opened panel. It is neither a P4/E01 replay nor a new untouched confirmation, and it does not replace historical R1 or establish universal training-seed robustness.",
+  "payload_sha256": "93262c9c553d239242bf50b7b24cb49b9bea0010fc123d341ef49db771fcd4cb"
+}

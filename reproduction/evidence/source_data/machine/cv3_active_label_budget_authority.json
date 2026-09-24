@@ -1,0 +1,284 @@
+{
+  "arms": {
+    "Base": {
+      "arm": "Base",
+      "relative_full_sd_total_active_ce_percent": null,
+      "source": {
+        "reason": "Not applicable: original checkpoint, no training."
+      },
+      "speech_active_labels": null,
+      "status": "NOT_APPLICABLE_NO_TRAINING",
+      "supervised_eos_labels": null,
+      "supervised_other_special_labels": null,
+      "total_active_ce_labels": null
+    },
+    "Full-SD_B1": {
+      "arm": "Full-SD (B1)",
+      "relative_full_sd_total_active_ce_percent": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "100 * total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 100.0
+      },
+      "relative_full_sd_total_active_ce_ratio": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 1.0
+      },
+      "source": {
+        "eos": {
+          "derivation": "123 records × one final EOS; label construction in pilot_core.py: labels[-1]=eos, full mask activates all valid labels",
+          "file": "phases/p3_method/e03_pilot/frozen_protocol.json",
+          "path": "$.arms.B1"
+        },
+        "other": {
+          "derivation": "No other special label is activated by the Full-SD definition.",
+          "file": "phases/p3_method/e03_pilot/frozen_protocol.json",
+          "path": "$.arms.B1"
+        },
+        "speech": {
+          "derivation": "sum($.train_records[*].selected_recovery.speech_token_count)",
+          "file": "phases/p3_method/e03_pilot/frozen_protocol.json",
+          "path": "$.arms.B1"
+        },
+        "total": {
+          "derivation": "speech_active_labels + supervised_eos_labels",
+          "file": "phases/p3_method/e03_pilot/data/training_records.json",
+          "path": "$.train_records[*].selected_recovery.speech_token_count"
+        }
+      },
+      "speech_active_labels": {
+        "derivation": "sum($.train_records[*].selected_recovery.speech_token_count)",
+        "json_path": "$.arms.B1",
+        "source_file": "phases/p3_method/e03_pilot/frozen_protocol.json",
+        "value": 101257
+      },
+      "status": "VERIFIED",
+      "supervised_eos_labels": {
+        "derivation": "123 records × one final EOS; label construction in pilot_core.py: labels[-1]=eos, full mask activates all valid labels",
+        "json_path": "$.arms.B1",
+        "source_file": "phases/p3_method/e03_pilot/frozen_protocol.json",
+        "value": 123
+      },
+      "supervised_other_special_labels": {
+        "json_path": "$.arms.B1",
+        "source_file": "phases/p3_method/e03_pilot/frozen_protocol.json",
+        "value": 0
+      },
+      "total_active_ce_labels": {
+        "derivation": "speech_active_labels + supervised_eos_labels",
+        "json_path": "$.train_records[*].selected_recovery.speech_token_count",
+        "source_file": "phases/p3_method/e03_pilot/data/training_records.json",
+        "value": 101380
+      }
+    },
+    "Random-Local_R1": {
+      "arm": "Random-Local (R1)",
+      "relative_full_sd_total_active_ce_percent": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "100 * total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 25.911422371276387
+      },
+      "relative_full_sd_total_active_ce_ratio": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 0.2591142237127639
+      },
+      "source": {
+        "eos": {
+          "derivation": "Each selected position equals recovery_speech_token_count; 58 only on Termination.",
+          "file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+          "path": "$.records[*].selected_special_label_positions"
+        },
+        "other": {
+          "derivation": "No selected non-EOS special position.",
+          "file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+          "path": "$.records[*].selected_special_label_positions"
+        },
+        "speech": {
+          "derivation": "sum over $.records[*]",
+          "file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+          "path": "$.records[*].selected_speech_span.token_count"
+        },
+        "total": {
+          "derivation": "sum over $.records[*]",
+          "file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+          "path": "$.records[*].total_supervised_token_count"
+        }
+      },
+      "speech_active_labels": {
+        "derivation": "sum over $.records[*]",
+        "json_path": "$.records[*].selected_speech_span.token_count",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+        "value": 26211
+      },
+      "status": "VERIFIED",
+      "supervised_eos_labels": {
+        "derivation": "Each selected position equals recovery_speech_token_count; 58 only on Termination.",
+        "json_path": "$.records[*].selected_special_label_positions",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+        "value": 58
+      },
+      "supervised_other_special_labels": {
+        "json_path": "$.records[*].selected_special_label_positions",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+        "value": 0
+      },
+      "total_active_ce_labels": {
+        "derivation": "sum over $.records[*]",
+        "json_path": "$.records[*].total_supervised_token_count",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/random_local_masks.json",
+        "value": 26269
+      }
+    },
+    "Tail-30_T1": {
+      "arm": "Tail-30 (T1)",
+      "relative_full_sd_total_active_ce_percent": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "100 * total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 30.079897415663837
+      },
+      "relative_full_sd_total_active_ce_ratio": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 0.30079897415663837
+      },
+      "source": {
+        "eos": {
+          "derivation": "Each selected position equals recovery_speech_token_count; 58 only on Termination.",
+          "file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+          "path": "$.records[*].selected_special_label_positions"
+        },
+        "other": {
+          "derivation": "No selected non-EOS special position.",
+          "file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+          "path": "$.records[*].selected_special_label_positions"
+        },
+        "speech": {
+          "derivation": "sum over $.records[*]",
+          "file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+          "path": "$.records[*].selected_speech_span.token_count"
+        },
+        "total": {
+          "derivation": "sum over $.records[*]",
+          "file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+          "path": "$.records[*].total_supervised_token_count"
+        }
+      },
+      "speech_active_labels": {
+        "derivation": "sum over $.records[*]",
+        "json_path": "$.records[*].selected_speech_span.token_count",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+        "value": 30437
+      },
+      "status": "VERIFIED",
+      "supervised_eos_labels": {
+        "derivation": "Each selected position equals recovery_speech_token_count; 58 only on Termination.",
+        "json_path": "$.records[*].selected_special_label_positions",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+        "value": 58
+      },
+      "supervised_other_special_labels": {
+        "json_path": "$.records[*].selected_special_label_positions",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+        "value": 0
+      },
+      "total_active_ce_labels": {
+        "derivation": "sum over $.records[*]",
+        "json_path": "$.records[*].total_supervised_token_count",
+        "source_file": "phases/p3_method/e09_mask_ablation/data/tail30_masks.json",
+        "value": 30495
+      }
+    },
+    "Tail-SD_T6": {
+      "arm": "Tail-SD (T6)",
+      "relative_full_sd_total_active_ce_percent": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "100 * total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 25.911422371276387
+      },
+      "relative_full_sd_total_active_ce_ratio": {
+        "derivation": "Exact integer division; no rounded-percentage inversion.",
+        "json_path": "total_active_ce_labels / Full-SD total_active_ce_labels",
+        "source_file": "DERIVED",
+        "value": 0.2591142237127639
+      },
+      "source": {
+        "eos": {
+          "derivation": "Each selected position equals recovery_speech_token_count; 58 only on Termination.",
+          "file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+          "path": "$.records[*].selected_special_label_positions"
+        },
+        "other": {
+          "derivation": "No selected non-EOS special position.",
+          "file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+          "path": "$.records[*].selected_special_label_positions"
+        },
+        "speech": {
+          "derivation": "sum over $.records[*]",
+          "file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+          "path": "$.records[*].speech_supervised_token_count"
+        },
+        "total": {
+          "derivation": "sum over $.records[*]",
+          "file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+          "path": "$.records[*].total_supervised_token_count"
+        }
+      },
+      "speech_active_labels": {
+        "derivation": "sum over $.records[*]",
+        "json_path": "$.records[*].speech_supervised_token_count",
+        "source_file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+        "value": 26211
+      },
+      "status": "VERIFIED",
+      "supervised_eos_labels": {
+        "derivation": "Each selected position equals recovery_speech_token_count; 58 only on Termination.",
+        "json_path": "$.records[*].selected_special_label_positions",
+        "source_file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+        "value": 58
+      },
+      "supervised_other_special_labels": {
+        "json_path": "$.records[*].selected_special_label_positions",
+        "source_file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+        "value": 0
+      },
+      "total_active_ce_labels": {
+        "derivation": "sum over $.records[*]",
+        "json_path": "$.records[*].total_supervised_token_count",
+        "source_file": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+        "value": 26269
+      }
+    }
+  },
+  "counting_contract": {
+    "EOS_rule": "B1 Full-SD activates final EOS for every 123 recovery record; R1/T1/T6 preserve the M1 EOS/special contract, which supervises final EOS for 58 Termination records and excludes EOS for 65 Content records.",
+    "full_sd_denominator_total_active_ce_labels": {
+      "derivation": "101257 speech labels + 123 final EOS labels.",
+      "json_path": "$.train_records[*].selected_recovery.speech_token_count",
+      "source_file": "phases/p3_method/e03_pilot/data/training_records.json",
+      "value": 101380
+    },
+    "ignored_label_rule": "Only non--100 labels selected by each arm's frozen CE mask count; prompt/context and ignored labels do not count.",
+    "note": "All count rows are direct sums over 123 frozen records/masks; `-100` ignored labels are excluded.",
+    "other_special_rule": "No other special label is selected in the four compared training arms."
+  },
+  "cross_checks": {
+    "R1_and_T6_speech_active_labels_match": true,
+    "R1_and_T6_total_active_CE_labels_match": true,
+    "T1_is_not_assumed_to_equal_exact_30_percent_of_global_budget": true,
+    "T6_branch_speech_labels": {
+      "content": 15432,
+      "global": 26211,
+      "termination": 10779
+    }
+  },
+  "schema_version": 1,
+  "status": "DERIVED_EXACT_ACTIVE_CE_LABEL_BUDGETS_VERIFIED"
+}

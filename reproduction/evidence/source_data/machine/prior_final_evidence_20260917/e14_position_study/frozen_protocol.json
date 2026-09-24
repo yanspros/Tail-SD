@@ -1,0 +1,136 @@
+{
+  "schema_version": "1",
+  "status": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_PROTOCOL_FROZEN",
+  "run_type": "FORMAL post-hoc mechanism study on opened E13 panel",
+  "scientific_role": "POST_HOC_MECHANISM_STUDY_ON_OPENED_E13_PANEL",
+  "question": "With target, full teacher-forced history, per-record K_i, EOS/special positions, CE denominator and paired initialization fixed, does terminal speech supervision outperform deterministic non-terminal placement?",
+  "frozen_inputs": {
+    "training_bank": {
+      "path": "[private-path]/training_records.json",
+      "sha256": "8697c1d264a9eb55a7249a2bafaed6e2b9fd475bb87e8a3197cc30fd4efc4ce4",
+      "records": 123
+    },
+    "tail_mask": {
+      "path": "[private-path]/t6_branch_fixed_tail_masks.json",
+      "sha256": "5b9151f976ebfeac44c2d806be05fb190cd207ce94da6ebe808afc51c6f09693"
+    },
+    "step0_initializations": {
+      "20260822": {
+        "path": "[private-path]/lora_step0.pt",
+        "sha256": "44068b7cdf6771cfc260309a2bf12ce88ea4c1a923cf0f7c0f634ea3d253e032",
+        "tensor_count": 336,
+        "historical_tensor_payload_sha256": "b2685e125e6e56af673e167fc9b39c2e6d108d31b44552a783a0c08df4200d7b"
+      },
+      "20260823": {
+        "path": "[private-path]/lora_step0.pt",
+        "sha256": "32a7d3953e4f649827a0f676a4722bd06498ce4c352ac974a51d5343610dda75",
+        "tensor_count": 336,
+        "historical_tensor_payload_sha256": "996c7b77b40705cd8fc516d6df1779621ef3647c6825cebb9cfa0d4502895704"
+      }
+    },
+    "tail_checkpoints": {
+      "20260822": {
+        "path": "[private-path]/adapter_final.pt",
+        "sha256": "c132146c7fe5e5a85cff33b25262575d3756720c68ff00693e547b941ba20e14"
+      },
+      "20260823": {
+        "path": "[private-path]/adapter_final.pt",
+        "sha256": "d478f8c5ff562fa7373f5259b20cde10bee6ff7f6a2a455bd9e6936fd8e3c69b"
+      }
+    },
+    "e13_protocol": {
+      "path": "[private-path]/frozen_protocol_v2.json",
+      "sha256": "869f0bdcb74c49cb1fd8727b7b46a5f085ab110a3b292b649697341fb345e96b"
+    },
+    "e13_gate": {
+      "path": "[private-path]/formal_gate_complete.json",
+      "sha256": "3e455615c00e550a294da680300b31a923bd73ffccdd8607a277f0c9dd32345d",
+      "status": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE"
+    }
+  },
+  "masks": {
+    "common": "Copy T_i, K_i, EOS/special positions, M_i and target/history from frozen Tail-SD row without recomputation.",
+    "HEAD_PR": "speech span [0, K_i)",
+    "MIDDLE_PR": "start=floor((T_i-K_i)/2), speech span [start,start+K_i)",
+    "TAIL_SD": "existing terminal K_i speech labels; reused, not retrained",
+    "termination_eos_supervised": true,
+    "content_eos_supervised": false,
+    "full_teacher_forced_history": true
+  },
+  "training": {
+    "new_models": {
+      "HEAD_PR_init20260822": {
+        "position": "HEAD_PR",
+        "init_seed": 20260822,
+        "checkpoint_path": "[private-path]/adapter_final.pt",
+        "checkpoint_sha256": null
+      },
+      "HEAD_PR_init20260823": {
+        "position": "HEAD_PR",
+        "init_seed": 20260823,
+        "checkpoint_path": "[private-path]/adapter_final.pt",
+        "checkpoint_sha256": null
+      },
+      "MIDDLE_PR_init20260822": {
+        "position": "MIDDLE_PR",
+        "init_seed": 20260822,
+        "checkpoint_path": "[private-path]/adapter_final.pt",
+        "checkpoint_sha256": null
+      },
+      "MIDDLE_PR_init20260823": {
+        "position": "MIDDLE_PR",
+        "init_seed": 20260823,
+        "checkpoint_path": "[private-path]/adapter_final.pt",
+        "checkpoint_sha256": null
+      }
+    },
+    "base_llm_sha256": "69f43bd545131c30e98947fb360ea8b4dc9916d8e83dded7757c7ea4f5a24970",
+    "optimizer": "Adam",
+    "lr": 1e-05,
+    "batch_size": 1,
+    "gradient_accumulation": 0,
+    "passes": 4,
+    "updates": 492,
+    "record_order": "canonical bank order repeated for four full passes",
+    "checkpoint_selection": "final update 492 only",
+    "unique_variable": "speech CE span position"
+  },
+  "evaluation": {
+    "panel": "opened P4/E13 500-source 10x50 panel",
+    "panel_is_new": false,
+    "seeds": [
+      0,
+      1
+    ],
+    "paths_per_new_model": 1000,
+    "new_paths": 4000,
+    "tail_outputs_reused": true,
+    "inference_scorer_contract": "byte-identical E13 frozen protocol and frontend/prompt/cap ledgers"
+  },
+  "statistics": {
+    "primary": "Per source equally average four Tail-SD minus non-terminal SC contrasts (Head/Middle x paired init), then source-level paired bootstrap.",
+    "secondary": [
+      "Tail-Head two-init average and CI",
+      "Tail-Middle two-init average and CI",
+      "four cell contrasts and CIs",
+      "Middle-Head descriptive only"
+    ],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "cluster": "source with both inference seeds retained together",
+    "effect_significance_is_not_gate_condition": true
+  },
+  "prohibited": [
+    "change position definition",
+    "add offset",
+    "recenter Middle",
+    "change init",
+    "add seed",
+    "retrain Tail",
+    "new panel",
+    "result-driven rescue",
+    "paper modification"
+  ],
+  "paper_modified": false,
+  "payload_sha256": "0942c129c53ebaa07c999d29c62453e968a23e05bc758b20e1a09b9b9351306b"
+}

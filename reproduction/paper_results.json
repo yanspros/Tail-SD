@@ -1605,7 +1605,62 @@
   },
   "deprecated_statistics_included": false,
   "human_evaluation": {
-    "status": "EXTERNAL_WINDOWS_AUTHORITY_NOT_IMPORTED",
-    "scope": "Human evaluation (MUSHRA) covers the original five systems on CV3 (Base, Full-SD, Random-Local, Tail-30, Tail-SD); it does not cover the E13 new-text Tail-SD vs Random-PR comparison."
+    "status": "DESCRIPTIVE_EXPORT_CHECKED",
+    "listeners": 10,
+    "sources": 120,
+    "systems": 5,
+    "records": 6000,
+    "ratings_per_system": 1200,
+    "aggregation": "pooled rating proportions / arithmetic MOS",
+    "systems_summary": {
+      "Base": {
+        "n_ratings": 1200,
+        "completion_count": 710,
+        "major_error_count": 220,
+        "mos_sum": 4824,
+        "completion_percent": "59.2",
+        "major_error_percent": "18.3",
+        "mos": "4.02"
+      },
+      "Full-SD": {
+        "n_ratings": 1200,
+        "completion_count": 830,
+        "major_error_count": 130,
+        "mos_sum": 4872,
+        "completion_percent": "69.2",
+        "major_error_percent": "10.8",
+        "mos": "4.06"
+      },
+      "Random-Local": {
+        "n_ratings": 1200,
+        "completion_count": 770,
+        "major_error_count": 178,
+        "mos_sum": 4836,
+        "completion_percent": "64.2",
+        "major_error_percent": "14.8",
+        "mos": "4.03"
+      },
+      "Tail-30": {
+        "n_ratings": 1200,
+        "completion_count": 810,
+        "major_error_count": 140,
+        "mos_sum": 4860,
+        "completion_percent": "67.5",
+        "major_error_percent": "11.7",
+        "mos": "4.05"
+      },
+      "Tail-SD": {
+        "n_ratings": 1200,
+        "completion_count": 838,
+        "major_error_count": 120,
+        "mos_sum": 4872,
+        "completion_percent": "69.8",
+        "major_error_percent": "10.0",
+        "mos": "4.06"
+      }
+    },
+    "raw_sha256": "70c29d4f1fc59707e804fd7cd955f000540c7c1686f141842d5912588fc728d5",
+    "scope": "Original five CV3 systems; not direct validation of the new-text Random-PR comparison.",
+    "verification_scope": "File integrity, complete rating grid, sums and paper rounding only; not independent verification of listening sessions or audio."
   }
 }

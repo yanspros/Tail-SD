@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "status": "FORMAL_P4_E10_RANDOM_PR_COMPLETE",
+  "run_type": "FORMAL post-hoc Random-PR matched-budget mechanism comparator",
+  "scientific_role": "POST_HOC_OPEN_E11_PANEL_MECHANISM_CONTROL_NOT_UNTOUCHED_CONFIRMATION_NOT_P4_E01_REPLAY",
+  "protocol_sha256": "a14ffd08072ee68d8eda93b9cfb158a1a70970f307a081e6a1368086a26f8611",
+  "preflight_sha256": "0635b66a4c6a6072c19393c9f6f32271834635d588beaa99fad409e453242584",
+  "mask_budget_audit_sha256": "ad905dbca8b882a3ec545f652398cf2d255203903b75369bbeb40b1ae893b2ef",
+  "initialization_reuse_audit_sha256": "9b67de86172a9862ded99360312b8887c40f4e8f4a9fc3bfb19cd5d01c025fa0",
+  "replicates": {
+    "20260822": {
+      "T6_BRANCH_FIXED_TAIL": {
+        "source_metrics": {
+          "strict_complete_rate": 0.668,
+          "any_incomplete_rate": 0.404,
+          "hc_early_eos_any_seed_rate": 0.142,
+          "wer": 0.1411029056575956,
+          "coverage": 0.9162730630421391,
+          "non_tail_error_rate": 0.11039891295149017
+        },
+        "path_metrics": {
+          "strict_complete_rate": 0.668,
+          "hc_early_eos_rate": 0.087
+        },
+        "scored_manifest": "[private-path]/per_generation_scored.json",
+        "scored_manifest_sha256": "fec88a78e212354e3f3b45cab6f6220043cb07409b307fd0afe85526dca8d0da",
+        "training_summary": "[private-path]/training_summary.json",
+        "training_summary_sha256": "1e94a07dc27a40d1f2a9d74f0c371460488d0af0419fe2420ab582757c943a10",
+        "checkpoint_sha256": "c132146c7fe5e5a85cff33b25262575d3756720c68ff00693e547b941ba20e14",
+        "reused_existing_result": true
+      },
+      "RANDOM_PR_PER_RECORD_MATCHED": {
+        "source_metrics": {
+          "strict_complete_rate": 0.64,
+          "any_incomplete_rate": 0.42,
+          "hc_early_eos_any_seed_rate": 0.2,
+          "wer": 0.15330355264877368,
+          "coverage": 0.8938154923923972,
+          "non_tail_error_rate": 0.10635684979116092
+        },
+        "path_metrics": {
+          "strict_complete_rate": 0.64,
+          "hc_early_eos_rate": 0.141
+        },
+        "scored_manifest": "[private-path]/per_generation_scored.json",
+        "scored_manifest_sha256": "3ac5f16bc3da6fe698e35035989d4133fe34e34a5dcb4bdae2b53410e6499a8d",
+        "training_summary": "[private-path]/training_summary.json",
+        "training_summary_sha256": "7b83d611b7cd403dba60f372325a573656db068278539ce5d146de7f0500780b",
+        "checkpoint_sha256": "c157f51d07de4d2dcd22fa2da6d38a5999dfe16b37a0760a9a5bc351b014b3d6",
+        "reused_existing_result": false
+      },
+      "literal_input_identity_exact": true
+    },
+    "20260823": {
+      "T6_BRANCH_FIXED_TAIL": {
+        "source_metrics": {
+          "strict_complete_rate": 0.69,
+          "any_incomplete_rate": 0.38,
+          "hc_early_eos_any_seed_rate": 0.13,
+          "wer": 0.1361473734468846,
+          "coverage": 0.9196477214218758,
+          "non_tail_error_rate": 0.10803158810886385
+        },
+        "path_metrics": {
+          "strict_complete_rate": 0.69,
+          "hc_early_eos_rate": 0.082
+        },
+        "scored_manifest": "[private-path]/per_generation_scored.json",
+        "scored_manifest_sha256": "c845b0c1f4ea3fb7799b0a486e556cb95bf708466b52972ac1ee9d3adbfccfd7",
+        "training_summary": "[private-path]/training_summary.json",
+        "training_summary_sha256": "72f7bcb01eb72ce175de86b4ff30313c29bc863ecbb98bd46801ce27c8e2646b",
+        "checkpoint_sha256": "d478f8c5ff562fa7373f5259b20cde10bee6ff7f6a2a455bd9e6936fd8e3c69b",
+        "reused_existing_result": true
+      },
+      "RANDOM_PR_PER_RECORD_MATCHED": {
+        "source_metrics": {
+          "strict_complete_rate": 0.63,
+          "any_incomplete_rate": 0.434,
+          "hc_early_eos_any_seed_rate": 0.202,
+          "wer": 0.1558464754926384,
+          "coverage": 0.8920167394395203,
+          "non_tail_error_rate": 0.11014010534615931
+        },
+        "path_metrics": {
+          "strict_complete_rate": 0.63,
+          "hc_early_eos_rate": 0.135
+        },
+        "scored_manifest": "[private-path]/per_generation_scored.json",
+        "scored_manifest_sha256": "f9bde3c13c3bd0bb7f45a2e06f5b3512e25fd7e83677c17d9ad25f8831d36dcc",
+        "training_summary": "[private-path]/training_summary.json",
+        "training_summary_sha256": "825a567f2edc466947f13c2cc1ec38677b77c5f6b9270eef4e234706f7405b75",
+        "checkpoint_sha256": "c6766d7492077ef25e5fbf77d203b0dba805480766fd3c0728079856182a1de7",
+        "reused_existing_result": false
+      },
+      "literal_input_identity_exact": true
+    }
+  },
+  "paired_effect_summary": {
+    "tail_sd_minus_random_pr_strict_complete_point_estimate_mean": 0.044,
+    "range": [
+      0.028,
+      0.06
+    ],
+    "population_std": 0.015999999999999997,
+    "conditional_ci_boundary": "Each CI is source-level E11 test-panel uncertainty conditional on its fixed trained initialization, not a training-randomness CI."
+  },
+  "interpretation": "TAIL_SD_ADVANTAGE_REPEATED_FOR_BOTH_TESTED_PAIRED_INITIALIZATIONS",
+  "boundary": "Post-hoc mechanism evidence on E11's opened panel. It is neither a P4/E01 replay nor a new untouched confirmation, and it does not replace historical R1 or establish universal training-seed robustness.",
+  "assertions": {
+    "historical_r1_not_overwritten": true,
+    "all_123_per_record_budget_and_special_contract_match_t6": true,
+    "two_pre_frozen_p1_initializations_only": true,
+    "each_new_random_pr_train_492_updates": true,
+    "each_random_pr_500_sources_1000_paths": true,
+    "each_pair_literal_e11_input_identity_exact": true,
+    "same_frozen_asr_scorer": true,
+    "source_level_paired_bootstrap_10000": true,
+    "p4_e01_primary_unchanged": true,
+    "e11_main_gate_unchanged": true,
+    "no_result_contingent_extra_seed_or_mask": true,
+    "no_paper_modification": true
+  },
+  "payload_sha256": "3226f474ed672f9e47001870781c299830a73611794ffc633f64d756303775a7"
+}

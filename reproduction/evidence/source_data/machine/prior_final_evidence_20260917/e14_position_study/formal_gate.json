@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "status": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+  "run_type": "FORMAL post-hoc mechanism study on opened E13 panel",
+  "protocol_sha256": "b36d5dd8878469344e141efb41c4b2702b9a884580bde2ac18665a3e12484bf6",
+  "mask_audit_sha256": "863556261c70096b83ad16ab208fd12d0e9d6b07a370dbf99be6e16a82cd42e7",
+  "system_summary_sha256": "a42f04c33f18bb42210ad01375eb1929a57bb22015b8b2d79cd5ec087a03637e",
+  "pairwise_units_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+  "primary_summary_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+  "length_bins_sha256": "fb0305c13b417ab04e1b678ffbc47f85874b89894ee2681a35f8e0df88ac91e5",
+  "assertions": {
+    "head_middle_masks_123_of_123_match": true,
+    "four_trains_492_of_492": true,
+    "new_generation_and_scoring_4000_of_4000": true,
+    "tail_outputs_reused_not_regenerated": true,
+    "source_bootstrap_10000": true,
+    "protocol_drift": false,
+    "paper_untouched": true
+  },
+  "effect_significance_not_a_completion_condition": true,
+  "decision": "COMPLETE_NO_RESCUE_NO_NEW_PANEL_NO_PAPER_UPDATE",
+  "payload_sha256": "e75f3ffa50e066f0f5d8a9ea719ff3b7103f5c5cfa2c14706467eeacb5d1377b"
+}

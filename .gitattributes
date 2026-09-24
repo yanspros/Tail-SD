@@ -1,0 +1,4 @@
+# Keep repository text checksums portable across Windows and Linux.
+* text=auto eol=lf
+# Preserve deposited evidence bytes and checksum identity on every platform.
+reproduction/evidence/source_data/** -text -whitespace

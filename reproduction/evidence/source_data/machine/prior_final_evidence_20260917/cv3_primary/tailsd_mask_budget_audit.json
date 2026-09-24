@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_type": "DEBUG pre-result T6 mask audit; no optimizer step, checkpoint, inference, ASR, scorer, or bootstrap",
+  "status": "P4_E06_T6_BRANCH_FIXED_TAIL_MASK_PASS",
+  "protocol_sha256": "44725a5fb46b16ce11948729831239639b64982f7a60442ee0457c9444e9cb42",
+  "base_protocol_sha256": "47ffdbeaa4a4d4401f6d5b66d36cbb6cee9636a1ab30e8ab0a4eadd6c7d28181",
+  "mask_manifest": {
+    "path": "[private-path]/t6_branch_fixed_tail_masks.json",
+    "sha256": "5b9151f976ebfeac44c2d806be05fb190cd207ce94da6ebe808afc51c6f09693"
+  },
+  "record_count": 123,
+  "global_t6_speech_budget": 26211,
+  "branch_audit": {
+    "termination": {
+      "record_count": 58,
+      "target_speech_token_total": 49661,
+      "fixed_tail_ratio": 0.21705160991522524,
+      "reference_m1_branch_speech_budget": 10779,
+      "t6_speech_budget": 10779,
+      "floor_budget": 10746,
+      "residual_count": 33,
+      "residual_increments_observed": 33
+    },
+    "content": {
+      "record_count": 65,
+      "target_speech_token_total": 51596,
+      "fixed_tail_ratio": 0.29909295294208854,
+      "reference_m1_branch_speech_budget": 15432,
+      "t6_speech_budget": 15432,
+      "floor_budget": 15397,
+      "residual_count": 35,
+      "residual_increments_observed": 35
+    }
+  },
+  "checks": {
+    "record_count_123": true,
+    "original_mixed_record_order_preserved": true,
+    "branch_cardinality_exact": {
+      "termination": true,
+      "content": true
+    },
+    "branch_speech_budget_exact": {
+      "termination": true,
+      "content": true
+    },
+    "global_speech_budget_26211": true,
+    "special_token_contract_exact_per_record": true,
+    "all_terminal_contiguous_tail": true,
+    "allocation_uses_only_fixed_ratio_target_length_and_order": true,
+    "no_ctc_failure_position_or_per_record_ki_used_for_allocation": true,
+    "deterministic_floor_residual_rounding_exact": {
+      "termination": true,
+      "content": true
+    }
+  },
+  "payload_sha256": "cb15c97b468055378b7041644d2421b91e75b8ff5102c8c1871e5f368eec3d54"
+}

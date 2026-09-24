@@ -1,0 +1,145 @@
+{
+  "schema_version": "1",
+  "status": "FINAL_HANDOFF_E13_LENGTH_BIN_PLACEMENT_VERIFIED",
+  "analysis_identity": "Read-only descriptive subgroup extraction from frozen E13 source-level scores; no new generation/scoring/bootstrap.",
+  "formal_primary_unchanged": {
+    "source_count": 500,
+    "point_estimate": 0.047,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "ci95": [
+      0.032,
+      0.06216666666666667
+    ]
+  },
+  "bins": {
+    "L40_44": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.95,
+      "random_pr_mean_sc": 0.9516666666666667,
+      "tail_minus_random_pr": -0.0016666666666667052,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L45_49": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.97,
+      "random_pr_mean_sc": 0.9316666666666666,
+      "tail_minus_random_pr": 0.03833333333333333,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L50_54": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.9,
+      "random_pr_mean_sc": 0.86,
+      "tail_minus_random_pr": 0.040000000000000036,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L55_59": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.835,
+      "random_pr_mean_sc": 0.8483333333333333,
+      "tail_minus_random_pr": -0.013333333333333308,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L60_64": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.815,
+      "random_pr_mean_sc": 0.74,
+      "tail_minus_random_pr": 0.07499999999999996,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L65_69": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.7849999999999999,
+      "random_pr_mean_sc": 0.76,
+      "tail_minus_random_pr": 0.02499999999999991,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L70_74": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.745,
+      "random_pr_mean_sc": 0.63,
+      "tail_minus_random_pr": 0.11499999999999999,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L75_79": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.545,
+      "random_pr_mean_sc": 0.44333333333333336,
+      "tail_minus_random_pr": 0.10166666666666668,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L100_119": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.16,
+      "random_pr_mean_sc": 0.07833333333333334,
+      "tail_minus_random_pr": 0.08166666666666667,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    },
+    "L160_180": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.01,
+      "random_pr_mean_sc": 0.0016666666666666668,
+      "tail_minus_random_pr": 0.008333333333333333,
+      "unit": "proportion",
+      "reporting": "DESCRIPTIVE_SUBGROUP_NO_MULTIPLICITY_CLAIM"
+    }
+  },
+  "requested_pooled_views": {
+    "words_60_79": {
+      "source_count": 200,
+      "tail_sd_mean_sc": 0.7225,
+      "random_pr_mean_sc": 0.6433333333333333,
+      "tail_minus_random_pr": 0.07916666666666672,
+      "unit": "proportion",
+      "reporting": "DERIVED_DESCRIPTIVE"
+    },
+    "words_100_119": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.16,
+      "random_pr_mean_sc": 0.07833333333333334,
+      "tail_minus_random_pr": 0.08166666666666667,
+      "unit": "proportion",
+      "reporting": "DERIVED_DESCRIPTIVE"
+    },
+    "words_160_180": {
+      "source_count": 50,
+      "tail_sd_mean_sc": 0.01,
+      "random_pr_mean_sc": 0.0016666666666666666,
+      "tail_minus_random_pr": 0.008333333333333333,
+      "unit": "proportion",
+      "reporting": "DERIVED_DESCRIPTIVE"
+    }
+  },
+  "ci_policy": "No new per-bin confidence intervals were created. E13 preregistered only the overall primary; bins are descriptive and not multiplicity-adjusted.",
+  "authorities": [
+    {
+      "source_path": "phases/p4_final/e13_unopened500_confirmatory/results/length_bins.json",
+      "json_pointer": "/strict_complete",
+      "source_sha256": "70982ae734517b0324bc0236b06fb4e40da2b25c66a658acd513f8c7a6a9f6de",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+      "json_pointer": "/systems/*/source_rows",
+      "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+      "json_pointer": "/strict_complete",
+      "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92",
+      "status": "VERIFIED"
+    }
+  ],
+  "payload_sha256": "a4c708208af912547f389bab3c75c07701d41c952ced9873663cc452457d99e8"
+}

@@ -1,0 +1,275 @@
+{
+  "active_label_budget": {
+    "claim_boundary": "active-label ratio / supervision-label participation only; not compute, FLOPs, wall-clock, or training-time saving",
+    "content_target_speech_tokens": 42755,
+    "full_sd_active_total_ce_labels": 83248,
+    "tail_sd_active_eos_special_labels": 58,
+    "tail_sd_active_speech_labels": 21563,
+    "tail_sd_active_total_ce_labels": 21621,
+    "tail_sd_over_full_sd_active_label_ratio": 0.25971795118201035,
+    "termination_target_speech_tokens": 40435
+  },
+  "authorities": {
+    "bank": {
+      "file_sha256": "fa1c0f19863298e2529769acf0929471606a5e0fc87a2c43d9007f2e2e7f0dcd",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_final_target_bank_e08only_manifest.json",
+      "payload_sha256": "061f0216425159f174bfff8c6b52085a0f7ea2ecff58f02497f796317155e73a"
+    },
+    "bank_gate": {
+      "file_sha256": "68d12d72a077dc31b96941d9afc44df55cee834643899717158611888ed4fd2f",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_target_bank_e08only_gate.json",
+      "payload_sha256": "1c5a21cb131edc56635ac18187f4829b849b40ee3e0b9ff633d1369a8a6abe20"
+    },
+    "bank_identity": {
+      "file_sha256": "04f946fbd4e4417ff55a60d06ea8a8b9bc3999915846be7294b445076d35d294",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_final_bank_e08only_identity_audit.json",
+      "payload_sha256": "5af5fd3f94980d3e79cb0e986c5f1041527e32c91447758562e29971cbab2153"
+    },
+    "cross_backbone_protocol": {
+      "file_sha256": "1eed23adddee2ce0cd248c8124c71be1bebdf358883d07819f08ec50e9a5de1c",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/frozen_e08_cv2_cross_backbone_protocol.json",
+      "payload_sha256": "cb3499f60057d5b5d339fd2c4c3dec7d0ae00cecbebc31544a65a8810c5fc81b"
+    },
+    "full_labels": {
+      "file_sha256": "ee57b2a93b40461ddc77dd7e36778ac4dd42c01e2b715aea593ac3fe4a539dc8",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_full_sd_label_manifest.json",
+      "payload_sha256": "bd7e122c53ac67aae617625e37f4ab371af0b306c7d2b974c3d69d43bcff64de"
+    },
+    "initialization": {
+      "file_sha256": "720bfdbf4fb4723940c818cb5d180f5e240219633ff0cf827021771a3c65c912",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_training_initialization_audit.json",
+      "payload_sha256": "c1a82e080bef3dc1f3235986dfe1fc76176065fdb2b99b6d0fb30e5b1fb8eb48"
+    },
+    "random_audit": {
+      "file_sha256": "79bdd35be9988d4e7e101c17d7a2a614987f8ff81c04278fb4ec299b5e4e2153",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_random_pr_per_record_match_audit.json",
+      "payload_sha256": "1e6ffd7815be5e8e4933ca37cab7f0da9666deabb5d22a34e752d5259a84b73f"
+    },
+    "random_mask": {
+      "file_sha256": "7100edb39ccf1a7260bfbf6e6aaa23495f00a5740357e0bc0e5ea18e9d7c8618",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_random_pr_mask_manifest.json",
+      "payload_sha256": "8d0cda11215315edf716b57f5759ab74823551fd5a681937d90acf913e5beaba"
+    },
+    "record_order": {
+      "file_sha256": "633f23e0985d8580f37a5498a1004ba1f528329d2b49062b39a5a0ce0f852e38",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_training_record_order.json",
+      "payload_sha256": "ce2aa6d85af47779b29f1f59efa1001566cdb9e8d0328906d805eca567e6f72c"
+    },
+    "rng_amendment": {
+      "file_sha256": "9462b8477c3394e1453429bac0e86da3db215af6da729cc08188c43b9dfec1dd",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/frozen_e08_random_pr_rng_amendment.json",
+      "payload_sha256": "e29da5b0df8662cba70e90845b94a6537d4c3f7b0b1b3e11163eb2c3a436a24d"
+    },
+    "rng_audit": {
+      "file_sha256": "e20facff63e4f7408464aa91ff144ff033f4415c7108db04025d39f7f3dae99f",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_random_pr_rng_authority_audit.json",
+      "payload_sha256": "b730d3aec31a782d9c5d1c784c11bebeafe4da128ab8e412312bf7ccc5c4e105"
+    },
+    "tail_audit": {
+      "file_sha256": "087b0c8e6aeec7ef57b36f7c86602df726f11f8b3f4955a2ac0d22083a80b0f9",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_tail_sd_mask_budget_audit.json",
+      "payload_sha256": "676ef5af434f09816c94fe1ddfea1cdf6e8109f548980949a58e7a8061f10dce"
+    },
+    "tail_mask": {
+      "file_sha256": "1322c97c8743092ecf4e827b1526f4f14a12cbd913641375b1ad04d43bba44fc",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_tail_sd_mask_manifest.json",
+      "payload_sha256": "65397b7252ef3d9f2e300eeebdb22bc12ad8017475023b9e88109c901f156360"
+    },
+    "zero_update": {
+      "file_sha256": "9deb22a36fb87b41d2f2ff49b0f200a490aced237cb110c6fc5401cba54bb119",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_zero_update_training_contract_audit.json",
+      "payload_sha256": "dee1d0b995a228e3dbbfbf6533e3455c58f0bd54ae678872e4358869f5358880"
+    }
+  },
+  "canonical_bank": {
+    "content": 65,
+    "cross_branch_overlap": 3,
+    "e07_records": 0,
+    "e08_records": 123,
+    "file_sha256": "fa1c0f19863298e2529769acf0929471606a5e0fc87a2c43d9007f2e2e7f0dcd",
+    "payload_sha256": "061f0216425159f174bfff8c6b52085a0f7ea2ecff58f02497f796317155e73a",
+    "records": 123,
+    "termination": 58,
+    "unique_sources": 120
+  },
+  "confirmatory_seal": {
+    "confirmatory_panel_opened": false,
+    "selection_allowed_before_training_checkpoints_frozen": false,
+    "test_source_selected": false,
+    "test_text_read": false
+  },
+  "created_at_utc": "2026-09-14T07:47:37.212679+00:00",
+  "execution_plan_not_started": {
+    "GPU0": "Full-SD",
+    "GPU1": "Random-PR",
+    "GPU2": "Tail-SD",
+    "GPU3": "reserved idle for fault isolation or later separately authorized evaluation",
+    "independent_rng": "each process resets the same frozen training seed 20260820; record order is explicit and dropout is zero",
+    "output_directories": {
+      "Full-SD": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/checkpoints/full_sd",
+      "Random-PR": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/checkpoints/random_pr",
+      "Tail-SD": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/checkpoints/tail_sd"
+    },
+    "recommendation": "three independent GPU workers in parallel",
+    "shared_writable_state": false,
+    "training_started": false
+  },
+  "gate": "P5_E08_CV2_MASK_BUDGET_AND_TRAINING_PROTOCOL_FROZEN",
+  "label_contracts": {
+    "Full-SD": {
+      "content_special": "EOS excluded",
+      "full_teacher_forced_history_retained": true,
+      "manifest": {
+        "file_sha256": "ee57b2a93b40461ddc77dd7e36778ac4dd42c01e2b715aea593ac3fe4a539dc8",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_full_sd_label_manifest.json",
+        "payload_sha256": "bd7e122c53ac67aae617625e37f4ab371af0b306c7d2b974c3d69d43bcff64de"
+      },
+      "speech": "all target speech labels",
+      "termination_special": "EOS supervised"
+    },
+    "Random-PR": {
+      "draw": "randrange(0, T_i-K_i+1), once in canonical bank manifest order",
+      "manifest": {
+        "file_sha256": "7100edb39ccf1a7260bfbf6e6aaa23495f00a5740357e0bc0e5ea18e9d7c8618",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_random_pr_mask_manifest.json",
+        "payload_sha256": "8d0cda11215315edf716b57f5759ab74823551fd5a681937d90acf913e5beaba"
+      },
+      "manifest_is_final_authority": true,
+      "only_change": "terminal contiguous speech span replaced by one frozen same-length random contiguous speech span",
+      "redraw": false,
+      "rng": "Python standard library random.Random(20260912)",
+      "rng_seed": 20260912,
+      "same_as_tail_per_record": [
+        "target",
+        "T_i",
+        "K_i",
+        "EOS/special positions",
+        "M_i",
+        "full teacher-forced history"
+      ]
+    },
+    "Tail-SD": {
+      "allocation": "per-record floor plus earliest-record residual allocation in canonical bank order filtered by branch",
+      "content": "terminal K_i speech labels; EOS excluded",
+      "content_ratio": 0.29909295294208854,
+      "full_teacher_forced_history_retained": true,
+      "manifest": {
+        "file_sha256": "1322c97c8743092ecf4e827b1526f4f14a12cbd913641375b1ad04d43bba44fc",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_tail_sd_mask_manifest.json",
+        "payload_sha256": "65397b7252ef3d9f2e300eeebdb22bc12ad8017475023b9e88109c901f156360"
+      },
+      "termination": "terminal K_i speech labels plus EOS",
+      "termination_ratio": 0.21705160991522524
+    }
+  },
+  "lora": {
+    "aggregate_initialization_sha256": "0e9d49bece5350f6bd6eb5122f63e1f22fac09f74ae181cd90fbc6c0778f782c",
+    "all_arm_files_byte_identical": true,
+    "alpha": 16,
+    "dropout": 0.0,
+    "initialization_files": {
+      "Full-SD": {
+        "file_sha256": "e873d16cea97b71da2bfd711777068df2a140ace34728a4c5c9a32b7f30b4550",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_lora_initialization/full_sd/e08_cv2_lora_init.pt"
+      },
+      "Random-PR": {
+        "file_sha256": "e873d16cea97b71da2bfd711777068df2a140ace34728a4c5c9a32b7f30b4550",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_lora_initialization/random_pr/e08_cv2_lora_init.pt"
+      },
+      "Tail-SD": {
+        "file_sha256": "e873d16cea97b71da2bfd711777068df2a140ace34728a4c5c9a32b7f30b4550",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_lora_initialization/tail_sd/e08_cv2_lora_init.pt"
+      },
+      "shared": {
+        "file_sha256": "e873d16cea97b71da2bfd711777068df2a140ace34728a4c5c9a32b7f30b4550",
+        "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_lora_initialization/shared/e08_cv2_lora_init.pt"
+      }
+    },
+    "initialization_seed": 20260820,
+    "layers": 24,
+    "projection_count": 168,
+    "projection_types": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "rank": 8,
+    "trainable_parameter_count": 4399104
+  },
+  "parent_gate": "P5_E08_CV2_TARGET_BANK_E08_ONLY_58_65_FROZEN",
+  "payload_sha256": "d422c3120ca6ce7590a463427acb437594141a947768bbab0edc877577e00637",
+  "prohibited_until_separate_authorization": [
+    "training launch",
+    "optimizer step",
+    "mask redraw or modification",
+    "record-order modification",
+    "target-bank modification",
+    "confirmatory panel selection/opening",
+    "test text read",
+    "checkpoint selection"
+  ],
+  "random_pr_descriptive_span_relations": {
+    "exact_tail": 0,
+    "partial_overlap": 39,
+    "zero_overlap": 84
+  },
+  "run_type": "FORMAL pre-training protocol freeze; no training or confirmatory access",
+  "schema_version": 1,
+  "scientific_question": "On CosyVoice2-0.5B, does terminal-tail placement outperform matched random contiguous placement when the training bank, per-record K_i, EOS/special positions, CE denominator, full teacher-forced history, initialization, order, optimizer, and update count are controlled?",
+  "status": "FROZEN_E08_CV2_MASK_BUDGET_AND_TRAINING_PROTOCOL_BEFORE_TRAINING",
+  "training": {
+    "adapted_arms": [
+      "Full-SD",
+      "Random-PR",
+      "Tail-SD"
+    ],
+    "base_is_not_trained": true,
+    "batch_size": 1,
+    "complete_passes": 4,
+    "dev_or_test_checkpoint_selection": false,
+    "early_stopping": false,
+    "extra_accumulation_steps": 0,
+    "final_checkpoint_only": true,
+    "gradient_accumulation_enabled": false,
+    "microbatches_per_optimizer_update": 1,
+    "only_experimental_difference": "CE supervision mask",
+    "optimizer": {
+      "amsgrad": false,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "gradient_clip_norm": 5.0,
+      "lr": 1e-05,
+      "name": "torch.optim.Adam",
+      "scheduler": "constant",
+      "weight_decay": 0.0
+    },
+    "optimizer_updates": 492,
+    "record_order": {
+      "file_sha256": "633f23e0985d8580f37a5498a1004ba1f528329d2b49062b39a5a0ce0f852e38",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_training_record_order.json",
+      "payload_sha256": "ce2aa6d85af47779b29f1f59efa1001566cdb9e8d0328906d805eca567e6f72c"
+    },
+    "record_order_sequence_sha256": "bba8dfcf513ebdc5380bafea501d4662e745640fcf41687a3bbc5d2b7d557618",
+    "records_per_pass": 123,
+    "same_bank": true,
+    "same_base": true,
+    "same_initial_lora": true,
+    "same_optimizer": true,
+    "same_record_order": true,
+    "training_seed_per_arm": 20260820
+  },
+  "zero_update_preflight": {
+    "all_losses_and_gradients_finite": true,
+    "base_parameters_byte_identical": true,
+    "optimizer_created": false,
+    "optimizer_steps": 0,
+    "status": "PASS_E08_ZERO_UPDATE_TRAINING_CONTRACT_AUDIT"
+  }
+}

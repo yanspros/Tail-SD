@@ -1,0 +1,1200 @@
+{
+  "schema_version": "2026-09-18",
+  "created_at_utc": "2026-09-18T00:31:04Z",
+  "status": "FINAL_CURRENT_PAPER_NUMBERS_THROUGH_E16",
+  "document_gate": "PAPER_EVIDENCE_PACKAGE_TAILSD_ICASSP2027_20260918_FROZEN",
+  "cv3_primary": {
+    "experiment_identity": "P4/E11 original independent CV3 confirmatory panel",
+    "systems": {
+      "Base": {
+        "value": 0.57,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/summary.json",
+        "json_pointer": "/arms/B0/source_metrics/strict_complete_rate",
+        "source_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+        "evidence_status": "VERIFIED"
+      },
+      "Full-SD": {
+        "value": 0.678,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/summary.json",
+        "json_pointer": "/arms/B1/source_metrics/strict_complete_rate",
+        "source_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+        "evidence_status": "VERIFIED"
+      },
+      "Random-Local": {
+        "value": 0.637,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/summary.json",
+        "json_pointer": "/arms/R1_RANDOM_LOCAL/source_metrics/strict_complete_rate",
+        "source_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-30": {
+        "value": 0.662,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/summary.json",
+        "json_pointer": "/arms/T1_TAIL30/source_metrics/strict_complete_rate",
+        "source_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD": {
+        "value": 0.682,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/summary.json",
+        "json_pointer": "/arms/T6_BRANCH_FIXED_TAIL/source_metrics/strict_complete_rate",
+        "source_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "comparisons": {
+      "tail_vs_base": {
+        "value": {
+          "delta_fraction": 0.112,
+          "ci95_fraction": [
+            0.087,
+            0.138
+          ],
+          "delta_pp": 11.2,
+          "ci95_pp": [
+            8.7,
+            13.8
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/pairwise.json",
+        "json_pointer": "/T6_BRANCH_FIXED_TAIL-B0/metrics/strict_complete",
+        "source_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+        "evidence_status": "VERIFIED"
+      },
+      "tail_vs_random_local": {
+        "value": {
+          "delta_fraction": 0.045,
+          "ci95_fraction": [
+            0.021,
+            0.069
+          ],
+          "delta_pp": 4.5,
+          "ci95_pp": [
+            2.1,
+            6.9
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/pairwise.json",
+        "json_pointer": "/T6_BRANCH_FIXED_TAIL-R1_RANDOM_LOCAL/metrics/strict_complete",
+        "source_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+        "evidence_status": "VERIFIED"
+      },
+      "tail_vs_full_sd": {
+        "value": {
+          "delta_fraction": 0.004,
+          "ci95_fraction": [
+            -0.019,
+            0.027
+          ],
+          "delta_pp": 0.4,
+          "ci95_pp": [
+            -1.9,
+            2.7
+          ],
+          "interpretation": "paired comparison did not establish a difference"
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/pairwise.json",
+        "json_pointer": "/T6_BRANCH_FIXED_TAIL-B1/metrics/strict_complete",
+        "source_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+        "evidence_status": "VERIFIED"
+      },
+      "tail_vs_tail30": {
+        "value": {
+          "delta_fraction": 0.02,
+          "ci95_fraction": [
+            -0.003,
+            0.043
+          ],
+          "delta_pp": 2.0,
+          "ci95_pp": [
+            -0.3,
+            4.3
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e11_untouched_confirmatory/results/pairwise.json",
+        "json_pointer": "/T6_BRANCH_FIXED_TAIL-T1_TAIL30/metrics/strict_complete",
+        "source_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "active_ce_labels": {
+      "Tail-SD": {
+        "value": 26269,
+        "unit": "labels",
+        "source_file": "paper_sync_addendum_20260910_P1/active_label_budgets.json",
+        "json_pointer": "/arms/Tail-SD_T6/total_active_ce_labels/value",
+        "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66",
+        "evidence_status": "VERIFIED"
+      },
+      "Full-SD": {
+        "value": 101380,
+        "unit": "labels",
+        "source_file": "paper_sync_addendum_20260910_P1/active_label_budgets.json",
+        "json_pointer": "/arms/Full-SD_B1/total_active_ce_labels/value",
+        "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66",
+        "evidence_status": "VERIFIED"
+      },
+      "ratio": {
+        "value": 0.2591142237127639,
+        "unit": "ratio",
+        "source_file": "paper_sync_addendum_20260910_P1/active_label_budgets.json",
+        "json_pointer": "/arms/Tail-SD_T6/relative_full_sd_total_active_ce_ratio/value",
+        "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66",
+        "evidence_status": "VERIFIED"
+      },
+      "interpretation": "active CE-label participation only; not FLOPs, compute, or training-time saving"
+    }
+  },
+  "random_pr_masks": {
+    "experiment_identity": "M0 historical opened-E11 result; M1/M2 post-hoc frozen mask realizations reusing opened E11 and paired Tail-SD checkpoints",
+    "M0": {
+      "20260822": {
+        "value": {
+          "delta_fraction": 0.028,
+          "ci95_fraction": [
+            0.003,
+            0.053
+          ],
+          "delta_pp": 2.8,
+          "ci95_pp": [
+            0.3,
+            5.3
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/results/pairwise.json",
+        "json_pointer": "/init_20260822__T6_BRANCH_FIXED_TAIL-init_20260822__RANDOM_PR_PER_RECORD_MATCHED/metrics/strict_complete",
+        "source_sha256": "f1eda388ae61abfdc88cbdf5b1d992ff24cda094145b19421063cf30885b038f",
+        "evidence_status": "VERIFIED"
+      },
+      "20260823": {
+        "value": {
+          "delta_fraction": 0.06,
+          "ci95_fraction": [
+            0.036,
+            0.084
+          ],
+          "delta_pp": 6.0,
+          "ci95_pp": [
+            3.6,
+            8.4
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/results/pairwise.json",
+        "json_pointer": "/init_20260823__T6_BRANCH_FIXED_TAIL-init_20260823__RANDOM_PR_PER_RECORD_MATCHED/metrics/strict_complete",
+        "source_sha256": "f1eda388ae61abfdc88cbdf5b1d992ff24cda094145b19421063cf30885b038f",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "M1_M2_new_cells": {
+      "M1__init_20260822__RANDOM_PR_M1_SEED20260915": {
+        "mask": "M1",
+        "mask_seed": 20260915,
+        "init_seed": 20260822,
+        "tail_sd_sc": 0.668,
+        "random_pr_sc": 0.64,
+        "contrast": {
+          "value": {
+            "delta_fraction": 0.028,
+            "ci95_fraction": [
+              0.004,
+              0.052
+            ],
+            "delta_pp": 2.8,
+            "ci95_pp": [
+              0.4,
+              5.2
+            ]
+          },
+          "unit": "fraction_and_percentage_points",
+          "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/mask_variation_summary.json",
+          "json_pointer": "/new_cells/M1__init_20260822__RANDOM_PR_M1_SEED20260915/t6_minus_random_pr",
+          "source_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+          "evidence_status": "VERIFIED"
+        }
+      },
+      "M1__init_20260823__RANDOM_PR_M1_SEED20260915": {
+        "mask": "M1",
+        "mask_seed": 20260915,
+        "init_seed": 20260823,
+        "tail_sd_sc": 0.69,
+        "random_pr_sc": 0.633,
+        "contrast": {
+          "value": {
+            "delta_fraction": 0.057,
+            "ci95_fraction": [
+              0.033,
+              0.081
+            ],
+            "delta_pp": 5.7,
+            "ci95_pp": [
+              3.3,
+              8.1
+            ]
+          },
+          "unit": "fraction_and_percentage_points",
+          "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/mask_variation_summary.json",
+          "json_pointer": "/new_cells/M1__init_20260823__RANDOM_PR_M1_SEED20260915/t6_minus_random_pr",
+          "source_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+          "evidence_status": "VERIFIED"
+        }
+      },
+      "M2__init_20260822__RANDOM_PR_M2_SEED20260916": {
+        "mask": "M2",
+        "mask_seed": 20260916,
+        "init_seed": 20260822,
+        "tail_sd_sc": 0.668,
+        "random_pr_sc": 0.644,
+        "contrast": {
+          "value": {
+            "delta_fraction": 0.024,
+            "ci95_fraction": [
+              0.001,
+              0.046
+            ],
+            "delta_pp": 2.4,
+            "ci95_pp": [
+              0.1,
+              4.6
+            ]
+          },
+          "unit": "fraction_and_percentage_points",
+          "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/mask_variation_summary.json",
+          "json_pointer": "/new_cells/M2__init_20260822__RANDOM_PR_M2_SEED20260916/t6_minus_random_pr",
+          "source_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+          "evidence_status": "VERIFIED"
+        }
+      },
+      "M2__init_20260823__RANDOM_PR_M2_SEED20260916": {
+        "mask": "M2",
+        "mask_seed": 20260916,
+        "init_seed": 20260823,
+        "tail_sd_sc": 0.69,
+        "random_pr_sc": 0.633,
+        "contrast": {
+          "value": {
+            "delta_fraction": 0.057,
+            "ci95_fraction": [
+              0.031,
+              0.083
+            ],
+            "delta_pp": 5.7,
+            "ci95_pp": [
+              3.1,
+              8.3
+            ]
+          },
+          "unit": "fraction_and_percentage_points",
+          "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/mask_variation_summary.json",
+          "json_pointer": "/new_cells/M2__init_20260823__RANDOM_PR_M2_SEED20260916/t6_minus_random_pr",
+          "source_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+          "evidence_status": "VERIFIED"
+        }
+      }
+    },
+    "M1_M2_primary_summary": {
+      "value": {
+        "delta_fraction": 0.0415,
+        "ci95_fraction": [
+          0.026,
+          0.05725
+        ],
+        "delta_pp": 4.15,
+        "ci95_pp": [
+          2.6,
+          5.725
+        ]
+      },
+      "unit": "fraction_and_percentage_points",
+      "source_file": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/mask_variation_summary.json",
+      "json_pointer": "/primary_new_M1_M2_summary",
+      "source_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+      "evidence_status": "VERIFIED"
+    },
+    "four_of_four_new_cells_positive": true
+  },
+  "cv2_transfer": {
+    "experiment_identity": "independent E08 training bank; shared/open CV3 E11 evaluation panel; not a second untouched test set",
+    "systems": {
+      "Base": {
+        "value": 0.44,
+        "unit": "fraction",
+        "source_file": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_system_summary.json",
+        "json_pointer": "/systems/Base/source_metrics/strict_complete_rate",
+        "source_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+        "evidence_status": "VERIFIED"
+      },
+      "Full-SD": {
+        "value": 0.483,
+        "unit": "fraction",
+        "source_file": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_system_summary.json",
+        "json_pointer": "/systems/Full-SD/source_metrics/strict_complete_rate",
+        "source_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+        "evidence_status": "VERIFIED"
+      },
+      "Random-PR": {
+        "value": 0.455,
+        "unit": "fraction",
+        "source_file": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_system_summary.json",
+        "json_pointer": "/systems/Random-PR/source_metrics/strict_complete_rate",
+        "source_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD": {
+        "value": 0.484,
+        "unit": "fraction",
+        "source_file": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_system_summary.json",
+        "json_pointer": "/systems/Tail-SD/source_metrics/strict_complete_rate",
+        "source_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "primary_tail_minus_random_pr": {
+      "value": {
+        "delta_fraction": 0.029,
+        "ci95_fraction": [
+          0.008,
+          0.051
+        ],
+        "delta_pp": 2.9,
+        "ci95_pp": [
+          0.8,
+          5.1
+        ]
+      },
+      "unit": "fraction_and_percentage_points",
+      "source_file": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_pairwise_bootstrap.json",
+      "json_pointer": "/comparisons/primary_tail_sd_minus_random_pr",
+      "source_sha256": "6772a9427cd2fcad2f4d4dd8f798164d058dc125fb562b72596916c9ad47188b",
+      "evidence_status": "VERIFIED"
+    }
+  },
+  "e13_unopened500": {
+    "experiment_identity": "new unopened 500-source CV3 confirmatory panel, frozen before inference",
+    "systems": {
+      "Base": {
+        "value": 0.555,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+        "json_pointer": "/systems/Base/source_metrics/strict_complete_rate",
+        "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+        "evidence_status": "VERIFIED"
+      },
+      "Full-SD": {
+        "value": 0.669,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+        "json_pointer": "/systems/Full-SD/source_metrics/strict_complete_rate",
+        "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260822": {
+        "value": 0.673,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+        "json_pointer": "/systems/Tail-SD_init20260822/source_metrics/strict_complete_rate",
+        "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260823": {
+        "value": 0.67,
+        "unit": "fraction",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+        "json_pointer": "/systems/Tail-SD_init20260823/source_metrics/strict_complete_rate",
+        "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "six_matched_units": {
+      "Tail-SD_init20260822-minus-Random-PR_M0_init20260822": {
+        "value": {
+          "delta_fraction": 0.055,
+          "ci95_fraction": [
+            0.029,
+            0.082
+          ],
+          "delta_pp": 5.5,
+          "ci95_pp": [
+            2.9,
+            8.2
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260822-minus-Random-PR_M0_init20260822/metrics/strict_complete",
+        "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260823-minus-Random-PR_M0_init20260823": {
+        "value": {
+          "delta_fraction": 0.043,
+          "ci95_fraction": [
+            0.019,
+            0.067
+          ],
+          "delta_pp": 4.3,
+          "ci95_pp": [
+            1.9,
+            6.7
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260823-minus-Random-PR_M0_init20260823/metrics/strict_complete",
+        "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260822-minus-Random-PR_M1_init20260822": {
+        "value": {
+          "delta_fraction": 0.026,
+          "ci95_fraction": [
+            0.001,
+            0.052
+          ],
+          "delta_pp": 2.6,
+          "ci95_pp": [
+            0.1,
+            5.2
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260822-minus-Random-PR_M1_init20260822/metrics/strict_complete",
+        "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260823-minus-Random-PR_M1_init20260823": {
+        "value": {
+          "delta_fraction": 0.036,
+          "ci95_fraction": [
+            0.013,
+            0.059
+          ],
+          "delta_pp": 3.6,
+          "ci95_pp": [
+            1.3,
+            5.9
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260823-minus-Random-PR_M1_init20260823/metrics/strict_complete",
+        "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260822-minus-Random-PR_M2_init20260822": {
+        "value": {
+          "delta_fraction": 0.071,
+          "ci95_fraction": [
+            0.045,
+            0.098
+          ],
+          "delta_pp": 7.1,
+          "ci95_pp": [
+            4.5,
+            9.8
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260822-minus-Random-PR_M2_init20260822/metrics/strict_complete",
+        "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260823-minus-Random-PR_M2_init20260823": {
+        "value": {
+          "delta_fraction": 0.051,
+          "ci95_fraction": [
+            0.027,
+            0.075
+          ],
+          "delta_pp": 5.1,
+          "ci95_pp": [
+            2.7,
+            7.5
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260823-minus-Random-PR_M2_init20260823/metrics/strict_complete",
+        "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "primary_six_unit_average": {
+      "value": {
+        "delta_fraction": 0.047,
+        "ci95_fraction": [
+          0.032,
+          0.06216666666666667
+        ],
+        "delta_pp": 4.7,
+        "ci95_pp": [
+          3.2,
+          6.216667
+        ]
+      },
+      "unit": "fraction_and_percentage_points",
+      "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+      "json_pointer": "/strict_complete",
+      "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92",
+      "evidence_status": "VERIFIED"
+    },
+    "six_of_six_positive": true
+  },
+  "e14_position_study": {
+    "experiment_identity": "FORMAL post-hoc mechanism study on the already-opened E13 panel; not an independent confirmatory test",
+    "four_matched_units": {
+      "Tail-SD_init20260822-minus-HEAD_PR_init20260822": {
+        "value": {
+          "delta_fraction": 0.16,
+          "ci95_fraction": [
+            0.13,
+            0.19
+          ],
+          "delta_pp": 16.0,
+          "ci95_pp": [
+            13.0,
+            19.0
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260822-minus-HEAD_PR_init20260822/metrics/strict_complete",
+        "source_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260823-minus-HEAD_PR_init20260823": {
+        "value": {
+          "delta_fraction": 0.169,
+          "ci95_fraction": [
+            0.14,
+            0.199
+          ],
+          "delta_pp": 16.9,
+          "ci95_pp": [
+            14.0,
+            19.9
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260823-minus-HEAD_PR_init20260823/metrics/strict_complete",
+        "source_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260822-minus-MIDDLE_PR_init20260822": {
+        "value": {
+          "delta_fraction": 0.088,
+          "ci95_fraction": [
+            0.062,
+            0.115
+          ],
+          "delta_pp": 8.8,
+          "ci95_pp": [
+            6.2,
+            11.5
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260822-minus-MIDDLE_PR_init20260822/metrics/strict_complete",
+        "source_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+        "evidence_status": "VERIFIED"
+      },
+      "Tail-SD_init20260823-minus-MIDDLE_PR_init20260823": {
+        "value": {
+          "delta_fraction": 0.102,
+          "ci95_fraction": [
+            0.076,
+            0.128
+          ],
+          "delta_pp": 10.2,
+          "ci95_pp": [
+            7.6,
+            12.8
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/pairwise_units.json",
+        "json_pointer": "/units/Tail-SD_init20260823-minus-MIDDLE_PR_init20260823/metrics/strict_complete",
+        "source_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+        "evidence_status": "VERIFIED"
+      }
+    },
+    "aggregates": {
+      "tail_minus_head": {
+        "value": {
+          "delta_fraction": 0.1645,
+          "ci95_fraction": [
+            0.1405,
+            0.1895
+          ],
+          "delta_pp": 16.45,
+          "ci95_pp": [
+            14.05,
+            18.95
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/primary_position_summary.json",
+        "json_pointer": "/tail_minus_head",
+        "source_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+        "evidence_status": "VERIFIED"
+      },
+      "tail_minus_middle": {
+        "value": {
+          "delta_fraction": 0.095,
+          "ci95_fraction": [
+            0.0745,
+            0.116
+          ],
+          "delta_pp": 9.5,
+          "ci95_pp": [
+            7.45,
+            11.6
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/primary_position_summary.json",
+        "json_pointer": "/tail_minus_middle",
+        "source_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+        "evidence_status": "VERIFIED"
+      },
+      "tail_minus_nonterminal_primary": {
+        "value": {
+          "delta_fraction": 0.12975,
+          "ci95_fraction": [
+            0.10949375,
+            0.1502562499999999
+          ],
+          "delta_pp": 12.975,
+          "ci95_pp": [
+            10.949375,
+            15.025625
+          ]
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/primary_position_summary.json",
+        "json_pointer": "/tail_minus_nonterminal",
+        "source_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+        "evidence_status": "VERIFIED"
+      },
+      "middle_minus_head_descriptive": {
+        "value": {
+          "delta_fraction": 0.0695,
+          "delta_pp": 6.95
+        },
+        "unit": "fraction_and_percentage_points",
+        "source_file": "phases/p4_final/e14_head_middle_tail_position_study/results/primary_position_summary.json",
+        "json_pointer": "/middle_minus_head/point_estimate",
+        "source_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+        "evidence_status": "VERIFIED_DESCRIPTIVE_ONLY"
+      }
+    },
+    "tail_above_both": true
+  },
+  "human_evaluation": {
+    "status": "EXTERNAL_WINDOWS_AUTHORITY_NOT_IMPORTED",
+    "values_included": false
+  },
+  "excluded_deprecated_statistics": {
+    "tail_vs_full_sd_positive_lower_bound_variant": {
+      "value_ci95_pp": [
+        0.15,
+        2.7
+      ],
+      "status": "UNREPRODUCIBLE_FORBIDDEN_NOT_FOR_PAPER",
+      "current_authority_pointer": "/cv3_primary/comparisons/tail_vs_full_sd",
+      "current_ci95_pp": [
+        -1.9,
+        2.7
+      ]
+    }
+  },
+  "authority_precedence": [
+    "formal_experiment_JSON",
+    "E16_or_mechanism_length_handoff",
+    "prior_FinalEvidence_20260917",
+    "markdown_report",
+    "paper_PDF"
+  ],
+  "e15_mechanism_diagnostic": {
+    "evidence_status": "DESCRIPTIVE_POST_HOC_ONLY",
+    "experiment_identity": "POST_HOC_MECHANISM_DIAGNOSTIC_ON_OPENED_E13_PANEL",
+    "state_counts": {
+      "continue_paths": 154,
+      "continue_sources": 117,
+      "stop_paths": 555,
+      "stop_sources": 317,
+      "cross_state_source_overlap": 12
+    },
+    "tail_two_init_equal_weight": {
+      "continue": {
+        "sources": 117,
+        "mean_eos_logit": 14.101470505070482
+      },
+      "stop": {
+        "sources": 317,
+        "mean_eos_logit": 21.362270713980642
+      },
+      "termination_separation": {
+        "point_estimate": 7.26080020891016,
+        "ci95": [
+          6.668108352783406,
+          7.856196990612945
+        ]
+      }
+    },
+    "preregistered_complete_mechanism_criterion_pass": false,
+    "bootstrap_strict_joint_cluster": false,
+    "cross_state_source_overlap_not_jointly_clustered": 12,
+    "limitations": [
+      "Raw EOS-logit separation is not termination-probability separation.",
+      "The preregistered complete mechanism criterion was not satisfied.",
+      "The existing bootstrap did not jointly cluster 12 sources present in both CONTINUE and STOP strata."
+    ],
+    "source": {
+      "source_file": "paper_sync_final_20260917/mechanism_and_length_handoff/e15_mechanism_audit.json",
+      "json_pointer": "/",
+      "source_sha256": "b42b0aef3c2bdc800e3ca0184fe9295bf89058b735a2822360d4887911a6a63a"
+    }
+  },
+  "e16_budget_sensitivity": {
+    "schema_version": "1",
+    "status": "E16_PAPER_HANDOFF_VERIFIED",
+    "experiment_identity": "POST_HOC_BUDGET_SENSITIVITY_ON_OPENED_E13_PANEL",
+    "formal_gate": "P4_E16_SUPERVISION_BUDGET_SENSITIVITY_COMPLETE",
+    "formal_gate_authority": {
+      "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/formal_gate.json",
+      "json_pointer": "/status",
+      "source_sha256": "a0f9c03fbb3efa7f774d5bdb504ed82cf15ebc224c4535da305c78b2c1d3c1d5"
+    },
+    "budgets": {
+      "0.5x": {
+        "lambda": 0.5,
+        "branch_speech_label_budgets": {
+          "Termination": 5390,
+          "Content": 7716
+        },
+        "active_speech_labels": 13106,
+        "active_eos_labels": 58,
+        "active_ce_labels": 13164,
+        "relative_to_full_sd_ratio": 0.12984809627145394,
+        "active_label_percent": 12.984809627145394,
+        "paper_rounded_active_label_percent": 12.9848,
+        "per_initialization": {
+          "20260822": {
+            "Tail-SD": {
+              "strict_completion_fraction": 0.656,
+              "strict_completion_percent": 65.60000000000001,
+              "wer_fraction": 0.14612948956982222,
+              "wer_percent": 14.612948956982223,
+              "coverage_fraction": 0.9145430172695367,
+              "coverage_percent": 91.45430172695367,
+              "source_any_seed_hc_fraction": 0.156,
+              "source_any_seed_hc_percent": 15.6
+            },
+            "Random-PR": {
+              "strict_completion_fraction": 0.611,
+              "strict_completion_percent": 61.1,
+              "wer_fraction": 0.16126390617600633,
+              "wer_percent": 16.126390617600634,
+              "coverage_fraction": 0.8895980460957327,
+              "coverage_percent": 88.95980460957327,
+              "source_any_seed_hc_fraction": 0.218,
+              "source_any_seed_hc_percent": 21.8
+            },
+            "Tail-SD_minus_Random-PR": {
+              "delta_fraction": 0.045,
+              "delta_pp": 4.5,
+              "ci95_fraction": [
+                0.019,
+                0.071
+              ],
+              "ci95_pp": [
+                1.9,
+                7.1
+              ],
+              "source_count": 500,
+              "bootstrap_resamples": 10000,
+              "bootstrap_seed": 20260820
+            },
+            "source_evidence": {
+              "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+              "json_pointer": "/systems/TAIL_B05_init20260822",
+              "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+              "pairwise_json_pointer": "/units/TAIL_B05_init20260822-minus-RANDOM_PR_B05_init20260822/metrics/strict_complete",
+              "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+            }
+          },
+          "20260823": {
+            "Tail-SD": {
+              "strict_completion_fraction": 0.659,
+              "strict_completion_percent": 65.9,
+              "wer_fraction": 0.14544195571659052,
+              "wer_percent": 14.544195571659053,
+              "coverage_fraction": 0.9136577296713648,
+              "coverage_percent": 91.36577296713648,
+              "source_any_seed_hc_fraction": 0.16,
+              "source_any_seed_hc_percent": 16.0
+            },
+            "Random-PR": {
+              "strict_completion_fraction": 0.613,
+              "strict_completion_percent": 61.3,
+              "wer_fraction": 0.15941459303614763,
+              "wer_percent": 15.941459303614764,
+              "coverage_fraction": 0.8889082410431824,
+              "coverage_percent": 88.89082410431824,
+              "source_any_seed_hc_fraction": 0.236,
+              "source_any_seed_hc_percent": 23.599999999999998
+            },
+            "Tail-SD_minus_Random-PR": {
+              "delta_fraction": 0.046,
+              "delta_pp": 4.6,
+              "ci95_fraction": [
+                0.023,
+                0.07
+              ],
+              "ci95_pp": [
+                2.3,
+                7.000000000000001
+              ],
+              "source_count": 500,
+              "bootstrap_resamples": 10000,
+              "bootstrap_seed": 20260820
+            },
+            "source_evidence": {
+              "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+              "json_pointer": "/systems/TAIL_B05_init20260823",
+              "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+              "pairwise_json_pointer": "/units/TAIL_B05_init20260823-minus-RANDOM_PR_B05_init20260823/metrics/strict_complete",
+              "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+            }
+          }
+        },
+        "aggregate": {
+          "delta_pp": 4.55,
+          "ci95_pp": [
+            2.75,
+            6.4
+          ]
+        },
+        "authority": {
+          "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/budget_sensitivity_summary.json",
+          "json_pointer": "/budgets/B05",
+          "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183"
+        }
+      },
+      "1.0x_reused_E13": {
+        "lambda": 1.0,
+        "active_speech_labels": 26211,
+        "active_eos_labels": 58,
+        "active_ce_labels": 26269,
+        "full_sd_active_ce_labels": 101380,
+        "relative_to_full_sd_ratio": 0.2591142237127639,
+        "active_label_percent": 25.911422371276387,
+        "paper_rounded_active_label_percent": 25.9,
+        "model_cells": {
+          "Tail-SD": {
+            "Tail-SD_init20260822": {
+              "strict_completion_fraction": 0.673,
+              "strict_completion_percent": 67.30000000000001,
+              "wer_fraction": 0.13665245048029295,
+              "wer_percent": 13.665245048029295,
+              "coverage_fraction": 0.9182863116324126,
+              "coverage_percent": 91.82863116324125,
+              "source_any_seed_hc_fraction": 0.146,
+              "source_any_seed_hc_percent": 14.6
+            },
+            "Tail-SD_init20260823": {
+              "strict_completion_fraction": 0.67,
+              "strict_completion_percent": 67.0,
+              "wer_fraction": 0.13515242972902689,
+              "wer_percent": 13.515242972902689,
+              "coverage_fraction": 0.9255019979518021,
+              "coverage_percent": 92.5501997951802,
+              "source_any_seed_hc_fraction": 0.108,
+              "source_any_seed_hc_percent": 10.8
+            }
+          },
+          "Random-PR": {
+            "Random-PR_M0_init20260822": {
+              "strict_completion_fraction": 0.618,
+              "strict_completion_percent": 61.8,
+              "wer_fraction": 0.1543299807248899,
+              "wer_percent": 15.43299807248899,
+              "coverage_fraction": 0.8942913599892364,
+              "coverage_percent": 89.42913599892364,
+              "source_any_seed_hc_fraction": 0.198,
+              "source_any_seed_hc_percent": 19.8
+            },
+            "Random-PR_M0_init20260823": {
+              "strict_completion_fraction": 0.627,
+              "strict_completion_percent": 62.7,
+              "wer_fraction": 0.15444118777817165,
+              "wer_percent": 15.444118777817165,
+              "coverage_fraction": 0.8971869283907479,
+              "coverage_percent": 89.71869283907479,
+              "source_any_seed_hc_fraction": 0.214,
+              "source_any_seed_hc_percent": 21.4
+            },
+            "Random-PR_M1_init20260822": {
+              "strict_completion_fraction": 0.647,
+              "strict_completion_percent": 64.7,
+              "wer_fraction": 0.14774907994074063,
+              "wer_percent": 14.774907994074063,
+              "coverage_fraction": 0.9029230314161169,
+              "coverage_percent": 90.29230314161168,
+              "source_any_seed_hc_fraction": 0.18,
+              "source_any_seed_hc_percent": 18.0
+            },
+            "Random-PR_M1_init20260823": {
+              "strict_completion_fraction": 0.634,
+              "strict_completion_percent": 63.4,
+              "wer_fraction": 0.14638814889716903,
+              "wer_percent": 14.638814889716903,
+              "coverage_fraction": 0.9047011654360099,
+              "coverage_percent": 90.47011654360098,
+              "source_any_seed_hc_fraction": 0.168,
+              "source_any_seed_hc_percent": 16.8
+            },
+            "Random-PR_M2_init20260822": {
+              "strict_completion_fraction": 0.602,
+              "strict_completion_percent": 60.199999999999996,
+              "wer_fraction": 0.15560147670774346,
+              "wer_percent": 15.560147670774347,
+              "coverage_fraction": 0.8948335265493136,
+              "coverage_percent": 89.48335265493135,
+              "source_any_seed_hc_fraction": 0.214,
+              "source_any_seed_hc_percent": 21.4
+            },
+            "Random-PR_M2_init20260823": {
+              "strict_completion_fraction": 0.619,
+              "strict_completion_percent": 61.9,
+              "wer_fraction": 0.15561415416879523,
+              "wer_percent": 15.561415416879523,
+              "coverage_fraction": 0.894734401679556,
+              "coverage_percent": 89.4734401679556,
+              "source_any_seed_hc_fraction": 0.198,
+              "source_any_seed_hc_percent": 19.8
+            }
+          },
+          "descriptive_equal_model_means": {
+            "Tail-SD": {
+              "strict_completion_fraction": 0.6715,
+              "strict_completion_percent": 67.15,
+              "wer_fraction": 0.1359024401046599,
+              "wer_percent": 13.590244010465991,
+              "coverage_fraction": 0.9218941547921073,
+              "coverage_percent": 92.18941547921074,
+              "source_any_seed_hc_fraction": 0.127,
+              "source_any_seed_hc_percent": 12.7
+            },
+            "Random-PR": {
+              "strict_completion_fraction": 0.6244999999999999,
+              "strict_completion_percent": 62.449999999999996,
+              "wer_fraction": 0.1523540047029183,
+              "wer_percent": 15.235400470291834,
+              "coverage_fraction": 0.8981117355768301,
+              "coverage_percent": 89.811173557683,
+              "source_any_seed_hc_fraction": 0.19533333333333336,
+              "source_any_seed_hc_percent": 19.533333333333335
+            },
+            "derived_descriptive": true
+          }
+        },
+        "aggregate": {
+          "delta_pp": 4.7,
+          "ci95_pp": [
+            3.2,
+            6.216666666666667
+          ]
+        },
+        "authority": {
+          "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+          "json_pointer": "/strict_complete",
+          "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92"
+        },
+        "retrained_or_recomputed_in_E16": false
+      },
+      "2.0x": {
+        "lambda": 2.0,
+        "branch_speech_label_budgets": {
+          "Termination": 21558,
+          "Content": 30864
+        },
+        "active_speech_labels": 52422,
+        "active_eos_labels": 58,
+        "active_ce_labels": 52480,
+        "relative_to_full_sd_ratio": 0.5176563424738607,
+        "active_label_percent": 51.765634247386075,
+        "paper_rounded_active_label_percent": 51.7656,
+        "per_initialization": {
+          "20260822": {
+            "Tail-SD": {
+              "strict_completion_fraction": 0.667,
+              "strict_completion_percent": 66.7,
+              "wer_fraction": 0.13900781920741395,
+              "wer_percent": 13.900781920741395,
+              "coverage_fraction": 0.9201059692278056,
+              "coverage_percent": 92.01059692278056,
+              "source_any_seed_hc_fraction": 0.134,
+              "source_any_seed_hc_percent": 13.4
+            },
+            "Random-PR": {
+              "strict_completion_fraction": 0.647,
+              "strict_completion_percent": 64.7,
+              "wer_fraction": 0.13969355176834924,
+              "wer_percent": 13.969355176834924,
+              "coverage_fraction": 0.9092925636633121,
+              "coverage_percent": 90.92925636633122,
+              "source_any_seed_hc_fraction": 0.186,
+              "source_any_seed_hc_percent": 18.6
+            },
+            "Tail-SD_minus_Random-PR": {
+              "delta_fraction": 0.02,
+              "delta_pp": 2.0,
+              "ci95_fraction": [
+                -0.004,
+                0.044
+              ],
+              "ci95_pp": [
+                -0.4,
+                4.3999999999999995
+              ],
+              "source_count": 500,
+              "bootstrap_resamples": 10000,
+              "bootstrap_seed": 20260820
+            },
+            "source_evidence": {
+              "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+              "json_pointer": "/systems/TAIL_B20_init20260822",
+              "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+              "pairwise_json_pointer": "/units/TAIL_B20_init20260822-minus-RANDOM_PR_B20_init20260822/metrics/strict_complete",
+              "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+            }
+          },
+          "20260823": {
+            "Tail-SD": {
+              "strict_completion_fraction": 0.69,
+              "strict_completion_percent": 69.0,
+              "wer_fraction": 0.13627616997763736,
+              "wer_percent": 13.627616997763736,
+              "coverage_fraction": 0.9198154255503532,
+              "coverage_percent": 91.98154255503532,
+              "source_any_seed_hc_fraction": 0.13,
+              "source_any_seed_hc_percent": 13.0
+            },
+            "Random-PR": {
+              "strict_completion_fraction": 0.66,
+              "strict_completion_percent": 66.0,
+              "wer_fraction": 0.13793833261032706,
+              "wer_percent": 13.793833261032706,
+              "coverage_fraction": 0.9119127526608428,
+              "coverage_percent": 91.19127526608428,
+              "source_any_seed_hc_fraction": 0.146,
+              "source_any_seed_hc_percent": 14.6
+            },
+            "Tail-SD_minus_Random-PR": {
+              "delta_fraction": 0.03,
+              "delta_pp": 3.0,
+              "ci95_fraction": [
+                0.006,
+                0.054
+              ],
+              "ci95_pp": [
+                0.6,
+                5.4
+              ],
+              "source_count": 500,
+              "bootstrap_resamples": 10000,
+              "bootstrap_seed": 20260820
+            },
+            "source_evidence": {
+              "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+              "json_pointer": "/systems/TAIL_B20_init20260823",
+              "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+              "pairwise_json_pointer": "/units/TAIL_B20_init20260823-minus-RANDOM_PR_B20_init20260823/metrics/strict_complete",
+              "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+            }
+          }
+        },
+        "aggregate": {
+          "delta_pp": 2.5,
+          "ci95_pp": [
+            0.75,
+            4.3
+          ]
+        },
+        "authority": {
+          "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/budget_sensitivity_summary.json",
+          "json_pointer": "/budgets/B20",
+          "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183"
+        }
+      }
+    },
+    "safe_claim": "Terminal-placement advantage persists across the tested direct-supervision budgets.",
+    "limitations": [
+      "E16 is a post-hoc sensitivity study on the already-opened E13 panel.",
+      "The three tested points do not establish a monotonic budget relationship.",
+      "The results do not establish that 25.9% is optimal.",
+      "Active-label ratio is not compute, FLOPs, or training-time saving.",
+      "Full-SD is a dense-supervision reference, not a 100% Tail-SD budget point."
+    ],
+    "completeness": {
+      "training_models": "8/8",
+      "updates_per_model": "492/492",
+      "new_generation_and_scoring_paths": "8000/8000",
+      "asr_chunks": "15595/15595",
+      "protocol_drift": false
+    },
+    "authorities": {
+      "budget_summary": {
+        "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/budget_sensitivity_summary.json",
+        "json_pointer": "/",
+        "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183"
+      },
+      "mask_budget_and_pairing": {
+        "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/mask_budget_and_pairing_audit.json",
+        "json_pointer": "/budgets",
+        "source_sha256": "5fa5479828c9f82feb1201a5fa69ea3e727b126daab98777b0267d45fd88f174"
+      },
+      "one_x_active_label_budget": {
+        "source_file": "paper_sync_addendum_20260910_P1/active_label_budgets.json",
+        "json_pointer": "/arms/Tail-SD_T6",
+        "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66"
+      },
+      "pairwise_units": {
+        "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/pairwise_units.json",
+        "json_pointer": "/units",
+        "source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+      },
+      "system_summary": {
+        "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+        "json_pointer": "/systems",
+        "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681"
+      },
+      "e13_reused_primary": {
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+        "json_pointer": "/strict_complete",
+        "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92"
+      },
+      "e13_reused_systems": {
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+        "json_pointer": "/systems",
+        "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92"
+      }
+    }
+  }
+}

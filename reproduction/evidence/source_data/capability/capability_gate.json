@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "P4_E12_PARSER_SEMANTICS_REPAIRED_VERIFIED_PASS",
+  "gate": "P4_E12_PARSER_SEMANTICS_REPAIRED_VERIFIED",
+  "gate_status": "PASS",
+  "run_type": "FORMAL append-only final archive gate",
+  "assertions": {
+    "parser_semantics_verification_pass": true,
+    "records_372_of_372": true,
+    "frozen_reference_372_of_372": true,
+    "asr_hypothesis_372_of_372": true,
+    "released_formula_372_of_372": true,
+    "original_numeric_372_of_372": true,
+    "original_field_swap_372_of_372": true,
+    "summary_bootstrap_unchanged": true,
+    "historical_runtime_nonreplay_boundary_recorded": true
+  },
+  "scientific_statement": "在统一 current-runtime 下，T6 相比 B0/B1 未观察到统计上可分辨的 hard_en/hard_zh 能力退化。",
+  "prohibited_claims": [
+    "No retention superiority claim.",
+    "No short-text capability improvement claim.",
+    "Do not mix historical E08 B0/B1 with E12 B0/B1."
+  ],
+  "parser_semantics_verification_sha256": "a452a3cbf4bb6f950e497f29260305987d0850399c3a727f7ab8f21c295c3159",
+  "final_verification_sha256": "b1053cfd69e4d9893bed34ffbc0034b1fe55274e6f465e95308f18f583152aff",
+  "payload_sha256": "d3f64a3775dc056723cc28a113343c99abf143432540f45906f9fa8f59740948"
+}

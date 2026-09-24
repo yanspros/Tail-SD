@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_P4_E10_RANDOM_PR_MASK_REPEAT_FORMAL_DRAW",
+  "run_type": "FORMAL post-hoc mask-realization sensitivity addendum",
+  "frozen_at_utc": "2026-09-14T13:36:45Z",
+  "scientific_question": "With CV3 model initialization, bank, training contract, and evaluation contract fixed, does the observed T6 Tail-SD advantage remain under two additional Random-PR mask realizations?",
+  "post_hoc_disclosure": "The M0 result was known before this M1/M2 addendum. This protocol is not represented as part of the original preregistration.",
+  "scope": {
+    "model_family": "CosyVoice3 Fun-CosyVoice3-0.5B",
+    "parent_experiment": "phases/p4_final/e10_t6_seed_repeat",
+    "new_unit": "random_pr_mask_repeats_v1",
+    "paper_modified": false,
+    "cosyvoice2_modified": false,
+    "full_sd_modified": false,
+    "historical_result_modified": false
+  },
+  "authority": {
+    "m0_protocol": {
+      "path": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/data/frozen_protocol.json",
+      "sha256": "a14ffd08072ee68d8eda93b9cfb158a1a70970f307a081e6a1368086a26f8611"
+    },
+    "m0_mask_seed": 20260912,
+    "cv3_bank": {
+      "path": "phases/p3_method/e03_pilot/data/training_records.json",
+      "sha256": "8697c1d264a9eb55a7249a2bafaed6e2b9fd475bb87e8a3197cc30fd4efc4ce4",
+      "record_count": 123
+    },
+    "t6_mask": {
+      "path": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/data/t6_branch_fixed_tail_masks.json",
+      "sha256": "5b9151f976ebfeac44c2d806be05fb190cd207ce94da6ebe808afc51c6f09693"
+    },
+    "paired_initialization_audit": {
+      "path": "phases/p4_final/e10_t6_seed_repeat/paired_init_v1/results/initialization_effectiveness_audit.json",
+      "sha256": "c205415a006dfa712a9fea1a7778d08f4b257a194ee47adb8eff33cf5a15f0c1"
+    }
+  },
+  "matrix": {
+    "M0": {
+      "mask_seed": 20260912,
+      "action": "REUSE_EXISTING_RESULTS",
+      "init_seeds": [
+        20260822,
+        20260823
+      ]
+    },
+    "M1": {
+      "mask_seed": 20260915,
+      "action": "NEW_MASK_TRAIN_AND_EVALUATE",
+      "init_seeds": [
+        20260822,
+        20260823
+      ]
+    },
+    "M2": {
+      "mask_seed": 20260916,
+      "action": "NEW_MASK_TRAIN_AND_EVALUATE",
+      "init_seeds": [
+        20260822,
+        20260823
+      ]
+    },
+    "new_training_runs": 4,
+    "new_evaluation_paths": 4000
+  },
+  "mask_contract": {
+    "python_prng": "Python standard library random.Random",
+    "algorithm": "Mersenne Twister",
+    "draw_function": "randrange(0, T_i - K_i + 1)",
+    "draw_order": "CV3 canonical 123-record bank order",
+    "draws_per_record_per_mask": 1,
+    "formal_seeds": [
+      20260915,
+      20260916
+    ],
+    "formal_rng_not_consumed_by_tests": true,
+    "copy_from_t6_per_record": [
+      "target/history",
+      "K_i",
+      "EOS/special positions",
+      "M_i"
+    ],
+    "active_label_budget": {
+      "speech_labels": 26211,
+      "eos_labels": 58,
+      "total_ce_labels": 26269
+    },
+    "overlap_or_exact_tail_allowed": true,
+    "redraw_forbidden": true,
+    "fixed_across_four_passes_and_two_initializations": true,
+    "rng_separated_from_lora_training_and_inference": true
+  },
+  "initialization_contract": {
+    "init_seeds": [
+      20260822,
+      20260823
+    ],
+    "requirement": "Each new model must load an archived raw step-0 LoRA tensor state whose 336 tensors are byte-identical to the corresponding T6 initial LoRA tensor authority; setting the same seed alone is forbidden.",
+    "expected_tensor_payload_sha256": {
+      "20260822": "b2685e125e6e56af673e167fc9b39c2e6d108d31b44552a783a0c08df4200d7b",
+      "20260823": "996c7b77b40705cd8fc516d6df1779621ef3647c6825cebb9cfa0d4502895704"
+    },
+    "parameter_count": 336,
+    "trainable_parameter_count": 4399104
+  },
+  "training_contract": {
+    "base_llm_sha256": "69f43bd545131c30e98947fb360ea8b4dc9916d8e83dded7757c7ea4f5a24970",
+    "bank_records": 123,
+    "full_teacher_forced_history": true,
+    "lora": {
+      "layers": 24,
+      "projections": 168,
+      "rank": 8,
+      "alpha": 16,
+      "dropout": 0
+    },
+    "optimizer": "Adam",
+    "learning_rate": 1e-05,
+    "batch_size": 1,
+    "gradient_accumulation": 0,
+    "passes": 4,
+    "optimizer_updates": 492,
+    "record_order": "same frozen 492-entry order as paired T6/M0",
+    "checkpoint_selection": "final update 492 only",
+    "only_new_variable": "Random-PR contiguous speech-span position"
+  },
+  "evaluation_contract": {
+    "panel": "CV3 E11 opened 500-source panel",
+    "sources": 500,
+    "inference_seeds": [
+      0,
+      1
+    ],
+    "paths_per_new_model": 1000,
+    "new_paths_total": 4000,
+    "reuse_t6_generation_and_scoring": true,
+    "frontend_cap_prompt_decoder_scorer": "exact CV3 E11 authority; no CV2 configuration",
+    "bootstrap": {
+      "unit": "source",
+      "two_inference_seeds_clustered": true,
+      "resamples": 10000,
+      "seed": 20260820
+    }
+  },
+  "pre_registered_statistics": {
+    "per_cell": [
+      "SC",
+      "WER",
+      "Coverage",
+      "source-level any-seed HC",
+      "T6 minus Random-PR SC difference",
+      "95% source-level paired bootstrap CI"
+    ],
+    "primary_new_summary": "For each source, average the four paired T6-minus-Random-PR SC differences over M1/M2 x init20260822/init20260823, then compute the source mean and 10,000-resample source-level paired percentile CI.",
+    "m0_role": "historical observed reference only; excluded from the main new-summary average",
+    "mask_sensitivity_by_initialization": "Across M0/M1/M2 report Random-PR SC mean, sample standard deviation, and range.",
+    "limitations": [
+      "Source-level CIs are conditional on the trained models and sampled masks.",
+      "Three-mask dispersion is not comprehensive mask-population uncertainty.",
+      "The six cells share masks or T6 models and are not six independent repeats.",
+      "Reused T6 records do not create additional independent test sources."
+    ]
+  },
+  "stop_rules": {
+    "negative_or_zero_effect_is_valid": true,
+    "no_result_contingent_cancellation": true,
+    "no_best_mask_selection": true,
+    "no_M3_or_new_initialization": true,
+    "identity_or_scientific_contract_conflict": "FAIL_CLOSED"
+  },
+  "execution_status_at_freeze": {
+    "formal_mask_draws": 0,
+    "new_optimizer_updates": 0,
+    "new_generation_paths": 0,
+    "new_asr_paths": 0,
+    "new_scored_paths": 0
+  }
+}

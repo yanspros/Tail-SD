@@ -1,0 +1,427 @@
+{
+  "schema_version": "1",
+  "status": "E16_PAPER_HANDOFF_VERIFIED",
+  "experiment_identity": "POST_HOC_BUDGET_SENSITIVITY_ON_OPENED_E13_PANEL",
+  "formal_gate": "P4_E16_SUPERVISION_BUDGET_SENSITIVITY_COMPLETE",
+  "formal_gate_authority": {
+    "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/formal_gate.json",
+    "json_pointer": "/status",
+    "source_sha256": "a0f9c03fbb3efa7f774d5bdb504ed82cf15ebc224c4535da305c78b2c1d3c1d5"
+  },
+  "budgets": {
+    "0.5x": {
+      "lambda": 0.5,
+      "branch_speech_label_budgets": {
+        "Termination": 5390,
+        "Content": 7716
+      },
+      "active_speech_labels": 13106,
+      "active_eos_labels": 58,
+      "active_ce_labels": 13164,
+      "relative_to_full_sd_ratio": 0.12984809627145394,
+      "active_label_percent": 12.984809627145394,
+      "paper_rounded_active_label_percent": 12.9848,
+      "per_initialization": {
+        "20260822": {
+          "Tail-SD": {
+            "strict_completion_fraction": 0.656,
+            "strict_completion_percent": 65.60000000000001,
+            "wer_fraction": 0.14612948956982222,
+            "wer_percent": 14.612948956982223,
+            "coverage_fraction": 0.9145430172695367,
+            "coverage_percent": 91.45430172695367,
+            "source_any_seed_hc_fraction": 0.156,
+            "source_any_seed_hc_percent": 15.6
+          },
+          "Random-PR": {
+            "strict_completion_fraction": 0.611,
+            "strict_completion_percent": 61.1,
+            "wer_fraction": 0.16126390617600633,
+            "wer_percent": 16.126390617600634,
+            "coverage_fraction": 0.8895980460957327,
+            "coverage_percent": 88.95980460957327,
+            "source_any_seed_hc_fraction": 0.218,
+            "source_any_seed_hc_percent": 21.8
+          },
+          "Tail-SD_minus_Random-PR": {
+            "delta_fraction": 0.045,
+            "delta_pp": 4.5,
+            "ci95_fraction": [
+              0.019,
+              0.071
+            ],
+            "ci95_pp": [
+              1.9,
+              7.1
+            ],
+            "source_count": 500,
+            "bootstrap_resamples": 10000,
+            "bootstrap_seed": 20260820
+          },
+          "source_evidence": {
+            "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+            "json_pointer": "/systems/TAIL_B05_init20260822",
+            "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+            "pairwise_json_pointer": "/units/TAIL_B05_init20260822-minus-RANDOM_PR_B05_init20260822/metrics/strict_complete",
+            "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+          }
+        },
+        "20260823": {
+          "Tail-SD": {
+            "strict_completion_fraction": 0.659,
+            "strict_completion_percent": 65.9,
+            "wer_fraction": 0.14544195571659052,
+            "wer_percent": 14.544195571659053,
+            "coverage_fraction": 0.9136577296713648,
+            "coverage_percent": 91.36577296713648,
+            "source_any_seed_hc_fraction": 0.16,
+            "source_any_seed_hc_percent": 16.0
+          },
+          "Random-PR": {
+            "strict_completion_fraction": 0.613,
+            "strict_completion_percent": 61.3,
+            "wer_fraction": 0.15941459303614763,
+            "wer_percent": 15.941459303614764,
+            "coverage_fraction": 0.8889082410431824,
+            "coverage_percent": 88.89082410431824,
+            "source_any_seed_hc_fraction": 0.236,
+            "source_any_seed_hc_percent": 23.599999999999998
+          },
+          "Tail-SD_minus_Random-PR": {
+            "delta_fraction": 0.046,
+            "delta_pp": 4.6,
+            "ci95_fraction": [
+              0.023,
+              0.07
+            ],
+            "ci95_pp": [
+              2.3,
+              7.000000000000001
+            ],
+            "source_count": 500,
+            "bootstrap_resamples": 10000,
+            "bootstrap_seed": 20260820
+          },
+          "source_evidence": {
+            "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+            "json_pointer": "/systems/TAIL_B05_init20260823",
+            "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+            "pairwise_json_pointer": "/units/TAIL_B05_init20260823-minus-RANDOM_PR_B05_init20260823/metrics/strict_complete",
+            "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+          }
+        }
+      },
+      "aggregate": {
+        "delta_pp": 4.55,
+        "ci95_pp": [
+          2.75,
+          6.4
+        ]
+      },
+      "authority": {
+        "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/budget_sensitivity_summary.json",
+        "json_pointer": "/budgets/B05",
+        "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183"
+      }
+    },
+    "1.0x_reused_E13": {
+      "lambda": 1.0,
+      "active_speech_labels": 26211,
+      "active_eos_labels": 58,
+      "active_ce_labels": 26269,
+      "full_sd_active_ce_labels": 101380,
+      "relative_to_full_sd_ratio": 0.2591142237127639,
+      "active_label_percent": 25.911422371276387,
+      "paper_rounded_active_label_percent": 25.9,
+      "model_cells": {
+        "Tail-SD": {
+          "Tail-SD_init20260822": {
+            "strict_completion_fraction": 0.673,
+            "strict_completion_percent": 67.30000000000001,
+            "wer_fraction": 0.13665245048029295,
+            "wer_percent": 13.665245048029295,
+            "coverage_fraction": 0.9182863116324126,
+            "coverage_percent": 91.82863116324125,
+            "source_any_seed_hc_fraction": 0.146,
+            "source_any_seed_hc_percent": 14.6
+          },
+          "Tail-SD_init20260823": {
+            "strict_completion_fraction": 0.67,
+            "strict_completion_percent": 67.0,
+            "wer_fraction": 0.13515242972902689,
+            "wer_percent": 13.515242972902689,
+            "coverage_fraction": 0.9255019979518021,
+            "coverage_percent": 92.5501997951802,
+            "source_any_seed_hc_fraction": 0.108,
+            "source_any_seed_hc_percent": 10.8
+          }
+        },
+        "Random-PR": {
+          "Random-PR_M0_init20260822": {
+            "strict_completion_fraction": 0.618,
+            "strict_completion_percent": 61.8,
+            "wer_fraction": 0.1543299807248899,
+            "wer_percent": 15.43299807248899,
+            "coverage_fraction": 0.8942913599892364,
+            "coverage_percent": 89.42913599892364,
+            "source_any_seed_hc_fraction": 0.198,
+            "source_any_seed_hc_percent": 19.8
+          },
+          "Random-PR_M0_init20260823": {
+            "strict_completion_fraction": 0.627,
+            "strict_completion_percent": 62.7,
+            "wer_fraction": 0.15444118777817165,
+            "wer_percent": 15.444118777817165,
+            "coverage_fraction": 0.8971869283907479,
+            "coverage_percent": 89.71869283907479,
+            "source_any_seed_hc_fraction": 0.214,
+            "source_any_seed_hc_percent": 21.4
+          },
+          "Random-PR_M1_init20260822": {
+            "strict_completion_fraction": 0.647,
+            "strict_completion_percent": 64.7,
+            "wer_fraction": 0.14774907994074063,
+            "wer_percent": 14.774907994074063,
+            "coverage_fraction": 0.9029230314161169,
+            "coverage_percent": 90.29230314161168,
+            "source_any_seed_hc_fraction": 0.18,
+            "source_any_seed_hc_percent": 18.0
+          },
+          "Random-PR_M1_init20260823": {
+            "strict_completion_fraction": 0.634,
+            "strict_completion_percent": 63.4,
+            "wer_fraction": 0.14638814889716903,
+            "wer_percent": 14.638814889716903,
+            "coverage_fraction": 0.9047011654360099,
+            "coverage_percent": 90.47011654360098,
+            "source_any_seed_hc_fraction": 0.168,
+            "source_any_seed_hc_percent": 16.8
+          },
+          "Random-PR_M2_init20260822": {
+            "strict_completion_fraction": 0.602,
+            "strict_completion_percent": 60.199999999999996,
+            "wer_fraction": 0.15560147670774346,
+            "wer_percent": 15.560147670774347,
+            "coverage_fraction": 0.8948335265493136,
+            "coverage_percent": 89.48335265493135,
+            "source_any_seed_hc_fraction": 0.214,
+            "source_any_seed_hc_percent": 21.4
+          },
+          "Random-PR_M2_init20260823": {
+            "strict_completion_fraction": 0.619,
+            "strict_completion_percent": 61.9,
+            "wer_fraction": 0.15561415416879523,
+            "wer_percent": 15.561415416879523,
+            "coverage_fraction": 0.894734401679556,
+            "coverage_percent": 89.4734401679556,
+            "source_any_seed_hc_fraction": 0.198,
+            "source_any_seed_hc_percent": 19.8
+          }
+        },
+        "descriptive_equal_model_means": {
+          "Tail-SD": {
+            "strict_completion_fraction": 0.6715,
+            "strict_completion_percent": 67.15,
+            "wer_fraction": 0.1359024401046599,
+            "wer_percent": 13.590244010465991,
+            "coverage_fraction": 0.9218941547921073,
+            "coverage_percent": 92.18941547921074,
+            "source_any_seed_hc_fraction": 0.127,
+            "source_any_seed_hc_percent": 12.7
+          },
+          "Random-PR": {
+            "strict_completion_fraction": 0.6244999999999999,
+            "strict_completion_percent": 62.449999999999996,
+            "wer_fraction": 0.1523540047029183,
+            "wer_percent": 15.235400470291834,
+            "coverage_fraction": 0.8981117355768301,
+            "coverage_percent": 89.811173557683,
+            "source_any_seed_hc_fraction": 0.19533333333333336,
+            "source_any_seed_hc_percent": 19.533333333333335
+          },
+          "derived_descriptive": true
+        }
+      },
+      "aggregate": {
+        "delta_pp": 4.7,
+        "ci95_pp": [
+          3.2,
+          6.216666666666667
+        ]
+      },
+      "authority": {
+        "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+        "json_pointer": "/strict_complete",
+        "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92"
+      },
+      "retrained_or_recomputed_in_E16": false
+    },
+    "2.0x": {
+      "lambda": 2.0,
+      "branch_speech_label_budgets": {
+        "Termination": 21558,
+        "Content": 30864
+      },
+      "active_speech_labels": 52422,
+      "active_eos_labels": 58,
+      "active_ce_labels": 52480,
+      "relative_to_full_sd_ratio": 0.5176563424738607,
+      "active_label_percent": 51.765634247386075,
+      "paper_rounded_active_label_percent": 51.7656,
+      "per_initialization": {
+        "20260822": {
+          "Tail-SD": {
+            "strict_completion_fraction": 0.667,
+            "strict_completion_percent": 66.7,
+            "wer_fraction": 0.13900781920741395,
+            "wer_percent": 13.900781920741395,
+            "coverage_fraction": 0.9201059692278056,
+            "coverage_percent": 92.01059692278056,
+            "source_any_seed_hc_fraction": 0.134,
+            "source_any_seed_hc_percent": 13.4
+          },
+          "Random-PR": {
+            "strict_completion_fraction": 0.647,
+            "strict_completion_percent": 64.7,
+            "wer_fraction": 0.13969355176834924,
+            "wer_percent": 13.969355176834924,
+            "coverage_fraction": 0.9092925636633121,
+            "coverage_percent": 90.92925636633122,
+            "source_any_seed_hc_fraction": 0.186,
+            "source_any_seed_hc_percent": 18.6
+          },
+          "Tail-SD_minus_Random-PR": {
+            "delta_fraction": 0.02,
+            "delta_pp": 2.0,
+            "ci95_fraction": [
+              -0.004,
+              0.044
+            ],
+            "ci95_pp": [
+              -0.4,
+              4.3999999999999995
+            ],
+            "source_count": 500,
+            "bootstrap_resamples": 10000,
+            "bootstrap_seed": 20260820
+          },
+          "source_evidence": {
+            "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+            "json_pointer": "/systems/TAIL_B20_init20260822",
+            "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+            "pairwise_json_pointer": "/units/TAIL_B20_init20260822-minus-RANDOM_PR_B20_init20260822/metrics/strict_complete",
+            "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+          }
+        },
+        "20260823": {
+          "Tail-SD": {
+            "strict_completion_fraction": 0.69,
+            "strict_completion_percent": 69.0,
+            "wer_fraction": 0.13627616997763736,
+            "wer_percent": 13.627616997763736,
+            "coverage_fraction": 0.9198154255503532,
+            "coverage_percent": 91.98154255503532,
+            "source_any_seed_hc_fraction": 0.13,
+            "source_any_seed_hc_percent": 13.0
+          },
+          "Random-PR": {
+            "strict_completion_fraction": 0.66,
+            "strict_completion_percent": 66.0,
+            "wer_fraction": 0.13793833261032706,
+            "wer_percent": 13.793833261032706,
+            "coverage_fraction": 0.9119127526608428,
+            "coverage_percent": 91.19127526608428,
+            "source_any_seed_hc_fraction": 0.146,
+            "source_any_seed_hc_percent": 14.6
+          },
+          "Tail-SD_minus_Random-PR": {
+            "delta_fraction": 0.03,
+            "delta_pp": 3.0,
+            "ci95_fraction": [
+              0.006,
+              0.054
+            ],
+            "ci95_pp": [
+              0.6,
+              5.4
+            ],
+            "source_count": 500,
+            "bootstrap_resamples": 10000,
+            "bootstrap_seed": 20260820
+          },
+          "source_evidence": {
+            "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+            "json_pointer": "/systems/TAIL_B20_init20260823",
+            "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+            "pairwise_json_pointer": "/units/TAIL_B20_init20260823-minus-RANDOM_PR_B20_init20260823/metrics/strict_complete",
+            "pairwise_source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+          }
+        }
+      },
+      "aggregate": {
+        "delta_pp": 2.5,
+        "ci95_pp": [
+          0.75,
+          4.3
+        ]
+      },
+      "authority": {
+        "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/budget_sensitivity_summary.json",
+        "json_pointer": "/budgets/B20",
+        "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183"
+      }
+    }
+  },
+  "safe_claim": "Terminal-placement advantage persists across the tested direct-supervision budgets.",
+  "limitations": [
+    "E16 is a post-hoc sensitivity study on the already-opened E13 panel.",
+    "The three tested points do not establish a monotonic budget relationship.",
+    "The results do not establish that 25.9% is optimal.",
+    "Active-label ratio is not compute, FLOPs, or training-time saving.",
+    "Full-SD is a dense-supervision reference, not a 100% Tail-SD budget point."
+  ],
+  "completeness": {
+    "training_models": "8/8",
+    "updates_per_model": "492/492",
+    "new_generation_and_scoring_paths": "8000/8000",
+    "asr_chunks": "15595/15595",
+    "protocol_drift": false
+  },
+  "authorities": {
+    "budget_summary": {
+      "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/budget_sensitivity_summary.json",
+      "json_pointer": "/",
+      "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183"
+    },
+    "mask_budget_and_pairing": {
+      "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/mask_budget_and_pairing_audit.json",
+      "json_pointer": "/budgets",
+      "source_sha256": "5fa5479828c9f82feb1201a5fa69ea3e727b126daab98777b0267d45fd88f174"
+    },
+    "one_x_active_label_budget": {
+      "source_file": "paper_sync_addendum_20260910_P1/active_label_budgets.json",
+      "json_pointer": "/arms/Tail-SD_T6",
+      "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66"
+    },
+    "pairwise_units": {
+      "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/pairwise_units.json",
+      "json_pointer": "/units",
+      "source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62"
+    },
+    "system_summary": {
+      "source_file": "phases/p4_final/e16_supervision_budget_sensitivity/results/system_summary.json",
+      "json_pointer": "/systems",
+      "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681"
+    },
+    "e13_reused_primary": {
+      "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+      "json_pointer": "/strict_complete",
+      "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92"
+    },
+    "e13_reused_systems": {
+      "source_file": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+      "json_pointer": "/systems",
+      "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92"
+    }
+  }
+}

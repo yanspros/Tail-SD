@@ -1,0 +1,44 @@
+{
+  "schema_version": "1",
+  "status": "P4_E13_HUMAN120_PROVENANCE_AMENDMENT_FROZEN",
+  "run_type": "FORMAL append-only pre-selection protocol amendment",
+  "created_at_utc": "2026-09-16T11:15:12Z",
+  "user_authorization": "2026-09-16: Human-120 and E13 Wikipedia candidates are confirmed to originate from different datasets and have no source overlap; use dataset-provenance disjointness instead of a missing Human-120 identity manifest.",
+  "parent_protocol": {
+    "path": "phases/p4_final/e13_unopened500_confirmatory/frozen_protocol.json",
+    "sha256": "43e4cf808022f420db2ea4a10c6e3516e67a2c7217e6e7ba8afd7980c771f4ad"
+  },
+  "historical_fail_closed_gate": {
+    "path": "phases/p4_final/e13_unopened500_confirmatory/formal_gate.json",
+    "sha256": "298ea7914fae64918b9d4d4b5408609f80e6917a0ae781f043f4711b5f6b64b5",
+    "preserved": true
+  },
+  "historical_disjoint_audit": {
+    "path": "phases/p4_final/e13_unopened500_confirmatory/results/disjoint_audit.json",
+    "sha256": "8bed71414a8ec49854a557dadf0d53a3978ea6ededc01c41b8f1136b0d4b2d5f",
+    "preserved": true
+  },
+  "human120_exclusion_mode": "DATASET_PROVENANCE_DISJOINT",
+  "human120_contract": {
+    "e13_candidate_dataset": "Wikimedia English Wikipedia 20260701 first multistream XML",
+    "human120_dataset": "external human-evaluation source set; user-confirmed different source provenance",
+    "identity_manifest_required": false,
+    "rating_data_used": false,
+    "per_source_identity_exclusion_performed": false,
+    "interpretation": "Human-120 is recorded only as provenance-level disjoint; all same-universe Wikipedia authorities remain subject to source/article/raw/normalized-text SHA exclusion."
+  },
+  "timing": {
+    "selected_sources_before_amendment": 0,
+    "generation_before_amendment": 0,
+    "asr_before_amendment": 0,
+    "scoring_before_amendment": 0,
+    "test_result_observed": false
+  },
+  "scientific_hypothesis_changed": false,
+  "checkpoint_changed": false,
+  "mask_changed": false,
+  "statistics_changed": false,
+  "test_result_observed": false,
+  "paper_modified": false,
+  "payload_sha256": "f6c2dc3f01803b228d8ab24e6842298c552d8070a56de3bf97358a12c31b7a3d"
+}

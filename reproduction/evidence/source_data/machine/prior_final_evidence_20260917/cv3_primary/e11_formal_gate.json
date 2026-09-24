@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "status": "P4_E11_UNTOUCHED_CONFIRMATORY_COMPLETE",
+  "run_type": "FORMAL independent untouched confirmatory evaluation",
+  "scientific_role": "FORMAL_UNTOUCHED_CONFIRMATORY_EVALUATION_NOT_P4_E01_PRIMARY_REPLACEMENT",
+  "protocol_sha256": "7d0371ba3b1b364f5dfa0bda664d9809a45c391fc24fd2120f954730a6966988",
+  "preflight_sha256": "3b9bfe0dbbc54a9d01145c661a05c80956ef029a229c7755a923d2e5a7e61830",
+  "summary_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+  "pairwise_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+  "p4_e01_immutable_checks": {
+    "results/summary.json": true,
+    "results/pairwise.json": true,
+    "results/frontier_metrics.json": true,
+    "results/B0/per_generation_raw.json": true,
+    "results/B0/per_generation_scored.json": true,
+    "results/B1/per_generation_raw.json": true,
+    "results/B1/per_generation_scored.json": true,
+    "results/T3/per_generation_raw.json": true,
+    "results/T3/per_generation_scored.json": true,
+    "results/M1/per_generation_raw.json": true,
+    "results/M1/per_generation_scored.json": true
+  },
+  "e10_gates": {
+    "historical_frontend_identity_drift": {
+      "path": "[private-path]/formal_gate.json",
+      "sha256": "8bb772e21281043d9f5b6cf656cbee58a3430390ab230b0c38ca4d30c3ed1b21",
+      "status": "P4_E10_T6_SEED_REPEAT_BLOCKED_FRONTEND_IDENTITY_DRIFT"
+    },
+    "current_runtime_seed_not_effective": {
+      "path": "[private-path]/formal_gate.json",
+      "sha256": "cfde744d4c07c9cc9a4a27ca55607cf56d91c8d285fbcc720eb6ea90a0a6fc06",
+      "status": "P4_E10_T6_CURRENT_RUNTIME_REPEAT_BLOCKED_TRAINING_SEED_NOT_EFFECTIVE"
+    }
+  },
+  "assertions": {
+    "five_arms_500_sources_1000_paths": true,
+    "five_arm_literal_input_identity_exact": true,
+    "artifact_sha_identity": true,
+    "same_frozen_whisper_scorer": true,
+    "paired_source_bootstrap_10000": true,
+    "p4_e01_primary_unchanged": true,
+    "e10_two_blocked_gates_preserved": true,
+    "no_training_or_checkpoint_reselection": true
+  },
+  "strict_complete_comparisons": {
+    "T6_BRANCH_FIXED_TAIL-B0": {
+      "source_count": 500,
+      "point_estimate": 0.112,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        0.087,
+        0.138
+      ]
+    },
+    "T6_BRANCH_FIXED_TAIL-R1_RANDOM_LOCAL": {
+      "source_count": 500,
+      "point_estimate": 0.045,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        0.021,
+        0.069
+      ]
+    },
+    "T6_BRANCH_FIXED_TAIL-B1": {
+      "source_count": 500,
+      "point_estimate": 0.004,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        -0.019,
+        0.027
+      ]
+    },
+    "T6_BRANCH_FIXED_TAIL-T1_TAIL30": {
+      "source_count": 500,
+      "point_estimate": 0.02,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        -0.003,
+        0.043
+      ]
+    }
+  },
+  "confirmatory_flags": {
+    "base_improvement_reproduced": true,
+    "random_local_advantage_reproduced": true
+  },
+  "interpretation": "T6_BASE_AND_RANDOM_LOCAL_ADVANTAGES_REPRODUCED",
+  "boundary": "E11 is a new independent confirmatory panel. It does not change P4/E01 primary results, E03--E10 addenda, paper claims, Human Evaluation status, or the two E10 blocked Gates.",
+  "payload_sha256": "c373e8f10ad3c12b25437b1a26a0300ff1aeaad337f8c25559729f780a29ca7e"
+}

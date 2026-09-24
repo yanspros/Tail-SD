@@ -1,0 +1,28 @@
+Human Evaluation Validation Report
+==================================
+raw rows = 6000
+listeners = 10
+sources = 120
+systems = 5
+duplicate(listener,source,system) = 0
+missing values = 0
+
+ratings/system = 1200
+listeners/source/system = exactly 10
+sources/listener/system = exactly 120
+
+source_manifest = 120
+length bins = 10 x 12
+
+audio map = 600
+systems/source = exactly 5
+inference seeds = {0}
+duplicate(source,system) = 0
+
+raw_log -> regenerated summary = PASS
+Table VI rounded values = PASS
+
+Authority: raw_log.csv
+Derived summary: platform_summary_export.csv
+Original platform export: platform_summary_export_original.csv
+Paper table source: Table VI, computed from raw_log.csv

@@ -1,0 +1,498 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-17T05:16:52.521442+00:00",
+  "status": "FINAL_AUTHORITY_INDEX",
+  "files": [
+    {
+      "logical_role": "CV3 E11 protocol",
+      "original_server_path": "[private-path]/frozen_protocol.json",
+      "original_project_relative_path": "phases/p4_final/e11_untouched_confirmatory/frozen_protocol.json",
+      "original_sha256": "7d0371ba3b1b364f5dfa0bda664d9809a45c391fc24fd2120f954730a6966988",
+      "copied_package_path": "cv3_primary/e11_frozen_protocol.json",
+      "currency": "current",
+      "formal_gate": "P4_E11_UNTOUCHED_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "7d0371ba3b1b364f5dfa0bda664d9809a45c391fc24fd2120f954730a6966988"
+    },
+    {
+      "logical_role": "CV3 E11 system summary",
+      "original_server_path": "[private-path]/summary.json",
+      "original_project_relative_path": "phases/p4_final/e11_untouched_confirmatory/results/summary.json",
+      "original_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+      "copied_package_path": "cv3_primary/e11_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E11_UNTOUCHED_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133"
+    },
+    {
+      "logical_role": "CV3 E11 paired bootstrap",
+      "original_server_path": "[private-path]/pairwise.json",
+      "original_project_relative_path": "phases/p4_final/e11_untouched_confirmatory/results/pairwise.json",
+      "original_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+      "copied_package_path": "cv3_primary/e11_pairwise.json",
+      "currency": "current",
+      "formal_gate": "P4_E11_UNTOUCHED_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760"
+    },
+    {
+      "logical_role": "CV3 E11 formal Gate",
+      "original_server_path": "[private-path]/formal_gate.json",
+      "original_project_relative_path": "phases/p4_final/e11_untouched_confirmatory/results/formal_gate.json",
+      "original_sha256": "eb830def99266596ceba3ca4cc01a49aba5074409e82d0675686859187507d56",
+      "copied_package_path": "cv3_primary/e11_formal_gate.json",
+      "currency": "current",
+      "formal_gate": "P4_E11_UNTOUCHED_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "eb830def99266596ceba3ca4cc01a49aba5074409e82d0675686859187507d56"
+    },
+    {
+      "logical_role": "CV3 active CE-label budget",
+      "original_server_path": "[private-path]/active_label_budgets.json",
+      "original_project_relative_path": "paper_sync_addendum_20260910_P1/active_label_budgets.json",
+      "original_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66",
+      "copied_package_path": "cv3_primary/active_label_budgets.json",
+      "currency": "current",
+      "formal_gate": "VERIFIED_BUDGET_AUTHORITY",
+      "copied_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66"
+    },
+    {
+      "logical_role": "Tail-SD fixed-ratio protocol",
+      "original_server_path": "[private-path]/frozen_protocol.json",
+      "original_project_relative_path": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/frozen_protocol.json",
+      "original_sha256": "47ffdbeaa4a4d4401f6d5b66d36cbb6cee9636a1ab30e8ab0a4eadd6c7d28181",
+      "copied_package_path": "cv3_primary/tailsd_frozen_protocol.json",
+      "currency": "current",
+      "formal_gate": "P4_E06_T6_BRANCH_FIXED_TAIL_COMPLETE",
+      "copied_sha256": "47ffdbeaa4a4d4401f6d5b66d36cbb6cee9636a1ab30e8ab0a4eadd6c7d28181"
+    },
+    {
+      "logical_role": "Tail-SD mask budget audit",
+      "original_server_path": "[private-path]/t6_mask_budget_audit.json",
+      "original_project_relative_path": "phases/p4_final/e06_t6_branch_fixed_tail_addendum/results/t6_mask_budget_audit.json",
+      "original_sha256": "773bb9eaabf669bb2e34e1a310fb964ab7dba67c761bd240627a2dae587e30b9",
+      "copied_package_path": "cv3_primary/tailsd_mask_budget_audit.json",
+      "currency": "current",
+      "formal_gate": "P4_E06_T6_BRANCH_FIXED_TAIL_COMPLETE",
+      "copied_sha256": "773bb9eaabf669bb2e34e1a310fb964ab7dba67c761bd240627a2dae587e30b9"
+    },
+    {
+      "logical_role": "Random-PR M0 protocol",
+      "original_server_path": "[private-path]/frozen_protocol.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/data/frozen_protocol.json",
+      "original_sha256": "a14ffd08072ee68d8eda93b9cfb158a1a70970f307a081e6a1368086a26f8611",
+      "copied_package_path": "random_pr_masks/m0_frozen_protocol.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_PER_RECORD_MATCHED_COMPLETE",
+      "copied_sha256": "a14ffd08072ee68d8eda93b9cfb158a1a70970f307a081e6a1368086a26f8611"
+    },
+    {
+      "logical_role": "Random-PR M0 summary",
+      "original_server_path": "[private-path]/summary.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/results/summary.json",
+      "original_sha256": "3aed61dbf149af44cdc41c3a2d3cf9713436dae4ecb4b46814c9f7aa4568a357",
+      "copied_package_path": "random_pr_masks/m0_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_PER_RECORD_MATCHED_COMPLETE",
+      "copied_sha256": "3aed61dbf149af44cdc41c3a2d3cf9713436dae4ecb4b46814c9f7aa4568a357"
+    },
+    {
+      "logical_role": "Random-PR M0 pairwise",
+      "original_server_path": "[private-path]/pairwise.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/results/pairwise.json",
+      "original_sha256": "f1eda388ae61abfdc88cbdf5b1d992ff24cda094145b19421063cf30885b038f",
+      "copied_package_path": "random_pr_masks/m0_pairwise.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_PER_RECORD_MATCHED_COMPLETE",
+      "copied_sha256": "f1eda388ae61abfdc88cbdf5b1d992ff24cda094145b19421063cf30885b038f"
+    },
+    {
+      "logical_role": "Random-PR M0 Gate",
+      "original_server_path": "[private-path]/formal_gate.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_v1/results/formal_gate.json",
+      "original_sha256": "a30cec664fe6d94a957b40216a3b74de5dfbf779276fe1efe0a86c03b17b7040",
+      "copied_package_path": "random_pr_masks/m0_formal_gate.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_PER_RECORD_MATCHED_COMPLETE",
+      "copied_sha256": "a30cec664fe6d94a957b40216a3b74de5dfbf779276fe1efe0a86c03b17b7040"
+    },
+    {
+      "logical_role": "Mask-repeat frozen protocol",
+      "original_server_path": "[private-path]/frozen_protocol.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/frozen_protocol.json",
+      "original_sha256": "b983d7f5532d9eb788fe07678895d3a4c64a6a8bc8526e86cedd3473c31929fd",
+      "copied_package_path": "random_pr_masks/repeats_frozen_protocol.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_MASK_REPEATS_V1_COMPLETE",
+      "copied_sha256": "b983d7f5532d9eb788fe07678895d3a4c64a6a8bc8526e86cedd3473c31929fd"
+    },
+    {
+      "logical_role": "M1 mask manifest",
+      "original_server_path": "[private-path]/random_pr_m1_mask.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/data/random_pr_m1_mask.json",
+      "original_sha256": "e799cf4837f69a65a3c20c890144dc2ab940d87887f8b1d672c29735b45e375c",
+      "copied_package_path": "random_pr_masks/m1_mask.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_MASK_REPEATS_V1_COMPLETE",
+      "copied_sha256": "e799cf4837f69a65a3c20c890144dc2ab940d87887f8b1d672c29735b45e375c"
+    },
+    {
+      "logical_role": "M2 mask manifest",
+      "original_server_path": "[private-path]/random_pr_m2_mask.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/data/random_pr_m2_mask.json",
+      "original_sha256": "b02904ff4bc5780a7ad29f69d62706382803e8702883a89392fbd24df47bd258",
+      "copied_package_path": "random_pr_masks/m2_mask.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_MASK_REPEATS_V1_COMPLETE",
+      "copied_sha256": "b02904ff4bc5780a7ad29f69d62706382803e8702883a89392fbd24df47bd258"
+    },
+    {
+      "logical_role": "Mask-repeat four-cell pairwise",
+      "original_server_path": "[private-path]/individual_pairwise.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/individual_pairwise.json",
+      "original_sha256": "2f80b8b4e805288d83f450446b9649f54ba130a9b5e80bf2b503c73e57f48549",
+      "copied_package_path": "random_pr_masks/repeats_individual_pairwise.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_MASK_REPEATS_V1_COMPLETE",
+      "copied_sha256": "2f80b8b4e805288d83f450446b9649f54ba130a9b5e80bf2b503c73e57f48549"
+    },
+    {
+      "logical_role": "Mask-repeat summary",
+      "original_server_path": "[private-path]/mask_variation_summary.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/mask_variation_summary.json",
+      "original_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+      "copied_package_path": "random_pr_masks/mask_variation_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_MASK_REPEATS_V1_COMPLETE",
+      "copied_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983"
+    },
+    {
+      "logical_role": "Mask-repeat Gate",
+      "original_server_path": "[private-path]/formal_gate_complete.json",
+      "original_project_relative_path": "phases/p4_final/e10_t6_seed_repeat/random_pr_mask_repeats_v1/results/formal_gate_complete.json",
+      "original_sha256": "aa07f51d8122fc02395a9c9bbb84cdb36a557543eb11de69b672c822554f733e",
+      "copied_package_path": "random_pr_masks/repeats_formal_gate.json",
+      "currency": "current",
+      "formal_gate": "P4_E10_RANDOM_PR_MASK_REPEATS_V1_COMPLETE",
+      "copied_sha256": "aa07f51d8122fc02395a9c9bbb84cdb36a557543eb11de69b672c822554f733e"
+    },
+    {
+      "logical_role": "CV2 training protocol",
+      "original_server_path": "[private-path]/frozen_e08_cv2_training_protocol.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/frozen_e08_cv2_training_protocol.json",
+      "original_sha256": "438759ce144ecd58475522872570ab517a747037617f57fce884f42a977665ba",
+      "copied_package_path": "cv2_transfer/training_protocol.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_MASK_BUDGET_AND_TRAINING_PROTOCOL_FROZEN",
+      "copied_sha256": "438759ce144ecd58475522872570ab517a747037617f57fce884f42a977665ba"
+    },
+    {
+      "logical_role": "CV2 shared/open E11 amendment",
+      "original_server_path": "[private-path]/frozen_e08_cv2_shared_e11_evaluation_amendment.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/frozen_e08_cv2_shared_e11_evaluation_amendment.json",
+      "original_sha256": "3641b198398ddc0dc4190d06b18110d4d5dbcd5063ddf48fdbdd01993a9ba175",
+      "copied_package_path": "cv2_transfer/shared_e11_amendment.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_SHARED_E11_500_EVALUATION_PROTOCOL_FROZEN",
+      "copied_sha256": "3641b198398ddc0dc4190d06b18110d4d5dbcd5063ddf48fdbdd01993a9ba175"
+    },
+    {
+      "logical_role": "CV2 E08-only bank identity",
+      "original_server_path": "[private-path]/e08_final_bank_e08only_identity_audit.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_final_bank_e08only_identity_audit.json",
+      "original_sha256": "04f946fbd4e4417ff55a60d06ea8a8b9bc3999915846be7294b445076d35d294",
+      "copied_package_path": "cv2_transfer/e08only_bank_identity_audit.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_TARGET_BANK_E08_ONLY_58_65_FROZEN",
+      "copied_sha256": "04f946fbd4e4417ff55a60d06ea8a8b9bc3999915846be7294b445076d35d294"
+    },
+    {
+      "logical_role": "CV2 Tail-SD label budget",
+      "original_server_path": "[private-path]/e08_tail_sd_mask_budget_audit.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_tail_sd_mask_budget_audit.json",
+      "original_sha256": "087b0c8e6aeec7ef57b36f7c86602df726f11f8b3f4955a2ac0d22083a80b0f9",
+      "copied_package_path": "cv2_transfer/tail_sd_mask_budget_audit.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_MASK_BUDGET_AND_TRAINING_PROTOCOL_FROZEN",
+      "copied_sha256": "087b0c8e6aeec7ef57b36f7c86602df726f11f8b3f4955a2ac0d22083a80b0f9"
+    },
+    {
+      "logical_role": "CV2 three-arm training audit",
+      "original_server_path": "[private-path]/e08_three_arm_training_audit.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_three_arm_training_audit.json",
+      "original_sha256": "d355731d08adac7ec351b014ceccf064005c85cf975ab391b97c3dcc8d3ddbab",
+      "copied_package_path": "cv2_transfer/three_arm_training_audit.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_THREE_ARM_TRAINING_COMPLETE_CHECKPOINTS_FROZEN",
+      "copied_sha256": "d355731d08adac7ec351b014ceccf064005c85cf975ab391b97c3dcc8d3ddbab"
+    },
+    {
+      "logical_role": "CV2 system summary",
+      "original_server_path": "[private-path]/e08_shared_e11_system_summary.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_system_summary.json",
+      "original_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+      "copied_package_path": "cv2_transfer/system_summary.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_SHARED_E11_500_EVALUATION_COMPLETE",
+      "copied_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1"
+    },
+    {
+      "logical_role": "CV2 paired bootstrap",
+      "original_server_path": "[private-path]/e08_shared_e11_pairwise_bootstrap.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_pairwise_bootstrap.json",
+      "original_sha256": "6772a9427cd2fcad2f4d4dd8f798164d058dc125fb562b72596916c9ad47188b",
+      "copied_package_path": "cv2_transfer/pairwise_bootstrap.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_SHARED_E11_500_EVALUATION_COMPLETE",
+      "copied_sha256": "6772a9427cd2fcad2f4d4dd8f798164d058dc125fb562b72596916c9ad47188b"
+    },
+    {
+      "logical_role": "CV2 length bins",
+      "original_server_path": "[private-path]/e08_shared_e11_length_bins.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_length_bins.json",
+      "original_sha256": "b2349e7c7ba71f4ec7e0dcc4e73cab2e46e58fa67049f7ed8475a686f46306e6",
+      "copied_package_path": "cv2_transfer/length_bins.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_SHARED_E11_500_EVALUATION_COMPLETE",
+      "copied_sha256": "b2349e7c7ba71f4ec7e0dcc4e73cab2e46e58fa67049f7ed8475a686f46306e6"
+    },
+    {
+      "logical_role": "CV2 final Gate",
+      "original_server_path": "[private-path]/e08_shared_e11_final_gate.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_final_gate.json",
+      "original_sha256": "39470f73786a3a0568df45744fc88ab42ca3e07a8f26699b465781937b616ce1",
+      "copied_package_path": "cv2_transfer/final_gate.json",
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_SHARED_E11_500_EVALUATION_COMPLETE",
+      "copied_sha256": "39470f73786a3a0568df45744fc88ab42ca3e07a8f26699b465781937b616ce1"
+    },
+    {
+      "logical_role": "CV2 E08-only 123-record bank",
+      "original_server_path": "[private-path]/e08_final_target_bank_e08only_manifest.json",
+      "original_project_relative_path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_final_target_bank_e08only_manifest.json",
+      "original_sha256": "fa1c0f19863298e2529769acf0929471606a5e0fc87a2c43d9007f2e2e7f0dcd",
+      "copied_package_path": null,
+      "currency": "current",
+      "formal_gate": "P5_E08_CV2_TARGET_BANK_E08_ONLY_58_65_FROZEN",
+      "copied_sha256": null,
+      "note": "Reference-only authority; large or path-level asset intentionally not copied."
+    },
+    {
+      "logical_role": "E13 final protocol",
+      "original_server_path": "[private-path]/frozen_protocol_v2.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/frozen_protocol_v2.json",
+      "original_sha256": "869f0bdcb74c49cb1fd8727b7b46a5f085ab110a3b292b649697341fb345e96b",
+      "copied_package_path": "e13_unopened500/frozen_protocol.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "869f0bdcb74c49cb1fd8727b7b46a5f085ab110a3b292b649697341fb345e96b"
+    },
+    {
+      "logical_role": "E13 provenance amendment",
+      "original_server_path": "[private-path]/protocol_amendment_human120_provenance_v1.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/protocol_amendment_human120_provenance_v1.json",
+      "original_sha256": "6d75f3c064533832bffd278d62227770e470df669c6ec01f6df0d5db5b5273a7",
+      "copied_package_path": "e13_unopened500/human120_provenance_amendment.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "6d75f3c064533832bffd278d62227770e470df669c6ec01f6df0d5db5b5273a7"
+    },
+    {
+      "logical_role": "E13 disjoint audit",
+      "original_server_path": "[private-path]/disjoint_audit_v2.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/disjoint_audit_v2.json",
+      "original_sha256": "40657af8d0d2a609dca384f455b2af1fb5836325a3c2cf37d4947bf6a60bdb1d",
+      "copied_package_path": "e13_unopened500/disjoint_audit.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "40657af8d0d2a609dca384f455b2af1fb5836325a3c2cf37d4947bf6a60bdb1d"
+    },
+    {
+      "logical_role": "E13 frontend/prompt/cap audit",
+      "original_server_path": "[private-path]/frontend_prompt_cap_audit.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/frontend_prompt_cap_audit.json",
+      "original_sha256": "472bbc85cdb82612501e31dcb877413e5b91e737a58b8a4664662fe814b75d59",
+      "copied_package_path": "e13_unopened500/frontend_prompt_cap_audit.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "472bbc85cdb82612501e31dcb877413e5b91e737a58b8a4664662fe814b75d59"
+    },
+    {
+      "logical_role": "E13 checkpoint audit",
+      "original_server_path": "[private-path]/checkpoint_audit.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/checkpoint_audit.json",
+      "original_sha256": "cc1ef71805cbda40de92bde7872c406ccbda733aab6ecea189ff0fed480cd399",
+      "copied_package_path": "e13_unopened500/checkpoint_audit.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "cc1ef71805cbda40de92bde7872c406ccbda733aab6ecea189ff0fed480cd399"
+    },
+    {
+      "logical_role": "E13 system summary",
+      "original_server_path": "[private-path]/system_summary.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+      "original_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+      "copied_package_path": "e13_unopened500/system_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92"
+    },
+    {
+      "logical_role": "E13 six pairwise units",
+      "original_server_path": "[private-path]/pairwise_units.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+      "original_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+      "copied_package_path": "e13_unopened500/pairwise_units.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2"
+    },
+    {
+      "logical_role": "E13 primary placement summary",
+      "original_server_path": "[private-path]/primary_placement_summary.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/primary_placement_summary.json",
+      "original_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92",
+      "copied_package_path": "e13_unopened500/primary_placement_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92"
+    },
+    {
+      "logical_role": "E13 length bins",
+      "original_server_path": "[private-path]/length_bins.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/length_bins.json",
+      "original_sha256": "70982ae734517b0324bc0236b06fb4e40da2b25c66a658acd513f8c7a6a9f6de",
+      "copied_package_path": "e13_unopened500/length_bins.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "70982ae734517b0324bc0236b06fb4e40da2b25c66a658acd513f8c7a6a9f6de"
+    },
+    {
+      "logical_role": "E13 final Gate",
+      "original_server_path": "[private-path]/formal_gate_complete.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/results/formal_gate_complete.json",
+      "original_sha256": "3e455615c00e550a294da680300b31a923bd73ffccdd8607a277f0c9dd32345d",
+      "copied_package_path": "e13_unopened500/formal_gate.json",
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": "3e455615c00e550a294da680300b31a923bd73ffccdd8607a277f0c9dd32345d"
+    },
+    {
+      "logical_role": "E13 unopened500 source manifest",
+      "original_server_path": "[private-path]/unopened500_manifest.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/data/unopened500_manifest.json",
+      "original_sha256": "a78e9c953e5fa3f42a1c5ebd0bc33bc61007baa4156ebe978ca44a839ac90d49",
+      "copied_package_path": null,
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": null,
+      "note": "Reference-only authority; large or path-level asset intentionally not copied."
+    },
+    {
+      "logical_role": "E13 frozen 10-checkpoint path grid",
+      "original_server_path": "[private-path]/unopened500_path_grid.json",
+      "original_project_relative_path": "phases/p4_final/e13_unopened500_confirmatory/data/unopened500_path_grid.json",
+      "original_sha256": "760c2a172bc3bd75209583476b2b917972dd1fb179221766edfc7332af5accf6",
+      "copied_package_path": null,
+      "currency": "current",
+      "formal_gate": "P4_E13_UNOPENED500_CONFIRMATORY_COMPLETE",
+      "copied_sha256": null,
+      "note": "Reference-only authority; large or path-level asset intentionally not copied."
+    },
+    {
+      "logical_role": "E14 frozen protocol",
+      "original_server_path": "[private-path]/frozen_protocol.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/frozen_protocol.json",
+      "original_sha256": "b36d5dd8878469344e141efb41c4b2702b9a884580bde2ac18665a3e12484bf6",
+      "copied_package_path": "e14_position_study/frozen_protocol.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "b36d5dd8878469344e141efb41c4b2702b9a884580bde2ac18665a3e12484bf6"
+    },
+    {
+      "logical_role": "E14 mask match audit",
+      "original_server_path": "[private-path]/head_middle_mask_match_audit.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/results/head_middle_mask_match_audit.json",
+      "original_sha256": "863556261c70096b83ad16ab208fd12d0e9d6b07a370dbf99be6e16a82cd42e7",
+      "copied_package_path": "e14_position_study/mask_match_audit.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "863556261c70096b83ad16ab208fd12d0e9d6b07a370dbf99be6e16a82cd42e7"
+    },
+    {
+      "logical_role": "E14 Head mask",
+      "original_server_path": "[private-path]/head_pr_mask.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/data/head_pr_mask.json",
+      "original_sha256": "ac7a7d059ad0626f94f989ce9b8e352e01c8766fdd24df7ad8f0d48cfc4ee8a1",
+      "copied_package_path": "e14_position_study/head_pr_mask.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "ac7a7d059ad0626f94f989ce9b8e352e01c8766fdd24df7ad8f0d48cfc4ee8a1"
+    },
+    {
+      "logical_role": "E14 Middle mask",
+      "original_server_path": "[private-path]/middle_pr_mask.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/data/middle_pr_mask.json",
+      "original_sha256": "b378df842d3a2b36254afed38cb2cc8a4ce23c07050388e2c889c70e21d706a0",
+      "copied_package_path": "e14_position_study/middle_pr_mask.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "b378df842d3a2b36254afed38cb2cc8a4ce23c07050388e2c889c70e21d706a0"
+    },
+    {
+      "logical_role": "E14 system summary",
+      "original_server_path": "[private-path]/system_summary.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/results/system_summary.json",
+      "original_sha256": "a42f04c33f18bb42210ad01375eb1929a57bb22015b8b2d79cd5ec087a03637e",
+      "copied_package_path": "e14_position_study/system_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "a42f04c33f18bb42210ad01375eb1929a57bb22015b8b2d79cd5ec087a03637e"
+    },
+    {
+      "logical_role": "E14 four pairwise units",
+      "original_server_path": "[private-path]/pairwise_units.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/results/pairwise_units.json",
+      "original_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+      "copied_package_path": "e14_position_study/pairwise_units.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7"
+    },
+    {
+      "logical_role": "E14 primary position summary",
+      "original_server_path": "[private-path]/primary_position_summary.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/results/primary_position_summary.json",
+      "original_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+      "copied_package_path": "e14_position_study/primary_position_summary.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4"
+    },
+    {
+      "logical_role": "E14 length bins",
+      "original_server_path": "[private-path]/length_bins.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/results/length_bins.json",
+      "original_sha256": "fb0305c13b417ab04e1b678ffbc47f85874b89894ee2681a35f8e0df88ac91e5",
+      "copied_package_path": "e14_position_study/length_bins.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "fb0305c13b417ab04e1b678ffbc47f85874b89894ee2681a35f8e0df88ac91e5"
+    },
+    {
+      "logical_role": "E14 final Gate",
+      "original_server_path": "[private-path]/formal_gate.json",
+      "original_project_relative_path": "phases/p4_final/e14_head_middle_tail_position_study/results/formal_gate.json",
+      "original_sha256": "7698d7719fda3d8ec359dbfec8c3411c12ed3d53de43eb8287470f1d81e0b4e1",
+      "copied_package_path": "e14_position_study/formal_gate.json",
+      "currency": "current",
+      "formal_gate": "P4_E14_HEAD_MIDDLE_TAIL_POSITION_STUDY_COMPLETE",
+      "copied_sha256": "7698d7719fda3d8ec359dbfec8c3411c12ed3d53de43eb8287470f1d81e0b4e1"
+    }
+  ],
+  "excluded_assets": [
+    "WAV",
+    "checkpoints",
+    "speech tokens",
+    "ASR chunk audio",
+    "full path grids"
+  ],
+  "human_evaluation": "External Windows frozen Human_Evaluation package; not imported or inferred."
+}

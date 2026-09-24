@@ -3,7 +3,7 @@
 > **Authority Document**: `TailSD_ICASSP2027_FinalEvidence_20260918` (Frozen 2026-09-18).  
 > **Machine-Readable Snapshot**: [`paper_results.json`](paper_results.json)  
 > **Structured Public Evidence**: [`evidence/table_values.json`](evidence/table_values.json), [`evidence/e13_length_bins.json`](evidence/e13_length_bins.json), [`evidence/e13_e14_aux_metrics.json`](evidence/e13_e14_aux_metrics.json), [`evidence/e16_budget_sensitivity.json`](evidence/e16_budget_sensitivity.json), [`evidence/claim_to_evidence.json`](evidence/claim_to_evidence.json)  
-> **Confidence Intervals**: All reported intervals are 95% non-parametric source-clustered bootstrap intervals (10,000 resamples, seed `20260820`), clustering inference seeds within each source text.
+> **Confidence Intervals**: Completion/placement intervals use 10,000 paired source-bootstrap resamples (seed `20260820`), retaining both inference seeds within source and conditional on the evaluated checkpoints/masks. Human evaluation is descriptive; the E15 diagnostic has the separate clustering limitation recorded below.
 
 ---
 
@@ -19,7 +19,7 @@ The empirical evaluation of Tail-SD is structured into prospective confirmatory 
 | **Supervision-Budget Controls** | `E16` | CV3 / Opened E13 panel | 0.5× (13.0%), 1.0× (25.9%), 2.0× (51.8%) budgets | +4.55 pp, +4.70 pp, +2.50 pp (advantage persists) | [Section 5](#5-e16--supervision-budget-controls) |
 | **Dense-Supervision Reference** | `Full-SD Ref` | CV3 / Original 500-source panel | Tail-SD vs. Full-SD (dense labels) | **+0.40 pp** [-1.90, +2.70] (no difference established) | [Section 6](#6-full-sd-reference) |
 | **Cross-Backbone Replication** | `CV2 Transfer` | CV2 / Shared E11 panel | Tail-SD vs. Random-PR with own E08 bank | **+2.90 pp** [0.80, 5.10] | [Section 7](#7-cosyvoice2-replication) |
-| **Subjective Evaluation Scope** | `Human Eval` | CV3 / Original 5 systems | MUSHRA naturalness and speaker similarity | Covers original 5 systems; does not cover E13 | [Section 8](#8-human-evaluation-scope) |
+| **Subjective Evaluation Scope** | `Human Eval` | CV3 / Original 5 systems | Completion, Major Error, and 1–5 naturalness MOS | Covers original 5 systems; does not cover E13 | [Section 8](#8-human-evaluation-scope) |
 | **Mechanistic Diagnostic & Limitations** | `E15 / Limits` | CV3 / Opened E13 panel | Fixed-prefix EOS logit separation & boundaries | Diagnostic only; complete mechanism unproven | [Section 9](#9-diagnostics-and-limitations) |
 
 ---
@@ -52,14 +52,14 @@ System-level baseline benchmarks on this panel:
 
 ### Descriptive Auxiliary Comparisons (WER and Coverage)
 
-Auxiliary metrics computed on the primary ASR evaluation pipeline confirm that improved completion did not come at the expense of phonetic accuracy:
+Completion gains accompany lower WER, higher word coverage, and lower HC point estimates in the existing ASR outputs; these auxiliary comparisons are descriptive:
 
 | Metric | Tail-SD (Equal Weight) | Random-PR (Equal Weight) | Descriptive Difference ($\Delta$) | Direction |
 | :--- | :---: | :---: | :---: | :--- |
 | **Strict Completion (SC)** | 67.15% | 62.45% | **+4.70 pp** | Higher is better |
 | **Word Error Rate (WER)** | 13.59% | 15.24% | **-1.65 pp** | Lower is better |
-| **Phoneme / Word Coverage** | 92.19% | 89.81% | **+2.38 pp** | Higher is better |
-| **Source Any-Seed Halting Failure (HC)** | 12.70% | 19.53% | **-6.83 pp** | Lower is better |
+| **Word Coverage** | 92.19% | 89.81% | **+2.38 pp** | Higher is better |
+| **Sources with Any-Seed High-Confidence Premature EOS (HC)** | 12.70% | 19.53% | **-6.83 pp** | Lower is better |
 
 > **Important Note**: WER and coverage are descriptive secondary comparisons derived from the primary evaluation scoring pipeline. They do not constitute an independent second-ASR verification.
 
@@ -67,7 +67,7 @@ Auxiliary metrics computed on the primary ASR evaluation pipeline confirm that i
 
 ## 3. Length-Stratified Results
 
-To evaluate performance across difficulty regimes without selection bias, the 500 sources in E13 are partitioned into **ten consecutive length bins** of 50 sources each (40 to 180 words). All ten bins are reported below, including negative, near-zero, and zero-crossing bins:
+To evaluate performance across difficulty regimes without selection bias, the 500 sources in E13 are partitioned into **ten length bins** of 50 sources each (eight five-word bins from 40–79, plus 100–119 and 160–180 words). All ten bins are reported below, including negative, near-zero, and zero-crossing bins:
 
 | Length Bin | Target Word Range | Base SC | Full-SD SC | Tail-SD Mean SC | Random-PR Mean SC | Tail − Random ($\Delta$) | Empirical Subgroup Behavior |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
@@ -91,11 +91,11 @@ To evaluate performance across difficulty regimes without selection bias, the 50
 
 ## 4. E14 — Position Controls (Head vs. Middle vs. Tail)
 
-To test whether the advantage of Tail-SD is uniquely terminal or shared by any fixed contiguous placement, a post-hoc position study was performed on the opened E13 panel comparing **Head-PR**, **Middle-PR**, and **Tail-SD** under an exact 1/3/1 budget match.
+To test whether the advantage of Tail-SD is uniquely terminal or shared by any fixed contiguous placement, a post-hoc position study was performed on the opened E13 panel comparing **Head-PR**, **Middle-PR**, and **Tail-SD** under matched per-record speech-label counts, EOS/special-label positions, CE normalization, and target trajectories.
 
 ### Study Definition and Hierarchy
 - **Nature of Experiment**: This is a *post-hoc position control study* on the opened E13 panel. It is **not** an independent second confirmatory set.
-- **Primary Pre-registered Contrast**: **Tail minus NonTerminal** (the combined average of Head-PR and Middle-PR).
+- **Prespecified Primary Contrast Within This Post-hoc Study**: **Tail minus NonTerminal** (the combined average of Head-PR and Middle-PR).
 
 ### Results
 
@@ -126,7 +126,7 @@ To investigate whether the terminal-placement advantage depends on a specific la
 - **1.0× Budget (Default)**: $\approx 25.91\%$ active CE labels relative to Full-SD (26,269 active labels; reused from E13)
 - **2.0× Budget**: $\approx 51.77\%$ active CE labels relative to Full-SD (52,480 active labels)
 
-All budget variants were trained across two initializations (`init20260822`, `init20260823`) with matched 1/3/1 mask configurations.
+All budgets use two paired initializations (`init20260822`, `init20260823`). The default budget reuses three Random-PR masks; each outer budget uses one frozen mask. These are matched contrasts, not ensemble predictions.
 
 ### Detailed Budget Results
 
@@ -145,7 +145,7 @@ All budget variants were trained across two initializations (`init20260822`, `in
 1. **Placement Advantage Persists**: Terminal placement maintains a positive advantage over matched random placement across all tested budgets (+4.55 pp, +4.70 pp, +2.50 pp).
 2. **Confidence Interval Spanning Zero at 2.0×**: For `init20260822` under the 2.0× budget, the 95% bootstrap confidence interval spans zero: **[-0.40, +4.40]**.
 3. **No Monotonicity Claim**: The empirical differences (+4.55, +4.70, +2.50 pp) across three points do **not** prove a monotonic budget curve or that 25.9% is an optimal threshold.
-4. **Active Label Ratio $\neq$ Compute Savings**: Active CE labels measure only loss masking during teacher-forced forward passes. They do not reduce FLOPs, GPU memory footprint, or wall-clock training time. Full-SD is a dense reference, not a "100% Tail budget" point.
+4. **Active Label Ratio $\neq$ Compute Savings**: Active CE labels measure only loss masking during teacher-forced forward passes. They do not establish a reduction in FLOPs, GPU memory, or wall-clock training time. Full-SD is a dense reference, not a "100% Tail budget" point.
 
 ---
 
@@ -155,17 +155,17 @@ Full-SD applies cross-entropy supervision across all speech tokens and EOS token
 
 ### Official Formal Comparison (Original CV3 Panel)
 
-| System | Strict Completion | Active CE Labels | Contrast vs. Tail-SD | 95% Bootstrap CI |
-| :--- | :---: | :---: | :---: | :---: |
-| **Base** | 57.0% | 0 | +11.20 pp | [+8.70, +13.80] |
-| **Full-SD** | 67.8% | 101,380 (100.0%) | — | — |
-| **Random-Local** | 63.7% | ~26,269 | +4.50 pp | [+2.10, +6.90] |
-| **Tail-30** | 66.2% | ~26,269 | +2.00 pp | [-0.30, +4.30] |
-| **Tail-SD** | 68.2% | 26,269 (25.9%) | **+0.40 pp** | **[-1.90, +2.70]** |
+| System | Strict Completion | Active CE Labels | Tail-SD minus system (pp) | 95% CI (pp) |
+| :--- | ---: | :--- | ---: | :--- |
+| Base | 57.0% | Not applicable (no adaptation) | +11.20 | [+8.70, +13.80] |
+| Full-SD | 67.8% | 101,380 (100.0%) | +0.40 | [-1.90, +2.70] |
+| Random-Local | 63.7% | 26,269 (25.9%) | +4.50 | [+2.10, +6.90] |
+| Tail-30 | 66.2% | 30,495 (30.1%) | +2.00 | [-0.30, +4.30] |
+| Tail-SD | 68.2% | 26,269 (25.9%) | Reference | — |
 
 ### Supervision Disentanglement Rationale
 - In CV3 training, Full-SD supervises the EOS token across all records (including Content-continuation records). Tail-SD and Random-PR supervise EOS only on Termination records. This creates an asymmetric Content-EOS supervision difference.
-- To rigorously isolate the causal effect of **supervision placement**, the paper designates EOS-matched **Random-PR** as the primary scientific control.
+- To isolate the effect of **direct-supervision placement** under the tested matching conditions, the paper designates EOS-matched **Random-PR** as the primary scientific control.
 - Full-SD is retained as a dense-supervision reference.
 
 ### Strict Claim Prohibitions
@@ -186,12 +186,12 @@ To test whether the supervision placement advantage transfers across model backb
 
 ### Results
 
-| System | Strict Completion | Contrast vs. Tail-SD | 95% Bootstrap CI |
-| :--- | :---: | :---: | :---: |
-| **Base** | 44.0% | +4.40 pp | — |
-| **Full-SD** | 48.3% | +0.10 pp | — |
-| **Random-PR** | 45.5% | — | — |
-| **Tail-SD** | 48.4% | **+2.90 pp** | **[+0.80, +5.10]** |
+| System | Strict Completion | Tail-SD minus system (pp) | 95% CI (pp) |
+| :--- | ---: | ---: | :--- |
+| Base | 44.0% | +4.40 | [+2.20, +6.60] |
+| Full-SD | 48.3% | +0.10 | [-2.10, +2.30] |
+| Random-PR | 45.5% | +2.90 | [+0.80, +5.10] |
+| Tail-SD | 48.4% | Reference | — |
 
 The terminal-placement advantage replicates on CosyVoice2 ($\Delta = +2.90\text{ pp}$, 95% CI $[+0.80, +5.10]$). On CosyVoice2, the EOS supervision contract for Full-SD differs from CV3; we report the observed outcomes factually without post-hoc conjecture.
 
@@ -199,10 +199,17 @@ The terminal-placement advantage replicates on CosyVoice2 ($\Delta = +2.90\text{
 
 ## 8. Human Evaluation Scope
 
-Subjective listening tests (MUSHRA) evaluating speech naturalness and speaker similarity were conducted for the original five systems on CV3:
-- **Evaluated Systems**: Base, Full-SD, Random-Local, Tail-30, and Tail-SD.
-- **Explicit Boundary**: Existing human evaluation **does not cover the E13 new-text confirmatory experiment** (Tail-SD vs. Random-PR).
-- **Prohibited Claim**: Human evaluation results must not be cited as direct subjective validation of the +4.70 pp placement gain on new text.
+An external system-blinded study evaluated Completion, Major Error, and 1–5 naturalness MOS on 120 sources from ten length bins (12 sources per bin). Ten listeners each rated all five systems: 1,200 valid ratings per system and 6,000 rows in total. Reference text was shown; presentation order was randomized per listener and source. Listeners were instructed to use headphones in quiet surroundings. Binary ratings and MOS were pooled within system.
+
+| System | Completion (%) | Major Error (%) | Naturalness MOS |
+| :--- | ---: | ---: | ---: |
+| Base | 59.2 | 18.3 | 4.02 |
+| Full-SD | 69.2 | 10.8 | 4.06 |
+| Random-Local | 64.2 | 14.8 | 4.03 |
+| Tail-30 | 67.5 | 11.7 | 4.05 |
+| Tail-SD | 69.8 | 10.0 | 4.06 |
+
+These are descriptive comparisons, without a new human-rating significance test. They characterize the original five systems, not the new-text Tail-SD versus Random-PR contrast. The [de-identified ratings, protocol, mapping, and source-derived summary](evidence/README.md#human-evaluation) support Table VI. The derived summary uses raw-log counts (Tail-SD completion 838; Random-Local major errors 178); the original platform export is preserved separately, not silently overwritten.
 
 ---
 
@@ -216,7 +223,7 @@ To examine whether terminal supervision improves the model's internal terminatio
 - **Middle-PR EOS-Logit Separation**: 6.28 (95% CI [5.71, 6.86])
 
 **Diagnostic Boundaries**:
-1. Tail-SD exhibits larger EOS-logit separation than Base, Head-PR, and Middle-PR, but the pre-registered criterion for proving a complete mechanism was **not fully satisfied**.
+1. Tail-SD exhibits larger EOS-logit separation than Base, Head-PR, and Middle-PR, but the pre-registered criterion for a mechanistic interpretation was **not fully satisfied**.
 2. Twelve sources appeared in both continue and stop strata and were not jointly clustered by the existing bootstrap.
 3. EOS-logit separation is **not** termination-probability separation and must not be described as a probability difference. The diagnostic is purely descriptive.
 
@@ -225,4 +232,4 @@ To examine whether terminal supervision improves the model's internal terminatio
 2. **Language Scope**: Evaluations are strictly English-focused (Wikipedia / LibriTTS-derived text). Multilingual performance is untested.
 3. **Long Input Collapse**: Completion collapses near 1% on 160–180 words across all systems. Tail-SD does not solve long-form AR-TTS instability.
 4. **No Full-SD Dominance**: Tail-SD does not outperform Full-SD in a statistically established manner (+0.40 pp [-1.90, +2.70]).
-5. **No Compute Advantage**: Active CE labels represent loss masking; forward pass FLOPs, memory footprint, and inference costs remain identical to Full-SD.
+5. **No Compute Advantage**: Active CE labels represent loss masking; no FLOPs, memory, or wall-clock savings have been demonstrated. AR decoding is unchanged.

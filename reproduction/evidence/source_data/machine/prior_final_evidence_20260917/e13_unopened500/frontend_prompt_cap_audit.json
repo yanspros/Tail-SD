@@ -1,0 +1,59 @@
+{
+  "schema_version": "1",
+  "status": "P4_E13_UNOPENED500_FRONTEND_PROMPT_CAP_PASS",
+  "run_type": "FORMAL pre-generation current-runtime frontend freeze",
+  "created_at_utc": "2026-09-16T11:17:09Z",
+  "implementation_reuse": {
+    "e11_pipeline": "phases/p4_final/e11_untouched_confirmatory/scripts/e11_pipeline.py",
+    "e11_pipeline_sha256": "f1cf83fe4cf2c3d3544de02ae40153adae55546ed09001386c15e73bb24800e5",
+    "e11_common": "phases/p4_final/e11_untouched_confirmatory/scripts/common.py",
+    "e11_common_sha256": "65b0329a3092506f2d8d5e8839a55234027778f875b826b2b8ccd780bd5c88b0",
+    "semantic_change": "none; only E13 output paths and E13 status validation adapter"
+  },
+  "source_count": 500,
+  "tier_counts": {
+    "L55_59": 50,
+    "L45_49": 50,
+    "L70_74": 50,
+    "L160_180": 50,
+    "L65_69": 50,
+    "L75_79": 50,
+    "L50_54": 50,
+    "L40_44": 50,
+    "L60_64": 50,
+    "L100_119": 50
+  },
+  "frontend_pass_count": 500,
+  "no_split_pass_count": 500,
+  "cap_context_pass_count": 500,
+  "prompt_binding_pass_count": 500,
+  "prompt_tensor_count": 10,
+  "base_path_count": 1000,
+  "formal_grid_path_count": 10000,
+  "frontend_ledger_sha256": "30e50d6709fdcf6f01a388979ef5fb9d7c5843fef60ed61dc59cb370eb0752a3",
+  "base_path_ledger_sha256": "112d55047a90bb6e6855f9a067319ee5d3eb0126dcb79a019550f51a0a166be4",
+  "frontend_contract_sha256": "41be5e5dc9603bfa0f12c1b0981bad914537658ced48bd1844278d4f8750303c",
+  "prompt_tensor_shas": {
+    "libritts_211_122425_000005_000002": "b9f9aa3c23a7c034a65109f9a0a79da6bdf1d3287cc997c804de0b4560808464",
+    "libritts_229_130880_000089_000000": "b69fb949212e81feb5f1bae58267cea4b05de8c78c2dff356f14d737aec090a9",
+    "libritts_2384_152900_000021_000011": "3abcc7b2af245dc04d6e55ae6aa347c5b9ba23fdee66d03a6f955d418c6259b3",
+    "libritts_2518_154826_000006_000001": "0177491842cfd11c3943608ebc830231cb76f6bcba83d2469b1195affc447800",
+    "libritts_374_180298_000014_000001": "6b90a359362a2069f9060a99c23616a9ac3ba781bedc49065c3539ef452c692b",
+    "libritts_5703_47198_000033_000000": "e0b27fb0f1f73ab1ea996d5faf30c54893587d1905d2cafcc406354db87ddec7",
+    "libritts_6880_216547_000051_000007": "6f1a99cffb8c9cd57f4749c8ddce488ebe50a475146d3fcb2043409ad03100ab",
+    "libritts_7402_90848_000026_000000": "c42500d8aaa3e9be4ee9ed5c90c0d15fbfc6b7a4a7bd7b6ec413dbb4c440d2bb",
+    "libritts_7447_91187_000013_000000": "1a80bf217326e9ff9d6d2e10e710688a5a70eccb193f5ee82445e1e77ae083b8",
+    "libritts_8838_298545_000013_000002": "959784eb259d2cd2f614c6236b16f879abef6c3f7d2b9970fe00988aa396a69b"
+  },
+  "assertions": {
+    "all_500_static_legal": true,
+    "all_500_prompt_bound": true,
+    "no_split": true,
+    "cap_rule_e11_exact": true,
+    "checkpoint_10_of_10": true,
+    "grid_10000_unique": true,
+    "generation_not_started": true,
+    "test_result_not_observed": true
+  },
+  "payload_sha256": "99c3dcebdddf39d37bc4fee64552b8955248a5b9f89aff0d9a62de8833c5fc23"
+}

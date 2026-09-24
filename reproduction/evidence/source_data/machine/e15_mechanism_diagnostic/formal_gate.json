@@ -1,0 +1,35 @@
+{
+  "schema_version": "1",
+  "status": "P4_E15_FIXED_PREFIX_TERMINATION_DIAGNOSTIC_COMPLETE",
+  "completed_at_utc": "2026-09-17T07:13:02Z",
+  "run_type": "FORMAL post-hoc mechanism diagnostic on opened E13 panel",
+  "completion_independent_of_direction": true,
+  "counts": {
+    "continue_paths": 154,
+    "stop_paths": 555,
+    "systems": 8,
+    "teacher_forced_scores": 5672,
+    "bootstrap_resamples": 10000
+  },
+  "checks": {
+    "fixed_state_panel": true,
+    "same_states_all_models": true,
+    "checkpoint_sha_closure": true,
+    "teacher_forced_only": true,
+    "generation": 0,
+    "new_wav": 0,
+    "asr": 0,
+    "training": 0,
+    "paper_modified": false,
+    "protocol_drift": false
+  },
+  "interpretation_rule_pass": false,
+  "artifacts": {
+    "protocol": "[private-path]/frozen_protocol.json",
+    "panel": "[private-path]/frozen_state_panel.json",
+    "scores": "[private-path]/eos_state_scores.json",
+    "separation": "[private-path]/termination_separation.json",
+    "pairwise": "[private-path]/pairwise_bootstrap.json"
+  },
+  "payload_sha256": "813d7bb913d41ebfbfe52a582ea9cb16ca7c3364f1faf7bc274e51436c75072d"
+}

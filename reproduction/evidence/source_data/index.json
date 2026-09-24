@@ -1,0 +1,574 @@
+{
+  "version": "2026-09-24",
+  "machine_package": "TailSD_ICASSP2027_FinalEvidence_20260918",
+  "machine_checksum_entries_verified": 76,
+  "machine_manifest_entries_verified": 77,
+  "human_checksum_entries_verified": 10,
+  "machine_numeric_leaves_unchanged": true,
+  "files": [
+    {
+      "path": "machine/claim_to_evidence_20260918.json",
+      "source_relative_path": "claim_to_evidence_20260918.json",
+      "source_sha256": "245982d73395e05637748715605070a0bbc3821fce904c3fe35d16d7ed92bb0b",
+      "public_sha256": "9467c112e2211ce41633b8a71f804bd74b58b08327c9a084b81ad85ca0969720",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/cv3_active_label_budget_authority.json",
+      "source_relative_path": "cv3_active_label_budget_authority.json",
+      "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66",
+      "public_sha256": "9ec88ea3ec344c90a14bb9cc10981c90c1c0c491ad1df617ba9e37616a25251e",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e15_mechanism_diagnostic/formal_gate.json",
+      "source_relative_path": "e15_mechanism_diagnostic/formal_gate.json",
+      "source_sha256": "5b7f70d6472aa2e3ec3bdb61c2c41bcef87c23a67fa904de0e28526ec450b0ae",
+      "public_sha256": "a4cf41379074f002aeafb03ef03ebe9f5ab60ba0fc434f037125c19ff3d82199",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e15_mechanism_diagnostic/pairwise_bootstrap.json",
+      "source_relative_path": "e15_mechanism_diagnostic/pairwise_bootstrap.json",
+      "source_sha256": "360e5249f51f172ca4021d8aaef5a65c140c6022b34b761941b449abdd1100d7",
+      "public_sha256": "426301f47770c99399e8064893ab3843bee733036712c2c3fc88c7de5d630c88",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e15_mechanism_diagnostic/termination_separation.json",
+      "source_relative_path": "e15_mechanism_diagnostic/termination_separation.json",
+      "source_sha256": "8bce5bd271a6ef395f55f88240adb6ec8930d98cc8e16e63209d1548c6c7026c",
+      "public_sha256": "2a131771708f8bbbf785533a8b866590b0df33273756ec12d51d3261113dd147",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e16_budget_sensitivity/budget_sensitivity_summary.json",
+      "source_relative_path": "e16_budget_sensitivity/budget_sensitivity_summary.json",
+      "source_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183",
+      "public_sha256": "00eb22f7a7917157b986c874e8301917fcfdfc38d9a777ae203289bef7d3519d",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e16_budget_sensitivity/formal_gate.json",
+      "source_relative_path": "e16_budget_sensitivity/formal_gate.json",
+      "source_sha256": "a0f9c03fbb3efa7f774d5bdb504ed82cf15ebc224c4535da305c78b2c1d3c1d5",
+      "public_sha256": "a0871f5cab0127472507cfaa257ce0e7823afbc8c7f607bd117e95f4a8c66dbb",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e16_budget_sensitivity/mask_budget_and_pairing_audit.json",
+      "source_relative_path": "e16_budget_sensitivity/mask_budget_and_pairing_audit.json",
+      "source_sha256": "5fa5479828c9f82feb1201a5fa69ea3e727b126daab98777b0267d45fd88f174",
+      "public_sha256": "bde3d7dbdaa304cca004d43a7c5694edbc358de18b79666b8b595ea49955a241",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e16_budget_sensitivity/pairwise_units.json",
+      "source_relative_path": "e16_budget_sensitivity/pairwise_units.json",
+      "source_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62",
+      "public_sha256": "c4151b3e146d54f2fbf13cdd0e162771a0c3a4db254722bcc94d3632f83ccdcc",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e16_budget_sensitivity/system_summary.json",
+      "source_relative_path": "e16_budget_sensitivity/system_summary.json",
+      "source_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+      "public_sha256": "f49dc07e5482e6764be255a8af1c27de919fc6e18ced3163c1f2870022df6615",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/e16_paper_handoff.json",
+      "source_relative_path": "e16_paper_handoff.json",
+      "source_sha256": "f609c58095df1f74c11e3a542d5fc1cd0d7bbef4f05f843441110d7a66bb0f3f",
+      "public_sha256": "989145a6c87afe583713a756cf0426620c54a72ab42838c2dc197f9de151e513",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/mechanism_and_length_handoff/e13_e14_aux_metrics.json",
+      "source_relative_path": "mechanism_and_length_handoff/e13_e14_aux_metrics.json",
+      "source_sha256": "fc2fe158909474dded67a6df650efe17df735d361ebdeadf33481ce6b7db0d2b",
+      "public_sha256": "b77bb7f5c77cfb42d6c2d203a44318ba1dd55308c061c88d8aba9ba951176798",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/mechanism_and_length_handoff/e13_length_bin_placement.json",
+      "source_relative_path": "mechanism_and_length_handoff/e13_length_bin_placement.json",
+      "source_sha256": "031eebd2cd5583aeac4353933db566fe601fc62f058aae41e41b1201413d45c2",
+      "public_sha256": "c481693b83ee47d172104a5ef9d2f09faa0dad475759101b575f0dfc86072db0",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/mechanism_and_length_handoff/e15_mechanism_audit.json",
+      "source_relative_path": "mechanism_and_length_handoff/e15_mechanism_audit.json",
+      "source_sha256": "b42b0aef3c2bdc800e3ca0184fe9295bf89058b735a2822360d4887911a6a63a",
+      "public_sha256": "f8da1ebdd144c769c4bfc090199e6ae2d31be2054cd3acf80f4821fc09cbefde",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/paper_numbers_20260918.json",
+      "source_relative_path": "paper_numbers_20260918.json",
+      "source_sha256": "78f6c1dae237ab8b319922250c7ae50e7b06b3f7f56c84e69c79ef2e1fcc9347",
+      "public_sha256": "95f58208866d9607234fa92a87d94d5e64613c062829e250047e3bc136e339f4",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/authority_index.json",
+      "source_relative_path": "prior_final_evidence_20260917/authority_index.json",
+      "source_sha256": "4bda693889df1f94bd0218658e9c855e2740acbbea23504fcb3cc70179d63318",
+      "public_sha256": "b235edd1d972ab6a27e84e1d642dca46bcde9ab44fb944f096d50edecf2d1ae9",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/checksums/package_self_check.json",
+      "source_relative_path": "prior_final_evidence_20260917/checksums/package_self_check.json",
+      "source_sha256": "7ffd1f22a1dddcf5dc082ede299eb8dbfb63f64e65b6b6237f023a882555bda7",
+      "public_sha256": "6109fd28b55c157b2baeee58469ad06f5477809eeae28b33dc1ea0ad1d3822ba",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/claim_to_evidence.json",
+      "source_relative_path": "prior_final_evidence_20260917/claim_to_evidence.json",
+      "source_sha256": "622ac56699657117910ecea7848232670e6fcf94928c48ebf37ec9d54d3e872d",
+      "public_sha256": "62e5057ee2a051e8f0f585aef12612b75ab90ca0fda9af82bcedc8016ac3d28e",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/e08only_bank_identity_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/e08only_bank_identity_audit.json",
+      "source_sha256": "04f946fbd4e4417ff55a60d06ea8a8b9bc3999915846be7294b445076d35d294",
+      "public_sha256": "43b1822dc8206e73e1a50ea8c44a815cea2e5dd71a046c72086ffc2a01b488e5",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/final_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/final_gate.json",
+      "source_sha256": "39470f73786a3a0568df45744fc88ab42ca3e07a8f26699b465781937b616ce1",
+      "public_sha256": "eb962d6bdcab8afa146f88cd2324fa8e357b34e95ef740017b2591fa5c83ae4e",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/length_bins.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/length_bins.json",
+      "source_sha256": "b2349e7c7ba71f4ec7e0dcc4e73cab2e46e58fa67049f7ed8475a686f46306e6",
+      "public_sha256": "59e854fb51aad6a6395df7e7bd3d3f4f7ec18e83186392359f331fd80926b708",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/pairwise_bootstrap.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/pairwise_bootstrap.json",
+      "source_sha256": "6772a9427cd2fcad2f4d4dd8f798164d058dc125fb562b72596916c9ad47188b",
+      "public_sha256": "02f54e6aedb44c0a5083f63a39f4c85e9bcc46654f820925ef72e45bbbf319bb",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/shared_e11_amendment.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/shared_e11_amendment.json",
+      "source_sha256": "3641b198398ddc0dc4190d06b18110d4d5dbcd5063ddf48fdbdd01993a9ba175",
+      "public_sha256": "c31befdce22a63b0a133f7243b0a1725613eaf4d41898a56648638de9dae4ddf",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/system_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/system_summary.json",
+      "source_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+      "public_sha256": "8a963412b485c5de2a71177d70a6f25a7130c4ff24faae32d10d3e48ec909bd5",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/tail_sd_mask_budget_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/tail_sd_mask_budget_audit.json",
+      "source_sha256": "087b0c8e6aeec7ef57b36f7c86602df726f11f8b3f4955a2ac0d22083a80b0f9",
+      "public_sha256": "23f923e57b1e50ce18504adf0a61d8125a3604fe73097cb66bccfde7d27483f1",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/three_arm_training_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/three_arm_training_audit.json",
+      "source_sha256": "d355731d08adac7ec351b014ceccf064005c85cf975ab391b97c3dcc8d3ddbab",
+      "public_sha256": "8242bb81600fda86722f43f4c96bcd85fc43f7995a6a47e31cda86b76391dde4",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv2_transfer/training_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv2_transfer/training_protocol.json",
+      "source_sha256": "438759ce144ecd58475522872570ab517a747037617f57fce884f42a977665ba",
+      "public_sha256": "8ffd2e23eb5495775f02ea254381e5dc384b6fc3e915e3441d89708afec24ad5",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/active_label_budgets.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/active_label_budgets.json",
+      "source_sha256": "1bcc14db336f42bbe07dc6daf420701a9a7118d0be89a72b6d9d6be1044b3c66",
+      "public_sha256": "9ec88ea3ec344c90a14bb9cc10981c90c1c0c491ad1df617ba9e37616a25251e",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/e11_formal_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/e11_formal_gate.json",
+      "source_sha256": "eb830def99266596ceba3ca4cc01a49aba5074409e82d0675686859187507d56",
+      "public_sha256": "75851c383cfaf95dab25c0862def6e540d13a89e8834d6a33897c0ea949a65e5",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/e11_frozen_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/e11_frozen_protocol.json",
+      "source_sha256": "7d0371ba3b1b364f5dfa0bda664d9809a45c391fc24fd2120f954730a6966988",
+      "public_sha256": "b8ec1e444edb7a9ba35a2e5520d5c61a44b317529578694cd80cf4f0d2f8a564",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/e11_pairwise.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/e11_pairwise.json",
+      "source_sha256": "c1228d8aa9d74173d973d647658e37fa111942f9a5a81e1c270abc54dce98760",
+      "public_sha256": "f7c43a1e72488c86b0d176acdb24ee0582cfeb6cb42e51e67e109ec2e575ccf6",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/e11_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/e11_summary.json",
+      "source_sha256": "fe5a209ae2dee05e865bd26a8d5f1a36b71c72ad09d80b1c536554699a65e133",
+      "public_sha256": "8705c5ba81d350398ff1dcd49181b5d6e6e76efd4a98ced6b36c9e1db3200e59",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/tailsd_frozen_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/tailsd_frozen_protocol.json",
+      "source_sha256": "47ffdbeaa4a4d4401f6d5b66d36cbb6cee9636a1ab30e8ab0a4eadd6c7d28181",
+      "public_sha256": "85ce4014d477f4a6a61f0a157b9248bcef19a6eeadf68822bcfc0058fa62f584",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/cv3_primary/tailsd_mask_budget_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/cv3_primary/tailsd_mask_budget_audit.json",
+      "source_sha256": "773bb9eaabf669bb2e34e1a310fb964ab7dba67c761bd240627a2dae587e30b9",
+      "public_sha256": "07e0299ef724676d85829201d7b5405e2787bc87878472873ada4492d809dfee",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/document_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/document_gate.json",
+      "source_sha256": "4b446d10834f70573eada7bf1f3fdc96be2ad6bfb44b755f868a52179c678a71",
+      "public_sha256": "e22ce31fae8a04be9bcfe1c6bb37db46c28961d8c01a495dfe5b9d76b7030c00",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/checkpoint_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/checkpoint_audit.json",
+      "source_sha256": "cc1ef71805cbda40de92bde7872c406ccbda733aab6ecea189ff0fed480cd399",
+      "public_sha256": "674c164381b1f3b1dd41e387d4dd56e2f328069d6a4346334c622883fa044659",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/disjoint_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/disjoint_audit.json",
+      "source_sha256": "40657af8d0d2a609dca384f455b2af1fb5836325a3c2cf37d4947bf6a60bdb1d",
+      "public_sha256": "097a3843326b3164a8abba0db265eafe00696ad963f870773233d6cc38a474c7",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/formal_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/formal_gate.json",
+      "source_sha256": "3e455615c00e550a294da680300b31a923bd73ffccdd8607a277f0c9dd32345d",
+      "public_sha256": "127be595a2114f2b862b526c7912584fb5d90a6a0e17752c28a73b1ccae26dfe",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/frontend_prompt_cap_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/frontend_prompt_cap_audit.json",
+      "source_sha256": "472bbc85cdb82612501e31dcb877413e5b91e737a58b8a4664662fe814b75d59",
+      "public_sha256": "3da62856ddd113984c706438b217cd1f7d2fd8622a293f6519bbfe87e1e97c30",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/frozen_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/frozen_protocol.json",
+      "source_sha256": "869f0bdcb74c49cb1fd8727b7b46a5f085ab110a3b292b649697341fb345e96b",
+      "public_sha256": "004139244bd13a920939ee1ed3d9605e35ea15cc7e363c66d140f78aff284913",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/human120_provenance_amendment.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/human120_provenance_amendment.json",
+      "source_sha256": "6d75f3c064533832bffd278d62227770e470df669c6ec01f6df0d5db5b5273a7",
+      "public_sha256": "ee4a8064cdbe3522359d5fc60dc0b6584e60c94d3780d8acd7e1df13f273a5d4",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/length_bins.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/length_bins.json",
+      "source_sha256": "70982ae734517b0324bc0236b06fb4e40da2b25c66a658acd513f8c7a6a9f6de",
+      "public_sha256": "81f043634a1906904897a2d685192b5ced27fe68725839b12253d22ab0109904",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/pairwise_units.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/pairwise_units.json",
+      "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+      "public_sha256": "d7eb7a205c32f0e660d2d22a98f7c535e000964a7a9efdad700bb5cd92d977cd",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/primary_placement_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/primary_placement_summary.json",
+      "source_sha256": "564a9fd69123170abfdaf7a40318986cab2c5f6c7f24ce11479804fe68cbcd92",
+      "public_sha256": "30456b056f2364d84e804ea2baaa6648e8010493062351d706b91fbf9e2132e1",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e13_unopened500/system_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/e13_unopened500/system_summary.json",
+      "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+      "public_sha256": "99b083c0a44493f0ff3ace81f48597c5fe512f860af773489dcdf39544f45c07",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/formal_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/formal_gate.json",
+      "source_sha256": "7698d7719fda3d8ec359dbfec8c3411c12ed3d53de43eb8287470f1d81e0b4e1",
+      "public_sha256": "5b02746cdff5f730ad4af783c12166671c62d075cd8790bc451eeea995dcbbf6",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/frozen_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/frozen_protocol.json",
+      "source_sha256": "b36d5dd8878469344e141efb41c4b2702b9a884580bde2ac18665a3e12484bf6",
+      "public_sha256": "c878a7f6ea7c13879fd499bffdb294e67a79f1f12a15609428e67977898b15d7",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/head_pr_mask.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/head_pr_mask.json",
+      "source_sha256": "ac7a7d059ad0626f94f989ce9b8e352e01c8766fdd24df7ad8f0d48cfc4ee8a1",
+      "public_sha256": "ac8ebab60709cae10e4a7bfc03f5b5510b45d33027122e2ac371c789c4713366",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/length_bins.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/length_bins.json",
+      "source_sha256": "fb0305c13b417ab04e1b678ffbc47f85874b89894ee2681a35f8e0df88ac91e5",
+      "public_sha256": "de31f78405ddc9ffd0de959c36624b4d7847cbfa8665c31ad9be8d8700221a84",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/mask_match_audit.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/mask_match_audit.json",
+      "source_sha256": "863556261c70096b83ad16ab208fd12d0e9d6b07a370dbf99be6e16a82cd42e7",
+      "public_sha256": "e20e37e5d7b1eee0a102c6cb8be6c42ca62ecff4c3664b4cbdb827ea99e5e6f6",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/middle_pr_mask.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/middle_pr_mask.json",
+      "source_sha256": "b378df842d3a2b36254afed38cb2cc8a4ce23c07050388e2c889c70e21d706a0",
+      "public_sha256": "b5c63dd5f9aa23b905ed5ea998dd11a1747c49476e53c1b68aff36068ea44058",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/pairwise_units.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/pairwise_units.json",
+      "source_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+      "public_sha256": "575f25c82e8e1c8c49bb20e3d7e5007a4240485263d8dd8e52bdbf3864591c48",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/primary_position_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/primary_position_summary.json",
+      "source_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+      "public_sha256": "8b2cb3983aaefd4901d9ef8d8621262a68fb979aa867b9c55aaf8acf0bef1b5b",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/e14_position_study/system_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/e14_position_study/system_summary.json",
+      "source_sha256": "a42f04c33f18bb42210ad01375eb1929a57bb22015b8b2d79cd5ec087a03637e",
+      "public_sha256": "9b94afd47acdab9d9ec0deebfff44b3064e7f4951549be711b7642eb32b27773",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/paper_numbers.json",
+      "source_relative_path": "prior_final_evidence_20260917/paper_numbers.json",
+      "source_sha256": "7fc38ff244d82d76c2c05d0cff0dd5ac072ca5f96718d34462640c377568620e",
+      "public_sha256": "320d8b7e904211b1e94018121fd055007cace3f375e4a30cb99e8bb7712b2da0",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/m0_formal_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/m0_formal_gate.json",
+      "source_sha256": "a30cec664fe6d94a957b40216a3b74de5dfbf779276fe1efe0a86c03b17b7040",
+      "public_sha256": "90846cf3c2e69b4295f0afc6a221f94f069e22ff06f784618a4a13093eead1da",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/m0_frozen_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/m0_frozen_protocol.json",
+      "source_sha256": "a14ffd08072ee68d8eda93b9cfb158a1a70970f307a081e6a1368086a26f8611",
+      "public_sha256": "af40a7dee9a43bbb81c69c023a2af9159fcfbbfe162de587f15734578e87a452",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/m0_pairwise.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/m0_pairwise.json",
+      "source_sha256": "f1eda388ae61abfdc88cbdf5b1d992ff24cda094145b19421063cf30885b038f",
+      "public_sha256": "a4fff7269caac0a8afa2a75d5b0b7882a198b692c1def81cf4d0778600d61d8d",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/m0_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/m0_summary.json",
+      "source_sha256": "3aed61dbf149af44cdc41c3a2d3cf9713436dae4ecb4b46814c9f7aa4568a357",
+      "public_sha256": "4c6eb8b642e29af0952a649d6986aaf89277d1f6c1d9a7c6d7926210c826cc28",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/m1_mask.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/m1_mask.json",
+      "source_sha256": "e799cf4837f69a65a3c20c890144dc2ab940d87887f8b1d672c29735b45e375c",
+      "public_sha256": "f61e41da9d5c9e026b538e32ae86d6f5c73f229068355eb65c4b94f433da11c4",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/m2_mask.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/m2_mask.json",
+      "source_sha256": "b02904ff4bc5780a7ad29f69d62706382803e8702883a89392fbd24df47bd258",
+      "public_sha256": "390b2803eaa6f8334cdeb046a711f5dbe6250a00a3692afdad166b0ed62c0caf",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/mask_variation_summary.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/mask_variation_summary.json",
+      "source_sha256": "1654008312a4a4f764a97d966731516ec13e078bd5680d0c02a93267a70a6983",
+      "public_sha256": "706bcdc9667574ba7e90c5c796bb7b07d28bd210a19c5bc1fd5cf8205334d669",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/repeats_formal_gate.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/repeats_formal_gate.json",
+      "source_sha256": "aa07f51d8122fc02395a9c9bbb84cdb36a557543eb11de69b672c822554f733e",
+      "public_sha256": "bf3f001e46116b23e48dec8bc21e4db96bb63d4cf9ddf940e76dce3aeefe17fe",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/repeats_frozen_protocol.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/repeats_frozen_protocol.json",
+      "source_sha256": "b983d7f5532d9eb788fe07678895d3a4c64a6a8bc8526e86cedd3473c31929fd",
+      "public_sha256": "ca6802cfec59606acc9ce2657f837d5e16a8e18a9e5394b6e15ad1329d64d0fb",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/random_pr_masks/repeats_individual_pairwise.json",
+      "source_relative_path": "prior_final_evidence_20260917/random_pr_masks/repeats_individual_pairwise.json",
+      "source_sha256": "2f80b8b4e805288d83f450446b9649f54ba130a9b5e80bf2b503c73e57f48549",
+      "public_sha256": "2cd4bb5a15fc4cb7d3223b7602084c0b30970b791df4f437977cda5c1e2591fc",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/prior_final_evidence_20260917/table_values.json",
+      "source_relative_path": "prior_final_evidence_20260917/table_values.json",
+      "source_sha256": "69efe3b4750f9b71c5c328d92a2ebf107efa38dabba6e4f4cad33c5e13bcf9ed",
+      "public_sha256": "3633dc224620229a618aa7a49af7acb1cb20f94ad6baf44141efb0764f938380",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "machine/table_values_20260918.json",
+      "source_relative_path": "table_values_20260918.json",
+      "source_sha256": "7a0eace4f92d72577327572162803a1d9133dd9a687d332d1a7fd634e754420a",
+      "public_sha256": "c8593befe4d44791723e6b8d52948e7a232c7dcfcd70afeaec02e9e73a00cd73",
+      "transformation": "JSON formatting and private absolute-path redaction only; all numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "capability/capability_summary.json",
+      "source_relative_path": "Evidence_v2/capability_human/capability_summary.json",
+      "source_sha256": "9d8664a5ca3dcb944fb91b4206bc524bac66627935d204c1cd1a60401f6a0f7b",
+      "public_sha256": "5e45c9ccca2eb423364e619a5c0afb96820a1d93189009a0d693e2f5b30d1d50",
+      "transformation": "JSON formatting and private absolute-path redaction only; numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "capability/capability_gate.json",
+      "source_relative_path": "Evidence_v2/capability_human/capability_gate.json",
+      "source_sha256": "83e6f6194cea140ca339e3a4871c81b550c7ef3aab28ae54733fbc50572e1466",
+      "public_sha256": "d14a88cefe5ed253d73fc895dd0d6cc75134c284773b86fb4ddb4619cb9f834c",
+      "transformation": "JSON formatting and private absolute-path redaction only; numeric/boolean leaves unchanged"
+    },
+    {
+      "path": "human/aggregation_script.py",
+      "source_sha256": "72827f28f8cada5dd0a194612353702ce809785026372154e70641f3b9a80f8b",
+      "public_sha256": "72827f28f8cada5dd0a194612353702ce809785026372154e70641f3b9a80f8b",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/authority_provenance.md",
+      "source_sha256": "d67eb7cafdb556f7870ffec4584c44d3d55fb50947229ecf9be940a23e5ef25a",
+      "public_sha256": "d67eb7cafdb556f7870ffec4584c44d3d55fb50947229ecf9be940a23e5ef25a",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/paper_reporting.txt",
+      "source_sha256": "34585c8023c7417fb97f1e8ed1a0246b622fb10d20dc20f54900fe8890960254",
+      "public_sha256": "34585c8023c7417fb97f1e8ed1a0246b622fb10d20dc20f54900fe8890960254",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/platform_annotation_protocol.md",
+      "source_sha256": "2644cfb3dbd31c31ea98648f5bdc60fccfac78a7c1019da56e652a772727c878",
+      "public_sha256": "2644cfb3dbd31c31ea98648f5bdc60fccfac78a7c1019da56e652a772727c878",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/platform_summary_export.csv",
+      "source_sha256": "86dcda47579cbcc053a70bda189961a9803e281e0f063630d40ca4b4a9b77912",
+      "public_sha256": "86dcda47579cbcc053a70bda189961a9803e281e0f063630d40ca4b4a9b77912",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/platform_summary_export_original.csv",
+      "source_sha256": "713e2c380f0cb6788e6789d70809e43f8e18d95516a1b66fb1c7c7251d949984",
+      "public_sha256": "713e2c380f0cb6788e6789d70809e43f8e18d95516a1b66fb1c7c7251d949984",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/raw_log.csv",
+      "source_sha256": "70c29d4f1fc59707e804fd7cd955f000540c7c1686f141842d5912588fc728d5",
+      "public_sha256": "70c29d4f1fc59707e804fd7cd955f000540c7c1686f141842d5912588fc728d5",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/source_manifest_120.csv",
+      "source_sha256": "6dde291534c835eabd56e4787d1b944c352c39dab844da6b38b1a7f1d0bd9a6b",
+      "public_sha256": "6dde291534c835eabd56e4787d1b944c352c39dab844da6b38b1a7f1d0bd9a6b",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/source_system_audio_seed_map.csv",
+      "source_sha256": "f2d4a9308ebe3559e96edb81c7a980ca4c9e2ee8dee1fcccfa83ae55a255810f",
+      "public_sha256": "f2d4a9308ebe3559e96edb81c7a980ca4c9e2ee8dee1fcccfa83ae55a255810f",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/validation_report.txt",
+      "source_sha256": "08f514dd91bb8c9cee38595edcd90890c6f5ec448bc2e9e69175ba7f891426d2",
+      "public_sha256": "08f514dd91bb8c9cee38595edcd90890c6f5ec448bc2e9e69175ba7f891426d2",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/SHA256SUMS",
+      "source_sha256": "92f4a6bb5639fae656748a5fb05ac63c8cd6c0518815e9134d61b319ba0e9030",
+      "public_sha256": "92f4a6bb5639fae656748a5fb05ac63c8cd6c0518815e9134d61b319ba0e9030",
+      "transformation": "byte-identical"
+    },
+    {
+      "path": "human/summary.json",
+      "public_sha256": "c84af3acad9af8c9fca1bb6090326d4de2cc96d14de1a96b76f3098fe5d35e95",
+      "transformation": "read-only aggregation consistency check; not a new inferential analysis"
+    }
+  ],
+  "excluded_assets": [
+    "model weights",
+    "checkpoints",
+    "audio",
+    "Wikipedia reference text",
+    "participant identity/contact mapping"
+  ],
+  "scope": "Frozen exported records and protocol/audit outputs, not a rerun or independent attestation of experiment execution.",
+  "hash_policy": "public_sha256 verifies published bytes; source_sha256 binds the unchanged local source. Embedded historical payload hashes still refer to their original payloads.",
+  "rights": "No new license is granted; see repository LICENSE_NOTICE.md."
+}

@@ -1,0 +1,71 @@
+{
+  "amendment": {
+    "file_sha256": "19a606d669d24e4371581f687964f3f96d8298311c268e82a69b8647c2353eb6",
+    "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/frozen_e08_e08only_bank_amendment.json",
+    "payload_sha256": "3011477643acd5f0819e266d4c210291845aad7e12e2af428b413de8e654eaf4"
+  },
+  "authorities": {
+    "diff_audit": {
+      "file_sha256": "c430abf83746775ddba00c709d5847d24b8ed584519efaf7e2b1abc157e858e4",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_combined_to_e08only_bank_diff_audit.json",
+      "payload_sha256": "e141236faf386b31a65c8c630e67b68b088dfd5b106907b82812a5b57c8df055"
+    },
+    "disjoint_audit": {
+      "file_sha256": "06d36b9e649f7ae0f2c5c865d4f276d9fdf8d5b055a41816737fbf6369e21e63",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_train4500_disjoint_audit.json",
+      "payload_sha256": "c6fda5363f4e3ad3a55e3104d0d948cabcff17f3c26d3ca0b883437f9267c697"
+    },
+    "selection_contract": {
+      "file_sha256": "0d12c5c42e3480e23eaa331f963064af53c8c1a9ea4d755338a3f2618bf335d0",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_target_selection_contract_audit.json",
+      "payload_sha256": "92909cbce34d38fb384e1fed5bcd0f53ac0f76e34e3dec4d75d98f7418da57c5"
+    },
+    "train4500": {
+      "file_sha256": "79ad9b7015b4a672b5f5d1e9869c31bb6850c638087ca15c4919273f89dccf37",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_train4500_manifest.json",
+      "payload_sha256": "feab05a698fae04de1fe26d30ce35434326035d9f5db58a6ebc8f70d5561f096"
+    }
+  },
+  "bank": {
+    "file_sha256": "fa1c0f19863298e2529769acf0929471606a5e0fc87a2c43d9007f2e2e7f0dcd",
+    "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_final_target_bank_e08only_manifest.json",
+    "payload_sha256": "061f0216425159f174bfff8c6b52085a0f7ea2ecff58f02497f796317155e73a"
+  },
+  "bank_cardinality": {
+    "content": 65,
+    "cross_branch_overlap_sources": 3,
+    "e07_records": 0,
+    "e08_records": 123,
+    "max_targets_per_source_per_branch": 1,
+    "termination": 58,
+    "total": 123,
+    "unique_sources": 120
+  },
+  "created_at_utc": "2026-09-14T07:12:16.857126+00:00",
+  "finalizer_recovery": {
+    "bank_overwritten": false,
+    "bank_reselected_again": false,
+    "engineering_fix_only": true,
+    "root_cause": "negative state flags were incorrectly included in all(values) PASS aggregation"
+  },
+  "identity_checks": {
+    "all_candidates_e08_formal_train4500": true,
+    "branch_source_multiplicity_at_most_one": true,
+    "confirmatory_panel_opened": false,
+    "cv3_target_speech_sha_intersection_zero": true,
+    "cv3_train_source_intersection_zero": true,
+    "e07_source_intersection_zero": true,
+    "eligible_pools_76_557": true,
+    "exact_58_65_123": true,
+    "generation_asr_scoring_rerun_zero": true,
+    "mask_constructed": false,
+    "ranking_and_tie_break_unchanged": true,
+    "seed_precedence_unchanged": true,
+    "target_artifact_sha_123_of_123": true,
+    "threshold_unchanged": true,
+    "training_started": false
+  },
+  "payload_sha256": "5af5fd3f94980d3e79cb0e986c5f1041527e32c91447758562e29971cbab2153",
+  "schema_version": 1,
+  "status": "PASS_E08_FINAL_TARGET_BANK_E08ONLY_IDENTITY_AUDIT"
+}

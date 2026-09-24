@@ -1,0 +1,2263 @@
+{
+  "schema_version": "1",
+  "status": "P4_E14_HEAD_MIDDLE_MASK_123_OF_123_MATCH_PASS",
+  "tail_mask_sha256": "5b9151f976ebfeac44c2d806be05fb190cd207ce94da6ebe808afc51c6f09693",
+  "positions": {
+    "HEAD_PR": {
+      "mask_path": "[private-path]/head_pr_mask.json",
+      "mask_sha256": "ac7a7d059ad0626f94f989ce9b8e352e01c8766fdd24df7ad8f0d48cfc4ee8a1",
+      "match_counts": {
+        "target_history_match": 123,
+        "K_i_match": 123,
+        "special_match": 123,
+        "M_i_match": 123,
+        "T_i_match": 123,
+        "legal_span": 123
+      },
+      "active_labels": {
+        "speech": 26211,
+        "eos_special": 58,
+        "total_ce": 26269
+      },
+      "pass": true,
+      "details": [
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:10520:1361103882:s20:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:39043:1355677382:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27413:1362229919:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5272:1355276733:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:24408:1360291696:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:17972:1358916584:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:10725:1362727218:s19:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:24942:1325254179:s2:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:12065:1357912113:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:22477:1360106578:s5:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:11371:1360381175:s4:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38180:1354475975:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:13306:1362195464:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:1400:1362407048:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5278:1361127347:s6:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:36397:1362060222:s50:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:7821:1358356506:s15:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:2179:1351021202:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:29153:1362729946:s12:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:25893:1359535188:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7966:1360214187:s12:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:17423:1357131868:s11:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:11439:1360063444:s17:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38055:1360616396:s21:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27479:1362272135:s12:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:38180:1354475975:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:10890:1354056588:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:7531:1359343711:s5:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:31440:1360865163:s19:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:22409:1359640918:s24:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:6068:1359739696:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:9061:1362237439:s22:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:32407:1358683880:s1:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:8884:1359533029:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:21944:1361365831:s19:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:18859:1361431577:s36:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:24983:1357113952:s36:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7531:1359343711:s5:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:27413:1362229919:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:9662:1361427992:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27034:1361667454:s18:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7461:1358685774:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:2836:1283599190:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7129:1360312014:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:19669:1360528681:s15:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:37653:1361288816:s4:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:2836:1283599190:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:9892:1360656991:s12:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:37353:1361354351:s9:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:22934:1360283399:s4:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:6623:1359865965:s14:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:22051:1354989863:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:11492:1355285059:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:25424:1361340169:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:14914:1362722717:s60:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:14865:1289264144:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:8884:1359533029:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:11186:1360925134:s6:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5320:1360165013:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:2936:1350602918:s18:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:39093:1352905973:s1:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:10958:1362792338:s28:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:15930:1359599753:s0:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7647:1362669098:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:14115:1360352272:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:18232:1358781789:s20:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:20590:1360760193:s11:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5704:1361233570:s13:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:8317:1361749455:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38393:1361039886:s20:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:17278:1360809634:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:39406:1360994353:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:12420:1359467938:s7:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:8816:1358255229:s45:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:32610:1362794730:s30:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:28607:1360991481:s8:sent3",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:20264:1354761598:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:12420:1359467938:s7:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:19942:1355494332:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:21058:1362102299:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:9230:1361857579:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:3335:1360006556:s20:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:33820:1362559902:s1:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:6613:1362143645:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:28380:1361023288:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:6068:1359739696:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:23364:1362475592:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:13306:1362195464:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:5451:1362501177:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:17772:1361803344:s6:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:27289:1362211990:s9:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:37357:1362460998:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:13790:1361521669:s25:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:4911:1362654280:s4:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7305:1357287972:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:23750:1362312064:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:19241:1359689974:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5906:1360625447:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:29378:1362273554:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:7200:1359912679:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:20616:1345177312:s7:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5698:1358878722:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:8816:1358255229:s45:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38123:1361650583:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:5704:1361233570:s13:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:34415:1361864836:s12:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38089:1345864567:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:28380:1361023288:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:38123:1361650583:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:16756:1362351682:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:15287:1351917293:s34:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:5272:1355276733:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:23750:1362312064:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:10667:1358765034:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:18232:1358781789:s20:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:18290:1361005047:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27210:1352397344:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:15930:1359599753:s0:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:17470:1360751721:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:1606:1362153457:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38058:1362019031:s11:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:25072:1360692181:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:22051:1354989863:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        }
+      ]
+    },
+    "MIDDLE_PR": {
+      "mask_path": "[private-path]/middle_pr_mask.json",
+      "mask_sha256": "b378df842d3a2b36254afed38cb2cc8a4ce23c07050388e2c889c70e21d706a0",
+      "match_counts": {
+        "target_history_match": 123,
+        "K_i_match": 123,
+        "special_match": 123,
+        "M_i_match": 123,
+        "T_i_match": 123,
+        "legal_span": 123
+      },
+      "active_labels": {
+        "speech": 26211,
+        "eos_special": 58,
+        "total_ce": 26269
+      },
+      "pass": true,
+      "details": [
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:10520:1361103882:s20:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:39043:1355677382:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27413:1362229919:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5272:1355276733:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:24408:1360291696:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:17972:1358916584:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:10725:1362727218:s19:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:24942:1325254179:s2:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:12065:1357912113:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:22477:1360106578:s5:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:11371:1360381175:s4:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38180:1354475975:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:13306:1362195464:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:1400:1362407048:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5278:1361127347:s6:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:36397:1362060222:s50:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:7821:1358356506:s15:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:2179:1351021202:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:29153:1362729946:s12:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:25893:1359535188:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7966:1360214187:s12:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:17423:1357131868:s11:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:11439:1360063444:s17:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38055:1360616396:s21:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27479:1362272135:s12:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:38180:1354475975:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:10890:1354056588:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:7531:1359343711:s5:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:31440:1360865163:s19:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:22409:1359640918:s24:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:6068:1359739696:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:9061:1362237439:s22:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:32407:1358683880:s1:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:8884:1359533029:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:21944:1361365831:s19:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:18859:1361431577:s36:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:24983:1357113952:s36:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7531:1359343711:s5:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:27413:1362229919:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:9662:1361427992:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27034:1361667454:s18:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7461:1358685774:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:2836:1283599190:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7129:1360312014:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:19669:1360528681:s15:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:37653:1361288816:s4:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:2836:1283599190:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:9892:1360656991:s12:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:37353:1361354351:s9:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:22934:1360283399:s4:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:6623:1359865965:s14:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:22051:1354989863:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:11492:1355285059:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:25424:1361340169:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:14914:1362722717:s60:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:14865:1289264144:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:8884:1359533029:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:11186:1360925134:s6:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5320:1360165013:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:2936:1350602918:s18:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:39093:1352905973:s1:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:10958:1362792338:s28:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:15930:1359599753:s0:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7647:1362669098:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:14115:1360352272:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:18232:1358781789:s20:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:20590:1360760193:s11:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5704:1361233570:s13:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:8317:1361749455:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38393:1361039886:s20:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:17278:1360809634:s2:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:39406:1360994353:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:12420:1359467938:s7:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:8816:1358255229:s45:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:32610:1362794730:s30:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:28607:1360991481:s8:sent3",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:20264:1354761598:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:12420:1359467938:s7:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:19942:1355494332:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:21058:1362102299:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:9230:1361857579:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:3335:1360006556:s20:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:33820:1362559902:s1:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:6613:1362143645:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:28380:1361023288:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:6068:1359739696:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:23364:1362475592:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:13306:1362195464:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:5451:1362501177:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:17772:1361803344:s6:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:27289:1362211990:s9:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:37357:1362460998:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:13790:1361521669:s25:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:4911:1362654280:s4:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:7305:1357287972:s3:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:23750:1362312064:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:19241:1359689974:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5906:1360625447:s10:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:29378:1362273554:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:7200:1359912679:s22:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:20616:1345177312:s7:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:5698:1358878722:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:8816:1358255229:s45:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38123:1361650583:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:5704:1361233570:s13:sent2",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:34415:1361864836:s12:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38089:1345864567:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:28380:1361023288:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:38123:1361650583:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:16756:1362351682:s16:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:15287:1351917293:s34:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:5272:1355276733:s13:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:23750:1362312064:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:10667:1358765034:s5:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:18232:1358781789:s20:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:18290:1361005047:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:27210:1352397344:s8:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:15930:1359599753:s0:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:17470:1360751721:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:1606:1362153457:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "content|wikipedia_enwiki_20260701:38058:1362019031:s11:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:25072:1360692181:s0:sent0",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        },
+        {
+          "record_key": "termination|wikipedia_enwiki_20260701:22051:1354989863:s3:sent1",
+          "target_history_match": true,
+          "K_i_match": true,
+          "special_match": true,
+          "M_i_match": true,
+          "T_i_match": true,
+          "legal_span": true
+        }
+      ]
+    }
+  },
+  "paper_modified": false,
+  "payload_sha256": "ad230bf127b3976004a63c84ca58338cc95c1dbfb43b6d12b998f81ed81f1448"
+}

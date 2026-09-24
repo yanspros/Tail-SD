@@ -36,6 +36,7 @@ def main() -> None:
     parser.add_argument("--evidence-package", required=True, help="Path to evidence package directory")
     parser.add_argument("--output", required=True, help="Output path for paper_results.json")
     parser.add_argument("--evidence-dir", help="Optional directory to export public evidence JSON summaries")
+    parser.add_argument("--human-summary", help="Checked Windows human-rating summary; imported separately from machine evidence")
     args = parser.parse_args()
 
     pkg = Path(args.evidence_package)
@@ -82,12 +83,17 @@ def main() -> None:
         "human_evaluation": {
             "status": "EXTERNAL_WINDOWS_AUTHORITY_NOT_IMPORTED",
             "scope": (
-                "Human evaluation (MUSHRA) covers the original five systems on CV3 "
+                "Descriptive Completion, Major Error and 1-5 naturalness MOS cover the original five systems on CV3 "
                 "(Base, Full-SD, Random-Local, Tail-30, Tail-SD); it does not cover the E13 "
                 "new-text Tail-SD vs Random-PR comparison."
             ),
         },
     }
+    if args.human_summary:
+        human = load_json(args.human_summary)
+        if human.get("status") != "DESCRIPTIVE_EXPORT_CHECKED":
+            raise ValueError("Expected a checked descriptive human summary")
+        public["human_evaluation"] = human
     dump_json(args.output, public)
     print(f"Wrote synchronized results to {args.output}")
 

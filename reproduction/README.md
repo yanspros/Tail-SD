@@ -1,6 +1,6 @@
 # Paper Reproduction and Results Snapshot
 
-This directory contains the frozen results, reproduction configs, and public evidence summaries corresponding to the ICASSP 2027 submission:
+This directory contains the frozen results, reproduction configs, and public evidence corresponding to the ICASSP 2027 submission. Start with the [source-evidence guide](evidence/README.md) for result/protocol JSON, matching audits, capability support, and the separately frozen human-rating records.
 
 - **Human-Readable Results Summary**: [`PAPER_RESULTS.md`](PAPER_RESULTS.md) provides the complete report across Fun-CosyVoice3-0.5B and CosyVoice2-0.5B (including E13 confirmatory test, length bins, E14 position controls, E16 budget controls, Full-SD reference, and diagnostics).
 - **Consolidated Machine-Readable Results**: [`paper_results.json`](paper_results.json) contains all formal metrics and statistics generated from the frozen evidence authority with internal server paths redacted.
@@ -19,5 +19,6 @@ To refresh against an authorized evidence package:
 PYTHONPATH=. python scripts/sync_paper_results.py \
   --evidence-package /path/to/TailSD_ICASSP2027_FinalEvidence_20260918 \
   --output reproduction/paper_results.json \
-  --evidence-dir reproduction/evidence
+  --evidence-dir reproduction/evidence \
+  --human-summary reproduction/evidence/source_data/human/summary.json
 ```

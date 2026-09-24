@@ -1,0 +1,67 @@
+{
+  "additional_experiment_authorized": false,
+  "allowed_claim": "On the shared 500-source E11 evaluation panel, the terminal-placement advantage was reproduced on CosyVoice2 using an independently constructed E08 training bank.",
+  "authorities": {
+    "bootstrap": {
+      "file_sha256": "6772a9427cd2fcad2f4d4dd8f798164d058dc125fb562b72596916c9ad47188b",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_pairwise_bootstrap.json",
+      "payload_sha256": "ef55030c655e8fe8a9e113087f62ccf8564e677694e4e4b80145ce73290963e8"
+    },
+    "generation": {
+      "file_sha256": "25560eb67929606107cba84c8e557151366b979fb1c302ee407d667fbe3e9eb0",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_shared_e11_generation_manifest.json",
+      "payload_sha256": "adc0636a45d3a790fcf1423b1b95312c1196887babc295625693cc50a90659fc"
+    },
+    "length_bins": {
+      "file_sha256": "b2349e7c7ba71f4ec7e0dcc4e73cab2e46e58fa67049f7ed8475a686f46306e6",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_length_bins.json",
+      "payload_sha256": "95d035adeb830cc9451895f23c6af7e036975af7eb82685ce1739d2dec0d7c57"
+    },
+    "preflight": {
+      "file_sha256": "338d74ffa3225fcce13339f2d3fc270453ecf5b5665a3153b90ce2e937ff5671",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_500_frontend_prompt_preflight.json",
+      "payload_sha256": "0ebdcaead673e2c4b3aa23eedfcc4172586161a176f53a267b4682f15e3e012e"
+    },
+    "scored": {
+      "file_sha256": "a4b9777c1108e817c18a4d16866426555e4ca8c2a1ad33468cf811ca330dbe10",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_scored_paths.json",
+      "payload_sha256": "9032d8c13a29ade32c26f1fbe563b3600a1abb90237b93e2e3086fe8367cbfe4"
+    },
+    "summary": {
+      "file_sha256": "6ba6643183deb22691b0215aff3d394638c86627b59460e48896d01a5a1311e1",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/results/e08_shared_e11_system_summary.json",
+      "payload_sha256": "8f46248f764e77b902d31f1f627e83e183126fac7e514ec7cf10cf91dac63605"
+    }
+  },
+  "claim_rule_triggered": "POSITIVE_CI",
+  "counts": {
+    "asr_chunks": 7122,
+    "generation_paths": 4000,
+    "preflight_sources": 500,
+    "scored_paths": 4000
+  },
+  "created_at_utc": "2026-09-14T13:05:29.101418+00:00",
+  "gate": "P5_E08_CV2_SHARED_E11_500_EVALUATION_COMPLETE",
+  "payload_sha256": "78a9c15a00ff2a9faf7833872cd5fa02d5ce68b5196ed114f04991517f173247",
+  "primary_result": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "ci95": [
+      0.008,
+      0.051
+    ],
+    "ci95_percentage_points": [
+      0.8,
+      5.1
+    ],
+    "contrast": "SC(Tail-SD) - SC(Random-PR)",
+    "delta_sc_percentage_points": 2.9000000000000004,
+    "point_estimate": 0.029,
+    "source_count": 500
+  },
+  "protocol_drift": false,
+  "run_type": "FORMAL shared/open E11 cross-backbone evaluation",
+  "schema_version": 1,
+  "status": "PASS",
+  "wall_clock_seconds": 14089.9858321473
+}

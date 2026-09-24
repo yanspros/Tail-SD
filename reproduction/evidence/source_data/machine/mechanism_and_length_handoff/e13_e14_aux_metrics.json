@@ -1,0 +1,263 @@
+{
+  "schema_version": "1",
+  "status": "FINAL_HANDOFF_E13_E14_AUX_METRICS_VERIFIED",
+  "metric_directions": {
+    "wer": "lower_is_better",
+    "coverage": "higher_is_better",
+    "source_any_seed_hc": "lower_is_better"
+  },
+  "e13": {
+    "tail_sd_equal_weight_two_inits": {
+      "strict_complete": 0.6715,
+      "wer": 0.1359024401046599,
+      "coverage": 0.9218941547921073,
+      "source_any_seed_hc": 0.127
+    },
+    "random_pr_equal_weight_six_cells": {
+      "strict_complete": 0.6245,
+      "wer": 0.15235400470291832,
+      "coverage": 0.8981117355768301,
+      "source_any_seed_hc": 0.19533333333333333
+    },
+    "tail_minus_random_pr": {
+      "strict_complete": 0.04699999999999993,
+      "wer": -0.016451564598258417,
+      "coverage": 0.02378241921527724,
+      "source_any_seed_hc": -0.06833333333333333
+    },
+    "formal_six_pairwise_point_estimate_mean_crosscheck": {
+      "strict_complete": 0.047,
+      "wer": -0.016451564598258396,
+      "coverage": 0.023782419215277226,
+      "source_any_seed_hc": -0.06833333333333333
+    },
+    "derived_descriptive": true,
+    "interpretation": "Tail-SD has lower WER and source-level HC and higher coverage than the matched Random-PR average; the SC gain is not accompanied by an obvious content-accuracy degradation."
+  },
+  "e14": {
+    "per_system": {
+      "Tail-SD_init20260822": {
+        "strict_complete": 0.673,
+        "wer": 0.13665245048029295,
+        "coverage": 0.9182863116324126,
+        "source_any_seed_hc": 0.146
+      },
+      "Tail-SD_init20260823": {
+        "strict_complete": 0.67,
+        "wer": 0.13515242972902689,
+        "coverage": 0.9255019979518021,
+        "source_any_seed_hc": 0.108
+      },
+      "HEAD_PR_init20260822": {
+        "strict_complete": 0.513,
+        "wer": 0.19554231045247403,
+        "coverage": 0.8503338738284307,
+        "source_any_seed_hc": 0.308
+      },
+      "HEAD_PR_init20260823": {
+        "strict_complete": 0.501,
+        "wer": 0.20022660387411553,
+        "coverage": 0.8458782006141293,
+        "source_any_seed_hc": 0.308
+      },
+      "MIDDLE_PR_init20260822": {
+        "strict_complete": 0.585,
+        "wer": 0.16511169633481732,
+        "coverage": 0.8808248538346029,
+        "source_any_seed_hc": 0.254
+      },
+      "MIDDLE_PR_init20260823": {
+        "strict_complete": 0.568,
+        "wer": 0.16957137470936595,
+        "coverage": 0.876713203443601,
+        "source_any_seed_hc": 0.262
+      }
+    },
+    "equal_weight_position_means": {
+      "Tail-SD": {
+        "strict_complete": 0.6715,
+        "wer": 0.1359024401046599,
+        "coverage": 0.9218941547921073,
+        "source_any_seed_hc": 0.127
+      },
+      "Head-PR": {
+        "strict_complete": 0.507,
+        "wer": 0.19788445716329478,
+        "coverage": 0.8481060372212801,
+        "source_any_seed_hc": 0.308
+      },
+      "Middle-PR": {
+        "strict_complete": 0.5765,
+        "wer": 0.16734153552209163,
+        "coverage": 0.8787690286391019,
+        "source_any_seed_hc": 0.258
+      }
+    },
+    "formal_pairwise_aux_metrics": {
+      "Tail-SD_init20260822-minus-HEAD_PR_init20260822": {
+        "wer": {
+          "source_count": 500,
+          "point_estimate": -0.058889859972181074,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.06725213952842733,
+            -0.05097982822644961
+          ]
+        },
+        "coverage": {
+          "source_count": 500,
+          "point_estimate": 0.06795243780398191,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            0.0588444394471515,
+            0.07760454547809541
+          ]
+        },
+        "hc_early_eos": {
+          "source_count": 500,
+          "point_estimate": -0.162,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.202,
+            -0.124
+          ]
+        }
+      },
+      "Tail-SD_init20260823-minus-HEAD_PR_init20260823": {
+        "wer": {
+          "source_count": 500,
+          "point_estimate": -0.06507417414508865,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.07403619215694955,
+            -0.056355387597764345
+          ]
+        },
+        "coverage": {
+          "source_count": 500,
+          "point_estimate": 0.07962379733767273,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            0.0697375313429888,
+            0.0902274478030505
+          ]
+        },
+        "hc_early_eos": {
+          "source_count": 500,
+          "point_estimate": -0.2,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.238,
+            -0.162
+          ]
+        }
+      },
+      "Tail-SD_init20260822-minus-MIDDLE_PR_init20260822": {
+        "wer": {
+          "source_count": 500,
+          "point_estimate": -0.028459245854524348,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.035379781586507,
+            -0.021771762598253183
+          ]
+        },
+        "coverage": {
+          "source_count": 500,
+          "point_estimate": 0.037461457797809614,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            0.03017430363765157,
+            0.04520199841194
+          ]
+        },
+        "hc_early_eos": {
+          "source_count": 500,
+          "point_estimate": -0.108,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.142,
+            -0.074
+          ]
+        }
+      },
+      "Tail-SD_init20260823-minus-MIDDLE_PR_init20260823": {
+        "wer": {
+          "source_count": 500,
+          "point_estimate": -0.03441894498033906,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.041678044903224847,
+            -0.027336966436996856
+          ]
+        },
+        "coverage": {
+          "source_count": 500,
+          "point_estimate": 0.048788794508201,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            0.04096646823766421,
+            0.0571425258026871
+          ]
+        },
+        "hc_early_eos": {
+          "source_count": 500,
+          "point_estimate": -0.154,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260820,
+          "ci95": [
+            -0.192,
+            -0.118
+          ]
+        }
+      }
+    },
+    "derived_descriptive_for_position_means": true,
+    "interpretation": "Tail-SD has lower WER and HC and higher coverage than both deterministic Head-PR and Middle-PR averages."
+  },
+  "no_new_hypothesis_test": true,
+  "authorities": [
+    {
+      "source_path": "phases/p4_final/e13_unopened500_confirmatory/results/system_summary.json",
+      "json_pointer": "/systems",
+      "source_sha256": "7db5095790cb3a32f3fc8eab0a10fca7978b7e073f050488abef06c6b7eeca92",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e13_unopened500_confirmatory/results/pairwise_units.json",
+      "json_pointer": "/units",
+      "source_sha256": "f03bb220d0bc254f18b6c193da5b5170ed877af8f2eb64fb16a7fda71f0636b2",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e14_head_middle_tail_position_study/results/system_summary.json",
+      "json_pointer": "/new_systems and /reused_tail_systems",
+      "source_sha256": "a42f04c33f18bb42210ad01375eb1929a57bb22015b8b2d79cd5ec087a03637e",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e14_head_middle_tail_position_study/results/pairwise_units.json",
+      "json_pointer": "/units",
+      "source_sha256": "8ad694a47739bac421972010f2301237988487d3645f1214304852df8afca8c7",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e14_head_middle_tail_position_study/results/primary_position_summary.json",
+      "json_pointer": "/tail_minus_nonterminal",
+      "source_sha256": "9754de035e969e930f782cb0b438bdcb3777afdf236b9ac19019367a753af5f4",
+      "status": "VERIFIED"
+    }
+  ],
+  "payload_sha256": "c76da03489fdff0698b80afe727e1fecd2c765710f02f7ca92af62702b30668a"
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "1",
+  "status": "P4_E15_TERMINATION_SEPARATION_COMPLETE",
+  "metric": "source-balanced STOP minus CONTINUE EOS logit",
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20260820,
+    "stratified_by_state": true
+  },
+  "systems": {
+    "Base": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.305475410233196,
+        "mean_eos_probability": 0.30025633374969357
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 19.97729133130624,
+        "mean_eos_probability": 0.685499893801253
+      },
+      "termination_separation": {
+        "point_estimate": 5.671815921073044,
+        "ci95": [
+          5.123343382893461,
+          6.231892792620712
+        ]
+      }
+    },
+    "Full-SD": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.040176464961124,
+        "mean_eos_probability": 0.20352023017114382
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.157416316613038,
+        "mean_eos_probability": 0.6780444497942347
+      },
+      "termination_separation": {
+        "point_estimate": 7.117239851651913,
+        "ci95": [
+          6.525576884426617,
+          7.716070980599052
+        ]
+      }
+    },
+    "Tail-SD_init20260822": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.096375665094099,
+        "mean_eos_probability": 0.2072218443192671
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.3967284659858,
+        "mean_eos_probability": 0.66404724448241
+      },
+      "termination_separation": {
+        "point_estimate": 7.3003528008917,
+        "ci95": [
+          6.7046979495535295,
+          7.899335303566668
+        ]
+      }
+    },
+    "Tail-SD_init20260823": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.106565345046867,
+        "mean_eos_probability": 0.20324227077021806
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.327812961975482,
+        "mean_eos_probability": 0.6605376649268041
+      },
+      "termination_separation": {
+        "point_estimate": 7.221247616928615,
+        "ci95": [
+          6.632726502336238,
+          7.813295127606302
+        ]
+      }
+    },
+    "HEAD_PR_init20260822": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.622530957572481,
+        "mean_eos_probability": 0.4397435029530818
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.48003688144383,
+        "mean_eos_probability": 0.7496771014953614
+      },
+      "termination_separation": {
+        "point_estimate": 5.857505923871349,
+        "ci95": [
+          5.318797242075761,
+          6.400550622141543
+        ]
+      }
+    },
+    "HEAD_PR_init20260823": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.658558291247767,
+        "mean_eos_probability": 0.4416377955578013
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.45011415541736,
+        "mean_eos_probability": 0.7499226303565484
+      },
+      "termination_separation": {
+        "point_estimate": 5.7915558641695934,
+        "ci95": [
+          5.256468161519925,
+          6.33260462424321
+        ]
+      }
+    },
+    "MIDDLE_PR_init20260822": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.225475278675047,
+        "mean_eos_probability": 0.3630664880490965
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.684926055583293,
+        "mean_eos_probability": 0.7474393990457834
+      },
+      "termination_separation": {
+        "point_estimate": 6.4594507769082465,
+        "ci95": [
+          5.90585030053072,
+          7.024690681647564
+        ]
+      }
+    },
+    "MIDDLE_PR_init20260823": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.30822174365704,
+        "mean_eos_probability": 0.3698596295245931
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.652371260646014,
+        "mean_eos_probability": 0.7483246500860189
+      },
+      "termination_separation": {
+        "point_estimate": 6.344149516988974,
+        "ci95": [
+          5.790792473932497,
+          6.904398236654244
+        ]
+      }
+    },
+    "Tail-SD_equal_weight_two_inits": {
+      "continue": {
+        "sources": 117,
+        "mean_eos_logit": 14.101470505070482
+      },
+      "stop": {
+        "sources": 317,
+        "mean_eos_logit": 21.362270713980642
+      },
+      "termination_separation": {
+        "point_estimate": 7.26080020891016,
+        "ci95": [
+          6.668108352783406,
+          7.856196990612945
+        ]
+      }
+    }
+  },
+  "payload_sha256": "41e2c650f39aceec28b18a1dbd002b2638ac821414c4912d4400ebe615bd1dd4"
+}

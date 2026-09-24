@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "status": "P4_E16_SUPERVISION_BUDGET_SENSITIVITY_COMPLETE",
+  "run_type": "FORMAL post-hoc budget sensitivity on opened E13 panel",
+  "protocol_sha256": "37f5c4e0472ef6bf22224609418d656212da47b002ad29ee73232fe8cf82bc94",
+  "mask_audit_sha256": "5fa5479828c9f82feb1201a5fa69ea3e727b126daab98777b0267d45fd88f174",
+  "checkpoint_binding_sha256": "d4758bd7e49becd188936bd623b45bfd5b84089159b4cac21e80db6df93aa777",
+  "system_summary_sha256": "8ab55a805388dd2931a739ad6e1b5ea1757551a6cc1904a243f476f24c39b681",
+  "pairwise_units_sha256": "44a41d8e5fd65291eb65811646d75ed16f5aa273bedf3d422f78901d031f4f62",
+  "budget_summary_sha256": "ebe73aa06099373d3520f7c56450be9a09a010de2700b8daaf53416f1acf8183",
+  "assertions": {
+    "eight_trains_492_of_492": true,
+    "new_generation_and_scoring_8000_of_8000": true,
+    "asr_all_chunks": true,
+    "source_bootstrap_10000": true,
+    "one_x_reused_not_retrained": true,
+    "protocol_drift": false,
+    "paper_untouched": true
+  },
+  "effect_significance_not_a_completion_condition": true,
+  "decision": "COMPLETE_NO_RESCUE_NO_ADDITIONAL_EXPERIMENT",
+  "payload_sha256": "f37752a400e4d2f1d91de3b0bce6bc3ef70bb8fcdca9f8daa47a7e6d175d6c9d"
+}

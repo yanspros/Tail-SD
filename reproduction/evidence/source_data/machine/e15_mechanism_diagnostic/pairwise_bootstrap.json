@@ -1,0 +1,151 @@
+{
+  "schema_version": "1",
+  "status": "P4_E15_PAIRWISE_BOOTSTRAP_COMPLETE",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260820,
+  "comparisons": {
+    "Tail22_minus_Base": {
+      "left": "Tail-SD_init20260822",
+      "right": "Base",
+      "separation_difference": 1.6285368798186557,
+      "ci95": [
+        1.4418624524296981,
+        1.8094292521013897
+      ],
+      "continue_logit_difference": -0.20909974513909724,
+      "stop_logit_difference": 1.4194371346795585,
+      "supports_discriminative_pattern": true
+    },
+    "Tail23_minus_Base": {
+      "left": "Tail-SD_init20260823",
+      "right": "Base",
+      "separation_difference": 1.5494316958555707,
+      "ci95": [
+        1.3604855368604625,
+        1.7320507355778219
+      ],
+      "continue_logit_difference": -0.19891006518632892,
+      "stop_logit_difference": 1.3505216306692418,
+      "supports_discriminative_pattern": true
+    },
+    "Tail22_minus_Full-SD": {
+      "left": "Tail-SD_init20260822",
+      "right": "Full-SD",
+      "separation_difference": 0.18311294923978672,
+      "ci95": [
+        0.033936799396644006,
+        0.3243522966504929
+      ],
+      "continue_logit_difference": 0.056199200132974525,
+      "stop_logit_difference": 0.23931214937276124,
+      "supports_discriminative_pattern": false
+    },
+    "Tail23_minus_Full-SD": {
+      "left": "Tail-SD_init20260823",
+      "right": "Full-SD",
+      "separation_difference": 0.10400776527670175,
+      "ci95": [
+        -0.048167052829914646,
+        0.2500584837206875
+      ],
+      "continue_logit_difference": 0.06638888008574284,
+      "stop_logit_difference": 0.1703966453624446,
+      "supports_discriminative_pattern": false
+    },
+    "Tail22_minus_Head22": {
+      "left": "Tail-SD_init20260822",
+      "right": "HEAD_PR_init20260822",
+      "separation_difference": 1.4428468770203509,
+      "ci95": [
+        1.3304303313935097,
+        1.5577279444812964
+      ],
+      "continue_logit_difference": -1.526155292478382,
+      "stop_logit_difference": -0.08330841545803125,
+      "supports_discriminative_pattern": false
+    },
+    "Tail23_minus_Head23": {
+      "left": "Tail-SD_init20260823",
+      "right": "HEAD_PR_init20260823",
+      "separation_difference": 1.4296917527590214,
+      "ci95": [
+        1.3175260020859916,
+        1.5447555609331667
+      ],
+      "continue_logit_difference": -1.5519929462008992,
+      "stop_logit_difference": -0.12230119344187784,
+      "supports_discriminative_pattern": false
+    },
+    "Tail22_minus_Middle22": {
+      "left": "Tail-SD_init20260822",
+      "right": "MIDDLE_PR_init20260822",
+      "separation_difference": 0.8409020239834533,
+      "ci95": [
+        0.7639819524892353,
+        0.9179684282239512
+      ],
+      "continue_logit_difference": -1.129099613580948,
+      "stop_logit_difference": -0.28819758959749464,
+      "supports_discriminative_pattern": false
+    },
+    "Tail23_minus_Middle23": {
+      "left": "Tail-SD_init20260823",
+      "right": "MIDDLE_PR_init20260823",
+      "separation_difference": 0.8770980999396407,
+      "ci95": [
+        0.7994891834492378,
+        0.9546302416700734
+      ],
+      "continue_logit_difference": -1.2016563986101723,
+      "stop_logit_difference": -0.32455829867053154,
+      "supports_discriminative_pattern": false
+    },
+    "Tail_equal_minus_Base": {
+      "separation_difference": 1.5889842878371132,
+      "ci95": [
+        1.4016249883552212,
+        1.7701371351705915
+      ],
+      "continue_logit_difference": -0.20400490516271308,
+      "stop_logit_difference": 1.3849793826744001,
+      "supports_discriminative_pattern": true,
+      "aggregation": "equal weight across paired Tail initializations"
+    },
+    "Tail_equal_minus_Full-SD": {
+      "separation_difference": 0.14356035725824423,
+      "ci95": [
+        -0.007232714437630379,
+        0.2865370455436552
+      ],
+      "continue_logit_difference": 0.06129404010935868,
+      "stop_logit_difference": 0.20485439736760291,
+      "supports_discriminative_pattern": false,
+      "aggregation": "equal weight across paired Tail initializations"
+    },
+    "Tail_equal_minus_Head_paired": {
+      "separation_difference": 1.4362693148896861,
+      "ci95": [
+        1.3238238595637601,
+        1.551185444707466
+      ],
+      "continue_logit_difference": -1.5390741193396407,
+      "stop_logit_difference": -0.10280480444995455,
+      "supports_discriminative_pattern": false,
+      "aggregation": "equal weight across paired Tail initializations"
+    },
+    "Tail_equal_minus_Middle_paired": {
+      "separation_difference": 0.859000061961547,
+      "ci95": [
+        0.7821036779784758,
+        0.9360197918272173
+      ],
+      "continue_logit_difference": -1.16537800609556,
+      "stop_logit_difference": -0.3063779441340131,
+      "supports_discriminative_pattern": false,
+      "aggregation": "equal weight across paired Tail initializations"
+    }
+  },
+  "overall_interpretation_rule_pass": false,
+  "allowed_interpretation": "The fixed-prefix diagnostic does not satisfy the preregistered full pattern for a more discriminative termination decision.",
+  "payload_sha256": "c3feca150ee01352d9cb86b7c27f60b849e137537e8cbebc2cb846aec859b96d"
+}

@@ -1,20 +1,27 @@
 cff-version: 1.2.0
-message: "If you use Tail-SD, please cite the paper and this repository."
-title: "Tail-SD: Terminal-Span Supervision for AR-TTS Trajectory Completion"
+message: "Please cite this repository and the associated Tail-SD manuscript. The manuscript is under submission."
+title: "Tail-SD: Tail-Focused Self-Distillation"
 type: software
 version: "0.1.0"
 date-released: "2026-09-18"
 authors:
-  - family-names: "TODO"
-    given-names: "TODO"
+  - family-names: "Li"
+    given-names: "Yanliang"
+  - family-names: "Zhang"
+    given-names: "Dejun"
+  - family-names: "Zhang"
+    given-names: "Lei"
 preferred-citation:
-  type: conference-paper
-  title: "TODO: final ICASSP 2027 paper title"
+  type: unpublished
+  title: "Tail-Focused Self-Distillation: Supervision Placement for Improving Completion in Autoregressive Text-to-Speech"
   authors:
-    - family-names: "TODO"
-      given-names: "TODO"
-  conference:
-    name: "2027 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027)"
-  year: 2027
+    - family-names: "Li"
+      given-names: "Yanliang"
+    - family-names: "Zhang"
+      given-names: "Dejun"
+    - family-names: "Zhang"
+      given-names: "Lei"
+  year: 2026
+  notes: "Submitted to ICASSP 2027; no acceptance or publication claim."
 repository-code: "https://github.com/yanspros/Tail-SD"
 license: "NOASSERTION"

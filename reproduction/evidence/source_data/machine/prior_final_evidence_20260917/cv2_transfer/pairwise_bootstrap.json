@@ -1,0 +1,57 @@
+{
+  "comparisons": {
+    "primary_tail_sd_minus_random_pr": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        0.008,
+        0.051
+      ],
+      "ci95_percentage_points": [
+        0.8,
+        5.1
+      ],
+      "contrast": "SC(Tail-SD) - SC(Random-PR)",
+      "delta_sc_percentage_points": 2.9000000000000004,
+      "point_estimate": 0.029,
+      "source_count": 500
+    },
+    "secondary_tail_sd_minus_base": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        0.022,
+        0.066
+      ],
+      "ci95_percentage_points": [
+        2.1999999999999997,
+        6.6000000000000005
+      ],
+      "contrast": "SC(Tail-SD) - SC(Base)",
+      "delta_sc_percentage_points": 4.3999999999999995,
+      "point_estimate": 0.044,
+      "source_count": 500
+    },
+    "secondary_tail_sd_minus_full_sd": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "ci95": [
+        -0.021,
+        0.023
+      ],
+      "ci95_percentage_points": [
+        -2.1,
+        2.3
+      ],
+      "contrast": "SC(Tail-SD) - SC(Full-SD)",
+      "delta_sc_percentage_points": 0.1,
+      "point_estimate": 0.001,
+      "source_count": 500
+    }
+  },
+  "payload_sha256": "ef55030c655e8fe8a9e113087f62ccf8564e677694e4e4b80145ce73290963e8",
+  "primary": "SC(Tail-SD) - SC(Random-PR)",
+  "schema_version": 1,
+  "status": "FORMAL_E08_SHARED_E11_PAIRED_BOOTSTRAP_COMPLETE",
+  "unit": "source; two inference seeds retained within source"
+}

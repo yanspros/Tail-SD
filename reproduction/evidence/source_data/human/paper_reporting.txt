@@ -1,0 +1,17 @@
+
+---
+
+## 5. 与论文方法描述的对应关系
+
+如果这三份材料存在，Human Evaluation 可以写成：
+
+> An external blinded study rated the original five CV3 systems on 120 long-form sources. Ten listeners familiar with the language each rated every source, yielding 1,200 valid ratings per system. System identity was hidden, and presentation order was randomized per listener and source. Listeners used headphones in a quiet environment and rated each stimulus on binary completion, binary major content error, and a five-point naturalness MOS. Ratings were pooled within system. Table VI reports the results. Human completion followed the automatic system ordering: Tail-SD reached 69.8% completion and 10.0% major error, compared with 59.2% and 18.3% for Base. MOS estimates were close (4.02–4.06); comparisons are descriptive only.
+
+对应的可复现材料链是：
+
+- `source_manifest_120.csv`：120 个 source。
+- `source_system_audio_seed_map.csv`：120 × 5 = 600 条 audio/seed/system 映射。
+- `raw_log.csv`：10 × 120 × 5 = 6,000 条评分。
+- `platform_annotation_protocol.md`：平台、盲法、随机化、设备、评分界面、质量控制。
+
+如果这些材料在本地都真实存在，Human Evaluation 就已经达到完整可复现状态。若其中某一份不存在，论文方法描述就应限制在已确认事实内，不能补写随机化、设备、排除标准等细节。

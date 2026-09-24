@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "PAPER_EVIDENCE_PACKAGE_TAILSD_ICASSP2027_FINAL_FROZEN",
+  "run_type": "FORMAL document/evidence freeze",
+  "scientific_gates_changed": false,
+  "model_training_inference_asr_bootstrap_invoked": false,
+  "assertions": {
+    "cv3_primary_match": true,
+    "random_pr_masks_match": true,
+    "cv2_match": true,
+    "e13_six_units_match": true,
+    "e14_position_results_match": true,
+    "deprecated_positive_lower_bound_ci_excluded": true,
+    "claim_to_evidence_complete": true,
+    "human_eval_not_reinferred": true
+  },
+  "decision": "FINAL_EVIDENCE_PACKAGE_FROZEN_FOR_WINDOWS_PAPER_EDITING"
+}

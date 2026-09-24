@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "PACKAGE_SELF_CHECK_PASS",
+  "created_at_utc": "2026-09-17T05:16:52.521442+00:00",
+  "json_parse": "PASS",
+  "copied_sha_closure": "PASS",
+  "paper_number_authority_assertions": "PASS",
+  "deprecated_ci_scan": "PASS_ZERO_HITS",
+  "duplicate_current_authority": "PASS_ZERO",
+  "experiment_identity": {
+    "E11": "original CV3 confirmatory",
+    "Random-PR repeats": "post-hoc opened E11",
+    "CV2": "independent E08 train bank; shared/open E11 evaluation",
+    "E13": "new unopened500 confirmatory",
+    "E14": "post-hoc opened E13 mechanism study"
+  },
+  "large_assets_excluded": true,
+  "human_evaluation_reinferred": false,
+  "source_authority_count": 48,
+  "copied_authority_count": 45
+}

@@ -1,0 +1,410 @@
+{
+  "schema_version": "1",
+  "status": "FINAL_HANDOFF_E15_MECHANISM_AUDIT_COMPLETE",
+  "diagnostic_identity": "POST_HOC_MECHANISM_DIAGNOSTIC_ON_OPENED_E13_PANEL",
+  "eos_probability_definition": {
+    "formula": "softmax(full_next_token_logits)[eos_token_id]",
+    "implementation": "torch.softmax(logits, dim=-1); eos_probability = probs[eos]",
+    "verified_from_code": true,
+    "warning": "EOS-logit separation is not EOS-probability separation and must not be relabeled as a probability difference."
+  },
+  "state_counts": {
+    "continue_paths": 154,
+    "continue_sources": 117,
+    "stop_paths": 555,
+    "stop_sources": 317,
+    "cross_state_source_overlap": 12
+  },
+  "system_statistics": {
+    "Base": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.305475410233196,
+        "mean_eos_probability": 0.30025633374969357
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 19.97729133130624,
+        "mean_eos_probability": 0.685499893801253
+      },
+      "termination_separation": {
+        "point_estimate": 5.671815921073044,
+        "ci95": [
+          5.123343382893461,
+          6.231892792620712
+        ]
+      }
+    },
+    "Full-SD": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.040176464961124,
+        "mean_eos_probability": 0.20352023017114382
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.157416316613038,
+        "mean_eos_probability": 0.6780444497942347
+      },
+      "termination_separation": {
+        "point_estimate": 7.117239851651913,
+        "ci95": [
+          6.525576884426617,
+          7.716070980599052
+        ]
+      }
+    },
+    "Tail-SD_init20260822": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.096375665094099,
+        "mean_eos_probability": 0.2072218443192671
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.3967284659858,
+        "mean_eos_probability": 0.66404724448241
+      },
+      "termination_separation": {
+        "point_estimate": 7.3003528008917,
+        "ci95": [
+          6.7046979495535295,
+          7.899335303566668
+        ]
+      }
+    },
+    "Tail-SD_init20260823": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 14.106565345046867,
+        "mean_eos_probability": 0.20324227077021806
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.327812961975482,
+        "mean_eos_probability": 0.6605376649268041
+      },
+      "termination_separation": {
+        "point_estimate": 7.221247616928615,
+        "ci95": [
+          6.632726502336238,
+          7.813295127606302
+        ]
+      }
+    },
+    "HEAD_PR_init20260822": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.622530957572481,
+        "mean_eos_probability": 0.4397435029530818
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.48003688144383,
+        "mean_eos_probability": 0.7496771014953614
+      },
+      "termination_separation": {
+        "point_estimate": 5.857505923871349,
+        "ci95": [
+          5.318797242075761,
+          6.400550622141543
+        ]
+      }
+    },
+    "HEAD_PR_init20260823": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.658558291247767,
+        "mean_eos_probability": 0.4416377955578013
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.45011415541736,
+        "mean_eos_probability": 0.7499226303565484
+      },
+      "termination_separation": {
+        "point_estimate": 5.7915558641695934,
+        "ci95": [
+          5.256468161519925,
+          6.33260462424321
+        ]
+      }
+    },
+    "MIDDLE_PR_init20260822": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.225475278675047,
+        "mean_eos_probability": 0.3630664880490965
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.684926055583293,
+        "mean_eos_probability": 0.7474393990457834
+      },
+      "termination_separation": {
+        "point_estimate": 6.4594507769082465,
+        "ci95": [
+          5.90585030053072,
+          7.024690681647564
+        ]
+      }
+    },
+    "MIDDLE_PR_init20260823": {
+      "continue": {
+        "paths": 154,
+        "sources": 117,
+        "mean_eos_logit": 15.30822174365704,
+        "mean_eos_probability": 0.3698596295245931
+      },
+      "stop": {
+        "paths": 555,
+        "sources": 317,
+        "mean_eos_logit": 21.652371260646014,
+        "mean_eos_probability": 0.7483246500860189
+      },
+      "termination_separation": {
+        "point_estimate": 6.344149516988974,
+        "ci95": [
+          5.790792473932497,
+          6.904398236654244
+        ]
+      }
+    },
+    "Tail-SD_equal_weight_two_inits": {
+      "continue": {
+        "sources": 117,
+        "mean_eos_logit": 14.101470505070482
+      },
+      "stop": {
+        "sources": 317,
+        "mean_eos_logit": 21.362270713980642
+      },
+      "termination_separation": {
+        "point_estimate": 7.26080020891016,
+        "ci95": [
+          6.668108352783406,
+          7.856196990612945
+        ]
+      }
+    }
+  },
+  "pairwise_separation_results": {
+    "Tail22_minus_Base": {
+      "left": "Tail-SD_init20260822",
+      "right": "Base",
+      "separation_difference": 1.6285368798186557,
+      "ci95": [
+        1.4418624524296981,
+        1.8094292521013897
+      ],
+      "continue_logit_difference": -0.20909974513909724,
+      "stop_logit_difference": 1.4194371346795585,
+      "supports_discriminative_pattern": true
+    },
+    "Tail23_minus_Base": {
+      "left": "Tail-SD_init20260823",
+      "right": "Base",
+      "separation_difference": 1.5494316958555707,
+      "ci95": [
+        1.3604855368604625,
+        1.7320507355778219
+      ],
+      "continue_logit_difference": -0.19891006518632892,
+      "stop_logit_difference": 1.3505216306692418,
+      "supports_discriminative_pattern": true
+    },
+    "Tail22_minus_Full-SD": {
+      "left": "Tail-SD_init20260822",
+      "right": "Full-SD",
+      "separation_difference": 0.18311294923978672,
+      "ci95": [
+        0.033936799396644006,
+        0.3243522966504929
+      ],
+      "continue_logit_difference": 0.056199200132974525,
+      "stop_logit_difference": 0.23931214937276124,
+      "supports_discriminative_pattern": false
+    },
+    "Tail23_minus_Full-SD": {
+      "left": "Tail-SD_init20260823",
+      "right": "Full-SD",
+      "separation_difference": 0.10400776527670175,
+      "ci95": [
+        -0.048167052829914646,
+        0.2500584837206875
+      ],
+      "continue_logit_difference": 0.06638888008574284,
+      "stop_logit_difference": 0.1703966453624446,
+      "supports_discriminative_pattern": false
+    },
+    "Tail22_minus_Head22": {
+      "left": "Tail-SD_init20260822",
+      "right": "HEAD_PR_init20260822",
+      "separation_difference": 1.4428468770203509,
+      "ci95": [
+        1.3304303313935097,
+        1.5577279444812964
+      ],
+      "continue_logit_difference": -1.526155292478382,
+      "stop_logit_difference": -0.08330841545803125,
+      "supports_discriminative_pattern": false
+    },
+    "Tail23_minus_Head23": {
+      "left": "Tail-SD_init20260823",
+      "right": "HEAD_PR_init20260823",
+      "separation_difference": 1.4296917527590214,
+      "ci95": [
+        1.3175260020859916,
+        1.5447555609331667
+      ],
+      "continue_logit_difference": -1.5519929462008992,
+      "stop_logit_difference": -0.12230119344187784,
+      "supports_discriminative_pattern": false
+    },
+    "Tail22_minus_Middle22": {
+      "left": "Tail-SD_init20260822",
+      "right": "MIDDLE_PR_init20260822",
+      "separation_difference": 0.8409020239834533,
+      "ci95": [
+        0.7639819524892353,
+        0.9179684282239512
+      ],
+      "continue_logit_difference": -1.129099613580948,
+      "stop_logit_difference": -0.28819758959749464,
+      "supports_discriminative_pattern": false
+    },
+    "Tail23_minus_Middle23": {
+      "left": "Tail-SD_init20260823",
+      "right": "MIDDLE_PR_init20260823",
+      "separation_difference": 0.8770980999396407,
+      "ci95": [
+        0.7994891834492378,
+        0.9546302416700734
+      ],
+      "continue_logit_difference": -1.2016563986101723,
+      "stop_logit_difference": -0.32455829867053154,
+      "supports_discriminative_pattern": false
+    },
+    "Tail_equal_minus_Base": {
+      "separation_difference": 1.5889842878371132,
+      "ci95": [
+        1.4016249883552212,
+        1.7701371351705915
+      ],
+      "continue_logit_difference": -0.20400490516271308,
+      "stop_logit_difference": 1.3849793826744001,
+      "supports_discriminative_pattern": true,
+      "aggregation": "equal weight across paired Tail initializations"
+    },
+    "Tail_equal_minus_Full-SD": {
+      "separation_difference": 0.14356035725824423,
+      "ci95": [
+        -0.007232714437630379,
+        0.2865370455436552
+      ],
+      "continue_logit_difference": 0.06129404010935868,
+      "stop_logit_difference": 0.20485439736760291,
+      "supports_discriminative_pattern": false,
+      "aggregation": "equal weight across paired Tail initializations"
+    },
+    "Tail_equal_minus_Head_paired": {
+      "separation_difference": 1.4362693148896861,
+      "ci95": [
+        1.3238238595637601,
+        1.551185444707466
+      ],
+      "continue_logit_difference": -1.5390741193396407,
+      "stop_logit_difference": -0.10280480444995455,
+      "supports_discriminative_pattern": false,
+      "aggregation": "equal weight across paired Tail initializations"
+    },
+    "Tail_equal_minus_Middle_paired": {
+      "separation_difference": 0.859000061961547,
+      "ci95": [
+        0.7821036779784758,
+        0.9360197918272173
+      ],
+      "continue_logit_difference": -1.16537800609556,
+      "stop_logit_difference": -0.3063779441340131,
+      "supports_discriminative_pattern": false,
+      "aggregation": "equal weight across paired Tail initializations"
+    }
+  },
+  "bootstrap_audit": {
+    "declared": {
+      "resamples": 10000,
+      "seed": 20260820,
+      "stratified_by_state": true
+    },
+    "continue_source_count": 117,
+    "stop_source_count": 317,
+    "overlapping_source_count": 12,
+    "implementation_observed": "CONTINUE and STOP source arrays receive separate random index matrices (c_draws and s_draws).",
+    "overlapping_sources_jointly_bound_across_strata": false,
+    "strict_source_cluster_bootstrap": false,
+    "impact": "Point estimates are unchanged, but reported E15 confidence intervals do not preserve dependence for the 12 sources appearing in both strata.",
+    "reporting_status": "DESCRIPTIVE_DIAGNOSTIC_ONLY_EXISTING_CI_NOT_STRICTLY_CLUSTERED",
+    "formal_results_modified": false
+  },
+  "preregistered_full_pattern_pass": false,
+  "safe_wording": "Tail-SD shows larger fixed-prefix EOS-logit separation than Base, Head-PR, and Middle-PR, but the preregistered criterion for a more discriminative termination decision was not fully satisfied.",
+  "prohibited_wording": [
+    "mechanism proven",
+    "Tail-SD learns when to stop",
+    "EOS behavior explains the completion gain",
+    "termination probability separation"
+  ],
+  "authorities": [
+    {
+      "source_path": "phases/p4_final/e15_fixed_prefix_termination_diagnostic/frozen_state_panel.json",
+      "json_pointer": "/records",
+      "source_sha256": "898210aad65803da5f459cebc6a015f6c1fb5e840a6d9138d8d044c77d3b2467",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e15_fixed_prefix_termination_diagnostic/results/eos_state_scores.json",
+      "json_pointer": "/records",
+      "source_sha256": "e75e92674ff9bd0539b958763ba1b712704fad96528263dc6ed947d20784ad53",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e15_fixed_prefix_termination_diagnostic/results/termination_separation.json",
+      "json_pointer": "/systems",
+      "source_sha256": "8bce5bd271a6ef395f55f88240adb6ec8930d98cc8e16e63209d1548c6c7026c",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e15_fixed_prefix_termination_diagnostic/results/pairwise_bootstrap.json",
+      "json_pointer": "/comparisons",
+      "source_sha256": "360e5249f51f172ca4021d8aaef5a65c140c6022b34b761941b449abdd1100d7",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e15_fixed_prefix_termination_diagnostic/scripts/e15_fixed_prefix_diagnostic.py",
+      "json_pointer": "/state_logits and /finalize",
+      "source_sha256": "a03c7e79f0c8e2c01676c6ae699ca50d720c4df762f0238ab631d46d138abf8f",
+      "status": "VERIFIED"
+    },
+    {
+      "source_path": "phases/p4_final/e15_fixed_prefix_termination_diagnostic/formal_gate.json",
+      "json_pointer": "/checks",
+      "source_sha256": "5b7f70d6472aa2e3ec3bdb61c2c41bcef87c23a67fa904de0e28526ec450b0ae",
+      "status": "VERIFIED"
+    }
+  ],
+  "payload_sha256": "7afd18dfa8188970debcf97d096241edcd2a9c2658f7d3dfae4e7f33af6935a1"
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-24",
+  "purpose": "Publish frozen submission evidence and align reader documentation; no experiments or formal statistics recomputed",
+  "source_packages": {
+    "machine": "TailSD_ICASSP2027_FinalEvidence_20260918",
+    "human": "Human_Evaluation",
+    "capability": "Evidence_v2"
+  },
+  "checks": {
+    "machine_sha256_entries": 76,
+    "machine_manifest_entries": 77,
+    "human_sha256_entries": 10,
+    "capability_summary_and_gate_source_hashes_verified": 2,
+    "published_indexed_artifacts": 81,
+    "published_manifest_entries": 81,
+    "relative_reader_links": 52,
+    "human_rows": 6000,
+    "human_listeners": 10,
+    "human_sources": 120,
+    "human_ratings_per_system": 1200,
+    "numeric_and_boolean_leaves_preserved_in_redacted_machine_json": true,
+    "human_source_bytes_preserved": true,
+    "public_human_summary_matches_raw_aggregates": true,
+    "unit_tests": {
+      "passed": 15,
+      "skipped": 2,
+      "failed": 0,
+      "skip_reason": "PyTorch unavailable; full-history loss tests skipped"
+    },
+    "private_path_contact_secret_pattern_scan": "PASS"
+  },
+  "unchanged": [
+    "source experiment packages",
+    "formal result values and confidence intervals",
+    "training/scoring/mask core implementation",
+    "historical experiment gates"
+  ],
+  "not_verified_or_not_distributed": [
+    "No model end-to-end rerun",
+    "No independent authentication of listening sessions or audio",
+    "No checkpoints, generated audio, third-party corpora or identity mappings distributed",
+    "No new open reuse license selected; see LICENSE_NOTICE.md"
+  ],
+  "checksum_policy": "Current audits/SHA256SUMS covers Git-tracked bytes except itself; historical checksum snapshot retained separately. Public evidence has its own checksum list and source/public hash index."
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "status": "FORMAL_E12_OFFICIAL_SPLIT_RETENTION_COMPLETE",
+  "run_type": "FORMAL independent current-runtime Official-Split retention addendum",
+  "scientific_role": "POST_HOC_CURRENT_RUNTIME_RETENTION_ADDENDUM_NOT_HISTORICAL_E08_REPLAY_NOT_P4_E01_PRIMARY",
+  "protocol_sha256": "93f1942a1bc2a3644e1691f2a8d97662ac1509623d0a128a26682ac64c10099b",
+  "input_contract_sha256": "c28d23efd2da70d1469edc354230a1d7434aac40639c5ada798a9e9191f2bde7",
+  "scorer_runtime_recovery_sha256": "e9b96cf525b25d309926ea3fb5e9da00d9fb7df28a06f0d13189509be18fbc2a",
+  "invalid_hard_en_attempt_audit_sha256": "f7a7c9378de1418112d27aaca883e1f660e059167c6b8d62d4e38151f1ea90c3",
+  "path_integrity": {
+    "B0": {
+      "generation_path_count": 124,
+      "hard_en_scored": 64,
+      "hard_zh_scored": 60,
+      "complete_124_of_124": true
+    },
+    "B1": {
+      "generation_path_count": 124,
+      "hard_en_scored": 64,
+      "hard_zh_scored": 60,
+      "complete_124_of_124": true
+    },
+    "T6_BRANCH_FIXED_TAIL": {
+      "generation_path_count": 124,
+      "hard_en_scored": 64,
+      "hard_zh_scored": 60,
+      "complete_124_of_124": true
+    }
+  },
+  "metrics": {
+    "hard_en": {
+      "B0": {
+        "metric": "WER",
+        "mean_error": 0.06828267633825136,
+        "scored_json": "[private-path]/scored.json",
+        "scored_json_sha256": "bc967fea8f395da8717d888b9f5d6b4cf6048b843572ff0d409d963e28a82a28"
+      },
+      "B1": {
+        "metric": "WER",
+        "mean_error": 0.07187871147073539,
+        "scored_json": "[private-path]/scored.json",
+        "scored_json_sha256": "787597e767699c5f90ae8a4984ad6ea70ccc52efd6c6ad4de3b557ce82a87954"
+      },
+      "T6_BRANCH_FIXED_TAIL": {
+        "metric": "WER",
+        "mean_error": 0.07580159966619142,
+        "scored_json": "[private-path]/scored.json",
+        "scored_json_sha256": "f79b48aa75282fd242e12f9857e8256d8f9208aec84e6d9344e4235e3568aff2"
+      }
+    },
+    "hard_zh": {
+      "B0": {
+        "metric": "CER",
+        "mean_error": 0.07792714710256536,
+        "scored_json": "[private-path]/scored.json",
+        "scored_json_sha256": "de9e9869bc8e68a121f8fb23aada5ad39e5d29b38b5a6c736a2dbd596162a355"
+      },
+      "B1": {
+        "metric": "CER",
+        "mean_error": 0.0743949020585664,
+        "scored_json": "[private-path]/scored.json",
+        "scored_json_sha256": "c140cb89a5ce9630f88eb015fbf3adc2838bf6507c8acc034845a75052aefd1c"
+      },
+      "T6_BRANCH_FIXED_TAIL": {
+        "metric": "CER",
+        "mean_error": 0.07477407522244821,
+        "scored_json": "[private-path]/scored.json",
+        "scored_json_sha256": "9355d292b706b95212ff82a4d9a7cfc6a6cb9d355cb3b08044cc502142d338f3"
+      }
+    }
+  },
+  "paired_differences": {
+    "hard_en": {
+      "T6_BRANCH_FIXED_TAIL-B0": {
+        "unit": "CV3-Eval utterance within language",
+        "n": 64,
+        "point_estimate": 0.007518923327940062,
+        "ci95": [
+          -0.018557526097774328,
+          0.0387215268507033
+        ],
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20260905,
+        "direction": "T6 minus comparator; lower error is better"
+      },
+      "T6_BRANCH_FIXED_TAIL-B1": {
+        "unit": "CV3-Eval utterance within language",
+        "n": 64,
+        "point_estimate": 0.0039228881954560275,
+        "ci95": [
+          -0.01866827089744179,
+          0.03352654415433253
+        ],
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20260905,
+        "direction": "T6 minus comparator; lower error is better"
+      }
+    },
+    "hard_zh": {
+      "T6_BRANCH_FIXED_TAIL-B0": {
+        "unit": "CV3-Eval utterance within language",
+        "n": 60,
+        "point_estimate": -0.0031530718801171605,
+        "ci95": [
+          -0.012387391656072288,
+          0.006210299775359758
+        ],
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20260905,
+        "direction": "T6 minus comparator; lower error is better"
+      },
+      "T6_BRANCH_FIXED_TAIL-B1": {
+        "unit": "CV3-Eval utterance within language",
+        "n": 60,
+        "point_estimate": 0.00037917316388179736,
+        "ci95": [
+          -0.009311756532058412,
+          0.010402715246799449
+        ],
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20260905,
+        "direction": "T6 minus comparator; lower error is better"
+      }
+    }
+  },
+  "interpretation_boundary": [
+    "This addendum cannot replace historical E08 or P4/E01.",
+    "Only absence/presence of a clear short-text capability collapse may be discussed.",
+    "A favorable T6 point estimate is not evidence of short-text capability improvement.",
+    "E11 remains the long-form confirmatory evidence; E12 is capability retention only.",
+    "No retention threshold/Gate is invented if historical E08 lacks one."
+  ],
+  "payload_sha256": "6d9575e246572cf10a7da1b68bccae6442e8bf167a4fed2db1f43993584df226"
+}

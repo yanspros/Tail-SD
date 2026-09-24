@@ -1,0 +1,149 @@
+{
+  "amendment_reason": "PRE_REGISTERED_300_SOURCE_CANDIDATE_AUTHORITY_CANNOT_COVER_FROZEN_LENGTH_BINS",
+  "claim_rules": {
+    "if_ci_crosses_zero": "The second-backbone comparison did not establish a placement advantage on the shared panel.",
+    "if_reverse": "Report the reverse result completely; no rescue experiment.",
+    "maximum_positive_claims": [
+      "On the same 500-source evaluation panel, the terminal-placement advantage was reproduced on CosyVoice2.",
+      "The placement effect was observed on a second AR-TTS backbone under the same evaluation panel."
+    ],
+    "positive_condition": "SC(Tail-SD)-SC(Random-PR)>0 and the complete 95% paired CI is >0",
+    "prohibited_claims": [
+      "independent second confirmatory test set",
+      "architecture-independent",
+      "universal principle",
+      "untouched E08 test"
+    ]
+  },
+  "evaluation": {
+    "grid": {
+      "file_sha256": "d8e8f407361dd8bafdb95a56682a281d69fbd02a8ce4c2c3da46b2f4d0fcd29f",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_shared_e11_4000_path_grid.json",
+      "payload_sha256": "c04bfcb445e6c95738a7d79a516e0b6ef121b96cdb8eae80d4ee822f21947619"
+    },
+    "length_analysis": "Report descriptive SC for all 10 bins (50 sources x 2 seeds each); no favorable-bin selection and no unregistered cross-backbone significance test.",
+    "metrics": {
+      "primary": "Strict Completion (SC)",
+      "secondary": [
+        "WER",
+        "coverage",
+        "source-level any-seed HC"
+      ]
+    },
+    "paths_per_system": 1000,
+    "primary_contrast": "Delta_place = SC(Tail-SD) - SC(Random-PR)",
+    "secondary_contrasts": [
+      "SC(Tail-SD) - SC(Base)",
+      "SC(Tail-SD) - SC(Full-SD)"
+    ],
+    "statistics": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260820,
+      "inference_seeds_clustered_within_source": true,
+      "interval": "95% percentile CI",
+      "paired": true,
+      "unit": "source"
+    },
+    "systems": [
+      "Base",
+      "Full-SD",
+      "Random-PR",
+      "Tail-SD"
+    ],
+    "total_paths": 4000
+  },
+  "new_plan": "SHARED_CV3_E11_500_SOURCE_CROSS_BACKBONE_PANEL",
+  "old_plan": "NEW_300_SOURCE_CONFIRMATORY_PANEL",
+  "old_plan_audit": {
+    "candidate_authority": {
+      "file_sha256": "c36c9aa7b96636ff417f63ef7bea7fc05f477e300808c864d0846c19f053030d",
+      "path": "phases/p1_panel/e11_panel/data/prospective_candidate_pool.json",
+      "payload_sha256": "e34a1f8242921afd1ee80d778c984dce5e23c2dbcbb1accfcb90896b0164dd4f"
+    },
+    "candidate_authority_audit": {
+      "file_sha256": "5dba426be8741ead41880a793bb61ff6d929c53f84a25d2bc826d0f6c5e8eb21",
+      "path": "phases/p1_panel/e11_panel/results/structural_pool_audit.json",
+      "payload_sha256": "e69346ef03ab1e15dfeb01a798b57665e50576dc9ecfc36b8d0ee2d6cf233916"
+    },
+    "candidate_word_range": [
+      72,
+      88
+    ],
+    "conclusion": "The referenced candidate authority has zero candidates in 8/10 frozen bins and cannot construct the registered 10x30 panel.",
+    "required_bin_candidate_counts": {
+      "L100_119": 0,
+      "L160_180": 0,
+      "L40_44": 0,
+      "L45_49": 0,
+      "L50_54": 0,
+      "L55_59": 0,
+      "L60_64": 0,
+      "L65_69": 0,
+      "L70_74": 2215,
+      "L75_79": 3620
+    },
+    "reservation_id": "P5_E08_CV2_CONFIRMATORY_300_UNOPENED_V1",
+    "uncovered_required_bins": [
+      "L40_44",
+      "L45_49",
+      "L50_54",
+      "L55_59",
+      "L60_64",
+      "L65_69",
+      "L100_119",
+      "L160_180"
+    ]
+  },
+  "panel_identity": {
+    "evaluation_panel_is_new": false,
+    "evaluation_panel_is_shared_with_cv3": true,
+    "evaluation_panel_previously_opened_for_cv3": true,
+    "inference_seeds": [
+      0,
+      1
+    ],
+    "manifest": {
+      "file_sha256": "1a6a6fbfe1b1efcccb22b122806eec72acbf2b6f31d5a7b7c94490885775ab97",
+      "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_shared_e11_500_manifest.json",
+      "payload_sha256": "fd21881ba01a93096c9a0daeac6ad155b1f5c5905c7002c1331a16aba45eb90e"
+    },
+    "source_count": 500,
+    "tier_counts": {
+      "L100_119": 50,
+      "L160_180": 50,
+      "L40_44": 50,
+      "L45_49": 50,
+      "L50_54": 50,
+      "L55_59": 50,
+      "L60_64": 50,
+      "L65_69": 50,
+      "L70_74": 50,
+      "L75_79": 50
+    },
+    "untouched_test_claim_for_e08": false
+  },
+  "parent_scientific_gate": "P5_E08_CV2_THREE_ARM_TRAINING_COMPLETE_CHECKPOINTS_FROZEN",
+  "payload_sha256": "aa6abd80e3ffcd892b977098bd9ccea6dcaed8cf698bbc46f382421caaa9df3e",
+  "prohibited_after_freeze": [
+    "panel/source/seed/checkpoint/mask/ratio change",
+    "Random-PR redraw",
+    "result-contingent bin selection",
+    "extra source or seed",
+    "retraining or checkpoint selection"
+  ],
+  "run_type": "FORMAL append-only evaluation-panel authority amendment; no CV2 test execution",
+  "schema_version": 1,
+  "status": "FROZEN_E08_CV2_SHARED_E11_500_EVALUATION_AMENDMENT_BEFORE_CV2_TEST",
+  "timing_and_outcome_blindness": {
+    "amendment_before_any_cv2_test": true,
+    "checkpoint_changed": false,
+    "cv2_test_asr": 0,
+    "cv2_test_inference": 0,
+    "cv2_test_scoring": 0,
+    "cv2_test_wav": 0,
+    "mask_changed": false,
+    "method_changed": false,
+    "no_cv2_test_result_observed": true,
+    "training_checkpoints_frozen_before_amendment": true
+  }
+}

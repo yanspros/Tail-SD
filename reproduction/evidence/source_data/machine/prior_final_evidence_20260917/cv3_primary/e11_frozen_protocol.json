@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_E11_UNTOUCHED_CONFIRMATORY_GENERATION",
+  "run_type": "FORMAL independent untouched confirmatory evaluation",
+  "authorization": "2026-09-04 user authorization: build a new 500-source, two-inference-seed untouched long-form panel and evaluate only B0/B1/R1/T1/T6 after literal frontend/token/cap and five-arm identity preflight passes.",
+  "scientific_role": "FORMAL_UNTOUCHED_CONFIRMATORY_EVALUATION_NOT_P4_E01_PRIMARY_REPLACEMENT",
+  "scientific_question": "Does frozen T6 Branch-Fixed-Tail prospectively retain a strict-COMPLETE advantage over Base and Random-Local on new long-text sources, and how does it compare with B1 and Tail-30?",
+  "immutable_boundaries": {
+    "p4_e01_primary_unchanged": true,
+    "p4_e03_e10_unchanged": true,
+    "paper_updated": false,
+    "no_training": true,
+    "no_checkpoint_reselection": true,
+    "no_new_method": true,
+    "e10_blocked_gates_preserved": {
+      "historical_frontend_identity_drift": {
+        "path": "[private-path]/formal_gate.json",
+        "sha256": "8bb772e21281043d9f5b6cf656cbee58a3430390ab230b0c38ca4d30c3ed1b21",
+        "status": "P4_E10_T6_SEED_REPEAT_BLOCKED_FRONTEND_IDENTITY_DRIFT"
+      },
+      "current_runtime_seed_not_effective": {
+        "path": "[private-path]/formal_gate.json",
+        "sha256": "cfde744d4c07c9cc9a4a27ca55607cf56d91c8d285fbcc720eb6ea90a0a6fc06",
+        "status": "P4_E10_T6_CURRENT_RUNTIME_REPEAT_BLOCKED_TRAINING_SEED_NOT_EFFECTIVE"
+      }
+    }
+  },
+  "p4_e01_primary_binding": {
+    "protocol_path": "[private-path]/frozen_protocol.json",
+    "protocol_sha256": "c46950ee3524cc96251ba6772d7ff746f945860fb04e44eb05b05f643cb5277e",
+    "immutable_artifact_sha256": {
+      "results/summary.json": "80b0461018c89f432a6cc87ba2a62047e0dc6bfb444a07278bc6d8c2f1080335",
+      "results/pairwise.json": "137f99c80012445d13c0a6aef414a70488f848e416d4d99fa913fe3e93910e4c",
+      "results/frontier_metrics.json": "f1b1f0c1244c4bbde1831697c6492263311e656e441d08b40b79648ce1f503ef",
+      "results/B0/per_generation_raw.json": "32006e51c7d98cbe459ea210fb3ce244a3b992432b5252bebd16a9f4821c8803",
+      "results/B0/per_generation_scored.json": "d46a3dea5600666f7150a2eba993de2492e400a22774d56a59328767f6dc438b",
+      "results/B1/per_generation_raw.json": "118e5154c9f8ff5ee5a06bc655f314651de68e95b4d6138d0d03c32b4abc4130",
+      "results/B1/per_generation_scored.json": "78e3b00114f9149deea0a3d5ce55965b80542e7cb08f500fb208292efef5442d",
+      "results/T3/per_generation_raw.json": "26993feb982b101f0da61e79845815ea5685b95c1b13c4fb6669f8c75bf2bd62",
+      "results/T3/per_generation_scored.json": "597a2845f15aaae8ba8058d813cdca3b3570dcc2dd15f4b0f6a120c9f7ee4f0a",
+      "results/M1/per_generation_raw.json": "a0968a7ac63dabc76b715668c466297de2f8100a836b30d51325c7bdd05f4c1e",
+      "results/M1/per_generation_scored.json": "38d159bb558160cee7cdb5d8583f1ba605ef53d199dd870e715ba664f1c4359a"
+    },
+    "statement": "P4/E01 remains the original primary sealed result and is neither replayed nor reinterpreted."
+  },
+  "panel": {
+    "raw_path": "[private-path]/panel_raw.json",
+    "raw_sha256": "8031b9097add2ab5aabf71cd85bbc93fa8e67e67bc25587976159fe9a192ed31",
+    "exclusion_audit_path": "[private-path]/exclusion_audit.json",
+    "exclusion_audit_sha256": "0eca4b9fe5ea2a683dbad8f5b9ff7defacc03ae89458d6c6fe4b553c3f100b1e",
+    "reference_binding_path": "[private-path]/reference_binding.json",
+    "reference_binding_sha256": "859e7e870f6657584251ff8cec661cd85442b6715c53371e5e6d017849106d66",
+    "source_count": 500,
+    "source_unit": "article/source",
+    "tiers": [
+      "L40_44",
+      "L45_49",
+      "L50_54",
+      "L55_59",
+      "L60_64",
+      "L65_69",
+      "L70_74",
+      "L75_79",
+      "L100_119",
+      "L160_180"
+    ],
+    "inference_seeds": [
+      0,
+      1
+    ],
+    "paths_per_arm": 1000
+  },
+  "frontend": {
+    "contract_path": "[private-path]/frontend_contract.json",
+    "contract_sha256": "29612fc3d6f0eed52a61f0683e1d04d047b199387260822abcabf86b679c6c02",
+    "runtime_identity": {
+      "official_source": {
+        "path": "[private-path]/CosyVoice_official_clean",
+        "git_head": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+        "files": {
+          "cosyvoice/cli/frontend.py": "8d3dcb5880d76346f053f19344eac48adcff2aca70687293aadf4e1f33fadac3",
+          "cosyvoice/cli/cosyvoice.py": "4b2a605f129d172cd031286a14a591396c2e8ed0bf53258acc7445525fdaa65b",
+          "cosyvoice/tokenizer/tokenizer.py": "b852d0047f46f77cfec3335cf53214c9b3e1939e61049e9cb53fac403e32d4fe",
+          "cosyvoice/llm/llm.py": "c3799f4b2a00baaf1784bda86c5c7f22d4f9199b45e1fb9edd247b996d101ffa"
+        }
+      },
+      "base_model": {
+        "path": "[private-path]/Fun-CosyVoice3-0.5B",
+        "llm_pt_sha256": "69f43bd545131c30e98947fb360ea8b4dc9916d8e83dded7757c7ea4f5a24970"
+      },
+      "tokenizer": {
+        "path": "[private-path]/CosyVoice-BlankEN",
+        "files": {
+          "config.json": "168aa1bd401abc3bc262ba15ba4e499627a8b4e006e9d050b47c22de20660185",
+          "tokenizer_config.json": "482bd979881423375ca5414e4e0d94cd7c5349dbb17fffd46b4d36d71e62a1bc",
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "merges.txt": "ac8ff86a72bee70828fbc1119bc4398c6f3a9a6e490d7b0dbe917be025478bd0",
+          "model.safetensors": "130282af0dfa9fe5840737cc49a0d339d06075f83c5a315c3372c9a0740d0b96"
+        }
+      },
+      "offline_wetext_bridge": {
+        "path": "[private-path]/offline_wetext.py",
+        "sha256": "1bc1df1853e438a75584e04ece95c8a9eef0907701fcf5d372af51ccf2f4cff1",
+        "pyc_path": "[private-path]/offline_wetext.cpython-310.pyc",
+        "pyc_sha256": "75bb77c6453199afbc6f76306ae535c13e7a8ec429502f676c875a6cee81aa36",
+        "fst_root": "[private-path]/fsts",
+        "fst_files": {
+          "en/tn/tagger.fst": "ce8b28103ccf2d936d057a5cd5621ec29ccfedb5f737e48ac8096e7d6af7b2ad",
+          "en/tn/verbalizer.fst": "16a6a2ce28b60975e501e965396edbf94a591216a644abd27c8607a2a9aa24cd",
+          "zh/tn/tagger.fst": "4b8b6504c7effcaa067e2fd14ecac3ae2edf9130d229e11abd0ff9b85cbe0390",
+          "zh/tn/verbalizer.fst": "9fcadad76cafddb2e96b92d892d18249f0ba5fbe60e4d4fc51f466cb6bc7ade9"
+        }
+      },
+      "current_xtransformers_source": {
+        "path": "[private-path]/deps",
+        "files": {
+          "x_transformers/__init__.py": "695ba1514d39ef64c91d6f3c055738c80dad95ad196fc977347ed6e11675004b",
+          "x_transformers/x_transformers.py": "112ba9804d9c0ad787e3f3cc5b3f6d3e8940993d25a811302135274fa66147c6",
+          "x_transformers-2.11.24.dist-info/METADATA": "8b7d7c051c54566d0708de98afade84451bc212734e2debef304fc37a99f15ec",
+          "einx/__init__.py": "85cacd30ff20a10ebe51dafa0597affe656c856d03a8f65b653e87678ed88294",
+          "loguru/__init__.py": "196e5e0ff9f2234516dcb9385ccbf6524c0a6d72b0a97ca5c81bd225a7c3df19"
+        }
+      },
+      "critical_dependencies": {
+        "wetext": {
+          "wetext-0.0.4.dist-info/METADATA": "ef12e0bfb22e9ffb78a90e4c34b356fa0b5901ab786eb68e8e20edf48a7d7dbb",
+          "wetext-0.0.4.dist-info/RECORD": "96d93a86a8d19ba1ff98d64a094414edd8219ea8babc4cc255b3cd875d25522c",
+          "wetext/wetext.py": "aad8edaddeaa15d51dd3cf98b25f6f85faaf9282832770f781681038f9521130"
+        },
+        "kaldifst": {
+          "kaldifst-1.7.17.dist-info/METADATA": "62d1c9c0aa9fbb008cfc6df50bd9292a3bf87a2cad81d5dda15ad6452d8dbb8b",
+          "kaldifst-1.7.17.dist-info/RECORD": "8c8bf74e39d29a14d43d35670a9223ea62408e62e5e006911ea0abfe76b69a9c",
+          "_kaldifst.cpython-310-x86_64-linux-gnu.so": "49bac3f3c8cb526c4acf1c6bef24ae5a0a63708412434355a86bbb4ae0d964d8"
+        },
+        "pynini": {
+          "pynini-2.1.5.dist-info/METADATA": "a253c6ecca7b8b51a784fe601d981c5960b9abcadef225d70a83057d8d9921e3",
+          "pynini-2.1.5.dist-info/RECORD": "e3d9db766d3d1ea08455cf70f64e2a033976730f27d29cd07491a3e8396542f6",
+          "_pynini.cpython-310-x86_64-linux-gnu.so": "c86324f330fc7743499bdad81e7cf9f85887c5effdb3a11ac3e9d506541d8d6b",
+          "_pywrapfst.cpython-310-x86_64-linux-gnu.so": "50d1591822fea270b6ac5e5fbf2f134685444970157f03f7c7cbcf5263d102fd"
+        },
+        "openfst": {
+          "../../../conda-meta/openfst-1.8.2-h924138e_2.json": "28672de291a1973b489d6846b4e95a7f6f4651eea8a94a88de0abc80c630020d",
+          "../../../lib/libfst.so.25.0.0": "d1e6de0e93178352f72033b727f725e6d3cc8bf9b2a90bf90904b894621b10a3"
+        }
+      },
+      "execution": {
+        "sys_executable": "/opt/conda/envs/cosyvoice/bin/python",
+        "python_version": "3.10.19",
+        "python_ignore_environment": true,
+        "conda_prefix": "/opt/conda/envs/cosyvoice",
+        "effective_sys_path_before_cosyvoice_import": [
+          "[private-path]/scripts",
+          "/opt/conda/envs/cosyvoice/lib/python310.zip",
+          "/opt/conda/envs/cosyvoice/lib/python3.10",
+          "/opt/conda/envs/cosyvoice/lib/python3.10/lib-dynload",
+          "/opt/conda/envs/cosyvoice/lib/python3.10/site-packages"
+        ],
+        "ld_library_path": "/usr/local/nvidia/li[private-path]/lib64",
+        "modelscope_cache": null,
+        "hf_home": null,
+        "xdg_cache_home": null
+      }
+    },
+    "inputs_path": "[private-path]/current_frontend_inputs.json",
+    "inputs_sha256": "1cc9e6039659b581134a41cc6f4033a6ff92887ccc7112473caec5d482cf08fa",
+    "ledger_path": "[private-path]/path_ledger.json",
+    "ledger_sha256": "9767cbb7770b6cb40b05096617d35c0eb1f8742369869e1a70f8c5dad9f86650",
+    "literal_values_required": [
+      "normalized_text",
+      "text_token_ids",
+      "text_token_count",
+      "generation_cap",
+      "prompt tensors"
+    ]
+  },
+  "model_binding": {
+    "base": {
+      "path": "[private-path]/llm.pt",
+      "sha256": "69f43bd545131c30e98947fb360ea8b4dc9916d8e83dded7757c7ea4f5a24970",
+      "name": "Fun-CosyVoice3-0.5B"
+    },
+    "lora": {
+      "rank": 8,
+      "alpha": 16,
+      "dropout": 0.0,
+      "module_names": [
+        "model.model.layers.0.mlp.down_proj",
+        "model.model.layers.0.mlp.gate_proj",
+        "model.model.layers.0.mlp.up_proj",
+        "model.model.layers.0.self_attn.k_proj",
+        "model.model.layers.0.self_attn.o_proj",
+        "model.model.layers.0.self_attn.q_proj",
+        "model.model.layers.0.self_attn.v_proj",
+        "model.model.layers.1.mlp.down_proj",
+        "model.model.layers.1.mlp.gate_proj",
+        "model.model.layers.1.mlp.up_proj",
+        "model.model.layers.1.self_attn.k_proj",
+        "model.model.layers.1.self_attn.o_proj",
+        "model.model.layers.1.self_attn.q_proj",
+        "model.model.layers.1.self_attn.v_proj",
+        "model.model.layers.10.mlp.down_proj",
+        "model.model.layers.10.mlp.gate_proj",
+        "model.model.layers.10.mlp.up_proj",
+        "model.model.layers.10.self_attn.k_proj",
+        "model.model.layers.10.self_attn.o_proj",
+        "model.model.layers.10.self_attn.q_proj",
+        "model.model.layers.10.self_attn.v_proj",
+        "model.model.layers.11.mlp.down_proj",
+        "model.model.layers.11.mlp.gate_proj",
+        "model.model.layers.11.mlp.up_proj",
+        "model.model.layers.11.self_attn.k_proj",
+        "model.model.layers.11.self_attn.o_proj",
+        "model.model.layers.11.self_attn.q_proj",
+        "model.model.layers.11.self_attn.v_proj",
+        "model.model.layers.12.mlp.down_proj",
+        "model.model.layers.12.mlp.gate_proj",
+        "model.model.layers.12.mlp.up_proj",
+        "model.model.layers.12.self_attn.k_proj",
+        "model.model.layers.12.self_attn.o_proj",
+        "model.model.layers.12.self_attn.q_proj",
+        "model.model.layers.12.self_attn.v_proj",
+        "model.model.layers.13.mlp.down_proj",
+        "model.model.layers.13.mlp.gate_proj",
+        "model.model.layers.13.mlp.up_proj",
+        "model.model.layers.13.self_attn.k_proj",
+        "model.model.layers.13.self_attn.o_proj",
+        "model.model.layers.13.self_attn.q_proj",
+        "model.model.layers.13.self_attn.v_proj",
+        "model.model.layers.14.mlp.down_proj",
+        "model.model.layers.14.mlp.gate_proj",
+        "model.model.layers.14.mlp.up_proj",
+        "model.model.layers.14.self_attn.k_proj",
+        "model.model.layers.14.self_attn.o_proj",
+        "model.model.layers.14.self_attn.q_proj",
+        "model.model.layers.14.self_attn.v_proj",
+        "model.model.layers.15.mlp.down_proj",
+        "model.model.layers.15.mlp.gate_proj",
+        "model.model.layers.15.mlp.up_proj",
+        "model.model.layers.15.self_attn.k_proj",
+        "model.model.layers.15.self_attn.o_proj",
+        "model.model.layers.15.self_attn.q_proj",
+        "model.model.layers.15.self_attn.v_proj",
+        "model.model.layers.16.mlp.down_proj",
+        "model.model.layers.16.mlp.gate_proj",
+        "model.model.layers.16.mlp.up_proj",
+        "model.model.layers.16.self_attn.k_proj",
+        "model.model.layers.16.self_attn.o_proj",
+        "model.model.layers.16.self_attn.q_proj",
+        "model.model.layers.16.self_attn.v_proj",
+        "model.model.layers.17.mlp.down_proj",
+        "model.model.layers.17.mlp.gate_proj",
+        "model.model.layers.17.mlp.up_proj",
+        "model.model.layers.17.self_attn.k_proj",
+        "model.model.layers.17.self_attn.o_proj",
+        "model.model.layers.17.self_attn.q_proj",
+        "model.model.layers.17.self_attn.v_proj",
+        "model.model.layers.18.mlp.down_proj",
+        "model.model.layers.18.mlp.gate_proj",
+        "model.model.layers.18.mlp.up_proj",
+        "model.model.layers.18.self_attn.k_proj",
+        "model.model.layers.18.self_attn.o_proj",
+        "model.model.layers.18.self_attn.q_proj",
+        "model.model.layers.18.self_attn.v_proj",
+        "model.model.layers.19.mlp.down_proj",
+        "model.model.layers.19.mlp.gate_proj",
+        "model.model.layers.19.mlp.up_proj",
+        "model.model.layers.19.self_attn.k_proj",
+        "model.model.layers.19.self_attn.o_proj",
+        "model.model.layers.19.self_attn.q_proj",
+        "model.model.layers.19.self_attn.v_proj",
+        "model.model.layers.2.mlp.down_proj",
+        "model.model.layers.2.mlp.gate_proj",
+        "model.model.layers.2.mlp.up_proj",
+        "model.model.layers.2.self_attn.k_proj",
+        "model.model.layers.2.self_attn.o_proj",
+        "model.model.layers.2.self_attn.q_proj",
+        "model.model.layers.2.self_attn.v_proj",
+        "model.model.layers.20.mlp.down_proj",
+        "model.model.layers.20.mlp.gate_proj",
+        "model.model.layers.20.mlp.up_proj",
+        "model.model.layers.20.self_attn.k_proj",
+        "model.model.layers.20.self_attn.o_proj",
+        "model.model.layers.20.self_attn.q_proj",
+        "model.model.layers.20.self_attn.v_proj",
+        "model.model.layers.21.mlp.down_proj",
+        "model.model.layers.21.mlp.gate_proj",
+        "model.model.layers.21.mlp.up_proj",
+        "model.model.layers.21.self_attn.k_proj",
+        "model.model.layers.21.self_attn.o_proj",
+        "model.model.layers.21.self_attn.q_proj",
+        "model.model.layers.21.self_attn.v_proj",
+        "model.model.layers.22.mlp.down_proj",
+        "model.model.layers.22.mlp.gate_proj",
+        "model.model.layers.22.mlp.up_proj",
+        "model.model.layers.22.self_attn.k_proj",
+        "model.model.layers.22.self_attn.o_proj",
+        "model.model.layers.22.self_attn.q_proj",
+        "model.model.layers.22.self_attn.v_proj",
+        "model.model.layers.23.mlp.down_proj",
+        "model.model.layers.23.mlp.gate_proj",
+        "model.model.layers.23.mlp.up_proj",
+        "model.model.layers.23.self_attn.k_proj",
+        "model.model.layers.23.self_attn.o_proj",
+        "model.model.layers.23.self_attn.q_proj",
+        "model.model.layers.23.self_attn.v_proj",
+        "model.model.layers.3.mlp.down_proj",
+        "model.model.layers.3.mlp.gate_proj",
+        "model.model.layers.3.mlp.up_proj",
+        "model.model.layers.3.self_attn.k_proj",
+        "model.model.layers.3.self_attn.o_proj",
+        "model.model.layers.3.self_attn.q_proj",
+        "model.model.layers.3.self_attn.v_proj",
+        "model.model.layers.4.mlp.down_proj",
+        "model.model.layers.4.mlp.gate_proj",
+        "model.model.layers.4.mlp.up_proj",
+        "model.model.layers.4.self_attn.k_proj",
+        "model.model.layers.4.self_attn.o_proj",
+        "model.model.layers.4.self_attn.q_proj",
+        "model.model.layers.4.self_attn.v_proj",
+        "model.model.layers.5.mlp.down_proj",
+        "model.model.layers.5.mlp.gate_proj",
+        "model.model.layers.5.mlp.up_proj",
+        "model.model.layers.5.self_attn.k_proj",
+        "model.model.layers.5.self_attn.o_proj",
+        "model.model.layers.5.self_attn.q_proj",
+        "model.model.layers.5.self_attn.v_proj",
+        "model.model.layers.6.mlp.down_proj",
+        "model.model.layers.6.mlp.gate_proj",
+        "model.model.layers.6.mlp.up_proj",
+        "model.model.layers.6.self_attn.k_proj",
+        "model.model.layers.6.self_attn.o_proj",
+        "model.model.layers.6.self_attn.q_proj",
+        "model.model.layers.6.self_attn.v_proj",
+        "model.model.layers.7.mlp.down_proj",
+        "model.model.layers.7.mlp.gate_proj",
+        "model.model.layers.7.mlp.up_proj",
+        "model.model.layers.7.self_attn.k_proj",
+        "model.model.layers.7.self_attn.o_proj",
+        "model.model.layers.7.self_attn.q_proj",
+        "model.model.layers.7.self_attn.v_proj",
+        "model.model.layers.8.mlp.down_proj",
+        "model.model.layers.8.mlp.gate_proj",
+        "model.model.layers.8.mlp.up_proj",
+        "model.model.layers.8.self_attn.k_proj",
+        "model.model.layers.8.self_attn.o_proj",
+        "model.model.layers.8.self_attn.q_proj",
+        "model.model.layers.8.self_attn.v_proj",
+        "model.model.layers.9.mlp.down_proj",
+        "model.model.layers.9.mlp.gate_proj",
+        "model.model.layers.9.mlp.up_proj",
+        "model.model.layers.9.self_attn.k_proj",
+        "model.model.layers.9.self_attn.o_proj",
+        "model.model.layers.9.self_attn.q_proj",
+        "model.model.layers.9.self_attn.v_proj"
+      ],
+      "trainable_parameter_count": 4399104
+    },
+    "inference": {
+      "no_split": true,
+      "single_ar_request": true,
+      "num_ar_requests": 1,
+      "sampling": {
+        "top_k": 25,
+        "top_p": 0.8,
+        "min_token_text_ratio": 2,
+        "max_token_text_ratio": 20
+      },
+      "generation_cap_rule": "existing empirical B_safe terminal cap rule; no decoder parameter change",
+      "frontend": "E04 V4 then E09 V5 canonicalization, then official text_normalize(split=False,text_frontend=True), official tokenizer, and frontend_zero_shot"
+    },
+    "arms": {
+      "B0": {
+        "path": null,
+        "sha256": null,
+        "payload_arm": null
+      },
+      "B1": {
+        "path": "[private-path]/adapter_final.pt",
+        "sha256": "77a0637b972d210f4b80d1591943b8ec7a05c1c745e5aeb0e31ccc4aa81847d4",
+        "payload_arm": "B1"
+      },
+      "R1_RANDOM_LOCAL": {
+        "path": "[private-path]/adapter_final.pt",
+        "sha256": "532e8292a75ab668b0f0aab1746ec9536e21c1eaa8787c532f6ca19a9d451375",
+        "payload_arm": "R1_RANDOM_LOCAL"
+      },
+      "T1_TAIL30": {
+        "path": "[private-path]/adapter_final.pt",
+        "sha256": "d28b731800c1fd77cf4bfc36f67e9241c4efa5277e92135a5f0a63f39c9b2d2e",
+        "payload_arm": "T1_TAIL30"
+      },
+      "T6_BRANCH_FIXED_TAIL": {
+        "path": "[private-path]/adapter_final.pt",
+        "sha256": "123c26563c097defc8b4be436a96c26454d20ecac9f16c1b83e6bfb47bbde56e",
+        "payload_arm": "T6_BRANCH_FIXED_TAIL"
+      }
+    }
+  },
+  "scoring": {
+    "contract": "E10 corrected Whisper large-v3 project chunk20 scorer",
+    "protocol_path": "[private-path]/protocol_amendment_20260819.json",
+    "protocol_sha256": "256ef46aa704c2b03b93e30b5e365fe96465ef37b43fadf77c4d69e21036e699",
+    "reference": "immutable raw source text",
+    "wer_column_one_based": {
+      "reference": 3,
+      "whisper_hypothesis": 4
+    },
+    "chunk_merge": "chronological chunk_index",
+    "strict_complete": "real EOS AND cap_hit=false AND coverage>=0.95 AND trailing_deleted_words=0",
+    "secondary": [
+      "any_incomplete",
+      "HC_EARLY_EOS",
+      "WER",
+      "coverage"
+    ],
+    "diagnostic_only": [
+      "non_tail_error",
+      "CONTENT_DEVIATION",
+      "detailed taxonomy"
+    ]
+  },
+  "statistics": {
+    "independent_unit": "source",
+    "source_completion": "mean strict COMPLETE across the two frozen inference seeds",
+    "bootstrap": {
+      "resamples": 10000,
+      "seed": 20260820,
+      "paired": true,
+      "resample_within_bin_then_pool_for_curve": true
+    },
+    "primary_comparisons": [
+      "M1-B0",
+      "M1-B1",
+      "M1-T3"
+    ],
+    "primary_metric": "overall 500-source strict COMPLETE",
+    "frontier": {
+      "curve": "unweighted decreasing isotonic regression over bin-level source completion estimates via pool-adjacent-violators",
+      "F95": "first fitted frontier-region crossing below 0.95, linearly interpolated between adjacent bin centers; if no crossing, right-censor at last frontier center; if first bin below, left-censor at first frontier center",
+      "F50": "first fitted all-10-bin crossing below 0.50, linearly interpolated between adjacent bin centers; same observed-support censoring rule",
+      "observed_L100": "largest frontier-region bin with observed source completion exactly 1.0; descriptive only, no extrapolation"
+    },
+    "unit": "source; two inference seeds are averaged within source before paired bootstrap"
+  },
+  "pre_registered_comparisons": [
+    "T6_BRANCH_FIXED_TAIL-B0",
+    "T6_BRANCH_FIXED_TAIL-R1_RANDOM_LOCAL",
+    "T6_BRANCH_FIXED_TAIL-B1",
+    "T6_BRANCH_FIXED_TAIL-T1_TAIL30"
+  ],
+  "generation_gate": {
+    "requirements": [
+      "500/500 source literal frontend values saved",
+      "1000/1000 path ledger saved",
+      "five arms have exact shared input identity",
+      "all frozen checkpoint and E10 Gate identities pass",
+      "P4/E01 immutables unchanged"
+    ],
+    "pass_status": "P4_E11_FIVE_ARM_PREFLIGHT_PASS"
+  },
+  "execution_plan": {
+    "path": "[private-path]/generation_worker_plan.json",
+    "sha256": "1322063d886534b4bf99a7bef057c33acf2258695d7d784ae39de3a9649a4d34"
+  },
+  "payload_sha256": "3d16e84fad9c92171b6fdd87a7c0314b250097c819014608a74b554377068f1e"
+}

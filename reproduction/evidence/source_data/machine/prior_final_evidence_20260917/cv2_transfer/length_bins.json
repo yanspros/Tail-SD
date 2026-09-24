@@ -1,0 +1,250 @@
+{
+  "all_ten_bins_reported": true,
+  "bins": {
+    "L100_119": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.0,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.0,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.0,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.01,
+        "source_count": 50
+      }
+    },
+    "L160_180": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.0,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.03,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.03,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.0,
+        "source_count": 50
+      }
+    },
+    "L40_44": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.89,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.94,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.89,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.9,
+        "source_count": 50
+      }
+    },
+    "L45_49": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.76,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.83,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.85,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.83,
+        "source_count": 50
+      }
+    },
+    "L50_54": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.72,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.72,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.68,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.73,
+        "source_count": 50
+      }
+    },
+    "L55_59": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.63,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.63,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.66,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.67,
+        "source_count": 50
+      }
+    },
+    "L60_64": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.46,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.56,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.5,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.53,
+        "source_count": 50
+      }
+    },
+    "L65_69": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.36,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.47,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.39,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.49,
+        "source_count": 50
+      }
+    },
+    "L70_74": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.29,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.32,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.28,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.35,
+        "source_count": 50
+      }
+    },
+    "L75_79": {
+      "Base": {
+        "path_count": 100,
+        "sc_rate": 0.29,
+        "source_count": 50
+      },
+      "Full-SD": {
+        "path_count": 100,
+        "sc_rate": 0.33,
+        "source_count": 50
+      },
+      "Random-PR": {
+        "path_count": 100,
+        "sc_rate": 0.27,
+        "source_count": 50
+      },
+      "Tail-SD": {
+        "path_count": 100,
+        "sc_rate": 0.33,
+        "source_count": 50
+      }
+    }
+  },
+  "payload_sha256": "95d035adeb830cc9451895f23c6af7e036975af7eb82685ce1739d2dec0d7c57",
+  "pooled_60_79": {
+    "Base": {
+      "path_count": 400,
+      "sc_rate": 0.35,
+      "source_count": 200
+    },
+    "Full-SD": {
+      "path_count": 400,
+      "sc_rate": 0.42,
+      "source_count": 200
+    },
+    "Random-PR": {
+      "path_count": 400,
+      "sc_rate": 0.36,
+      "source_count": 200
+    },
+    "Tail-SD": {
+      "path_count": 400,
+      "sc_rate": 0.425,
+      "source_count": 200
+    }
+  },
+  "schema_version": 1,
+  "status": "FORMAL_E08_SHARED_E11_LENGTH_BIN_RESULTS_COMPLETE"
+}

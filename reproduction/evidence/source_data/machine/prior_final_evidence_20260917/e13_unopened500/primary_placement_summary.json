@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "status": "FORMAL_P4_E13_PRIMARY_PLACEMENT_SUMMARY_COMPLETE",
+  "definition": "Per source, equally average the six matched Tail-SD(init)-Random-PR(mask,init) strict-completion contrasts, then bootstrap sources.",
+  "strict_complete": {
+    "source_count": 500,
+    "point_estimate": 0.047,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260820,
+    "ci95": [
+      0.032,
+      0.06216666666666667
+    ]
+  },
+  "six_units": 6,
+  "six_of_six_positive": true,
+  "direction_flip": false,
+  "bootstrap_seed": 20260820,
+  "bootstrap_resamples": 10000,
+  "payload_sha256": "ca4ce26b6f8c69759488022e651e807d1d4a6a34cf8f8f0d791e3fb94b622456"
+}

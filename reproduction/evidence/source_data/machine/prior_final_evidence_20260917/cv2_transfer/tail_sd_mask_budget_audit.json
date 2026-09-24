@@ -1,0 +1,63 @@
+{
+  "branch_audit": {
+    "content": {
+      "active_eos_special_labels": 0,
+      "active_total_ce_labels": 12787,
+      "aggregate_budget_rounding": "int(ratio * branch_total_speech_tokens), i.e. Python floor for positive inputs, matching CV3 formal implementation semantics",
+      "aggregate_speech_label_budget": 12787,
+      "fixed_ratio": 0.29909295294208854,
+      "per_record_floor_sum": 12755,
+      "ratio_times_total": 12787.719203038996,
+      "record_count": 65,
+      "residual_count": 32,
+      "residual_rule": "add one to earliest residual_count records in canonical bank order filtered by branch",
+      "target_speech_token_total": 42755
+    },
+    "termination": {
+      "active_eos_special_labels": 58,
+      "active_total_ce_labels": 8834,
+      "aggregate_budget_rounding": "int(ratio * branch_total_speech_tokens), i.e. Python floor for positive inputs, matching CV3 formal implementation semantics",
+      "aggregate_speech_label_budget": 8776,
+      "fixed_ratio": 0.21705160991522524,
+      "per_record_floor_sum": 8748,
+      "ratio_times_total": 8776.481846922132,
+      "record_count": 58,
+      "residual_count": 28,
+      "residual_rule": "add one to earliest residual_count records in canonical bank order filtered by branch",
+      "target_speech_token_total": 40435
+    }
+  },
+  "canonical_bank": {
+    "file_sha256": "fa1c0f19863298e2529769acf0929471606a5e0fc87a2c43d9007f2e2e7f0dcd",
+    "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_final_target_bank_e08only_manifest.json",
+    "payload_sha256": "061f0216425159f174bfff8c6b52085a0f7ea2ecff58f02497f796317155e73a"
+  },
+  "checks": {
+    "aggregate_budgets_match": true,
+    "all_K_in_bounds": true,
+    "content_65": true,
+    "content_eos_excluded": true,
+    "records_123": true,
+    "termination_58": true,
+    "termination_eos_supervised": true
+  },
+  "created_at_utc": "2026-09-14T07:40:51.767886+00:00",
+  "overall": {
+    "full_sd_active_total_ce_labels": 83248,
+    "interpretation": "active-label ratio / supervision-label participation only; not compute, FLOPs, or training-time saving",
+    "tail_sd_active_eos_special_labels": 58,
+    "tail_sd_active_speech_labels": 21563,
+    "tail_sd_active_total_ce_labels": 21621,
+    "tail_sd_over_full_sd_active_label_ratio": 0.25971795118201035,
+    "target_speech_token_total": 83190
+  },
+  "payload_sha256": "676ef5af434f09816c94fe1ddfea1cdf6e8109f548980949a58e7a8061f10dce",
+  "run_type": "FORMAL pre-training mask/budget audit",
+  "schema_version": 1,
+  "status": "PASS_E08_TAIL_SD_MASK_BUDGET_AUDIT",
+  "tail_mask_manifest": {
+    "file_sha256": "1322c97c8743092ecf4e827b1526f4f14a12cbd913641375b1ad04d43bba44fc",
+    "path": "phases/p5_transfer/e08_cosyvoice2_cross_backbone_confirmatory/data/e08_tail_sd_mask_manifest.json",
+    "payload_sha256": "65397b7252ef3d9f2e300eeebdb22bc12ad8017475023b9e88109c901f156360"
+  }
+}
